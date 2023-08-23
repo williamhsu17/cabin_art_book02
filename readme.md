@@ -1,4 +1,4 @@
-# 台灣原住民樂舞 古flash網頁翻新Book02/10
+# 台灣傳統建築 古flash網頁翻新Book02/10
 
 - [Demo](#Demo)
 - [本機端測試](#本機端測試)
@@ -6,10 +6,10 @@
 
 ## Demo
 使用原始demo連結觀看flash版本的效果以及內容
-[原始demo連結](https://www.cabindesigntaipei.com/demo/arte/01%20aborigine/index.htm)
+[原始demo連結](https://www.cabindesigntaipei.com/demo/arte/02%20architecture/index.htm)
 
 測試中的更新網頁：
-[專案Demo](https://williamhsu17.github.io/cabin_art_book01/)
+[專案Demo](https://williamhsu17.github.io/cabin_art_book02/)
 
 需要使用chrome並啟用flash來觀看內容
 [Ruffle.rs](https://ruffle.rs/)
