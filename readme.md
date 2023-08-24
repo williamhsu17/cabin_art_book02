@@ -30,10 +30,17 @@
 
 ## 變更模式
 抽換下列連結已更換不同區塊間的模板
+
 const mainBackground = 'images/02_style/m00_bg.jpg';         # 主文區的背景
+
 const navButtonGroupImage = 'images/02_style/top01_01.jpg';  # 按鈕區塊的底圖，在同一區塊的不同小傑也需要更換
+
 const navLogoImage = 'images/02_style/top01.gif';            # 左邊的logo
+
 const navBackgroundImage = 'images/02_style/top07.jpg';      # 上面最底層的背景
 
+
 抽換左右展開處的顏色背景，每一區塊會改變
+
 <body style="background-image: url('images/02_style/left.gif');">
+
