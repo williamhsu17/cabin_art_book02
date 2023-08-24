@@ -42,5 +42,7 @@ const navBackgroundImage = 'images/02_style/top07.jpg';      # 上面最底層�
 
 抽換左右展開處的顏色背景，每一區塊會改變
 
+```
 <body style="background-image: url('images/02_style/left.gif');">
+```
 
