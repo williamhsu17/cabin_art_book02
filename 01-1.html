@@ -7,7 +7,6 @@
 
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
-    <link rel="stylesheet" href="css/introductory.css">
     <link rel="stylesheet" href="css/image-switch-button.css">
     <script>
         // 按照頁面需求更換
@@ -16,6 +15,8 @@
 
         const mainBackground = 'images/01_history/content/m_bg.jpg';
         const navButtonGroupImage = 'images/01_history/top01_01.jpg';
+        const navLogoImage = 'images/01_history/top01.gif';
+        const navBackgroundImage = 'images/01_history/top07.jpg';
     </script>
     <style>
         .display-none {
@@ -104,10 +105,10 @@
 
                                     <p id="displayText">長濱文化遺址</p>
                                     <div class="button-container">
-                                        <a href="#" class="isb_01" onclick="changeImage('images/01_history/content/1-1/001_01.jpg');"><img class="image-switch-button" alt="b1"></a>
-                                        <a href="#" class="isb_02" onclick="changeImage('images/01_history/content/1-1/001_02.jpg');"><img class="image-switch-button" alt="b2"></a>
-                                        <a href="#" class="isb_03" onclick="changeImage('images/01_history/content/1-1/001_03.jpg');"><img class="image-switch-button" alt="b3"></a>
-                                        <a href="#" class="isb_04" onclick="changeImage('images/01_history/content/1-1/001_04.jpg');"><img class="image-switch-button" alt="b4"></a>
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_01.jpg', 'displayImage');"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_02.jpg', 'displayImage');"><img class="image-switch-button" alt="b2"></a>
+                                        <a href="" class="isb_03" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_03.jpg', 'displayImage');"><img class="image-switch-button" alt="b3"></a>
+                                        <a href="" class="isb_04" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_04.jpg', 'displayImage');"><img class="image-switch-button" alt="b4"></a>
                                     </div>                                    
                                 </div>
                                 <p>臺灣史前人類的活動遺蹟可以由三萬年以前的台南「左鎮人」，以及一萬五千年以前台東「長濱文化」來看，兩者皆屬於舊石器時代；如同世界其他地區的人類文明發展，舊石器時代的居所常常利用天然的洞穴， 長濱文化所發現之地即為一處巨大的岩洞。</p>
@@ -124,15 +125,15 @@
                                 <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2/01_02map.gif" alt="">
                                 <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
                                     <div class="image-container">
-                                        <img id="displayImage" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2/002_02.jpg" alt="Image 1">
+                                        <img id="displayImage_1-2" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2/002_02.jpg" alt="Image 1">
                                     </div>
 
                                     <p>大坌坑文化遺址</p>
                                     <div class="button-container">
-                                        <a href="#" class="isb_01" onclick="changeImage('images/01_history/content/1-2/002_02.jpg')"><img class="image-switch-button" alt="b1"></a>
-                                        <a href="#" class="isb_02" onclick="changeImage('images/01_history/content/1-2/002_07.jpg')"><img class="image-switch-button" alt="b2"></a>
-                                        <a href="#" class="isb_03" onclick="changeImage('images/01_history/content/1-2/002_01.jpg')"><img class="image-switch-button" alt="b3"></a>
-                                        <a href="#" class="isb_04" onclick="changeImage('images/01_history/content/1-2/002_06.jpg')"><img class="image-switch-button" alt="b4"></a>
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2/002_02.jpg', 'displayImage_1-2')"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2/002_07.jpg', 'displayImage_1-2')"><img class="image-switch-button" alt="b2"></a>
+                                        <a href="" class="isb_03" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2/002_01.jpg', 'displayImage_1-2')"><img class="image-switch-button" alt="b3"></a>
+                                        <a href="" class="isb_04" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2/002_06.jpg', 'displayImage_1-2')"><img class="image-switch-button" alt="b4"></a>
                                     </div>                                    
                                 </div>
                                 <p>新石器時代後，包括大坌坑文化、圓山文化、牛罵頭文化以及卑南文化。他們使用比較精良的工具，尤其是製作多種類型的陶器。到了新石器文化的晚期，農業發達，人口增加，因此出現較大的聚落。</p>

@@ -8,11 +8,12 @@ function showContent(contentId) {
     // Show the selected content
     document.getElementById(contentId).style.display = 'block';
 }
-function changeImage(newSrc) {
-    const imageElement = document.getElementById('displayImage');
+function changeImage(newSrc, displayField) {
+    console.log('change image')
+    const imageElement = document.getElementById(displayField);
     imageElement.src = newSrc;
 }
-function changeText(newText) {
-    const textElement = document.getElementById('displayText');
+function changeText(newText, displayField) {
+    const textElement = document.getElementById(displayField);
     textElement.innerText = newText;
 }

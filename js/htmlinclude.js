@@ -40,7 +40,6 @@ async function fetchHTML(url) {
     // return new DOMParser().parseFromString(data, 'text/html');
 }
 function executeScripts(contentDocument) {
-    console.log(contentDocument)
     const scripts = contentDocument.querySelectorAll("script");
     
     for(let script of scripts) {
