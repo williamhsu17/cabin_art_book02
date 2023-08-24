@@ -1,9 +1,19 @@
 <div class="nav-section">
-    <div style="width: 868px; height: 114px; display: flex; background-image: url('images/01_history/top07.jpg');">
+    <div id="nav-background" style="width: 868px; height: 114px; display: flex; background-image: url('images/01_history/top07.jpg');">
         <div style="width: 169; height: 114px; display: flex; flex-direction: column; background-color: #bfbfbf;">
-            <img src="images/01_history/top01.gif" alt="" style="width: 169px; height: 89px; line-height: 1;">
+            <img id="nav-logo" src="images/01_history/top01.gif" alt="" style="width: 169px; height: 89px; line-height: 1;">
             <a href="#" style="width: 96px; height: 25px; line-height: 1;"><img src="images/01_history/top02.gif" alt="" style="width: 96px; height: 25px;"></a>
         </div>
-        <div style="width: 598px; height: 114px; background-image: url('images/01_history/top01_01.jpg');"></div>
+        <div id="nav-button-group"  style="width: 598px; height: 114px; background-image: url('images/01_history/top01_01.jpg');"></div>
     </div>
 </div>
+<script>
+    const navLogo = document.getElementById("nav-logo")
+    navLogo.src = navLogoImage;
+
+    const navBackground = document.getElementById("nav-background")
+    navBackground.style.backgroundImage = "url('" + navBackgroundImage + "')";
+    
+    const navButtonGroup = document.getElementById("nav-button-group")
+    navButtonGroup.style.backgroundImage = "url('" + navButtonGroupImage + "')";
+</script>
