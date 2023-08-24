@@ -12,3 +12,7 @@ function changeImage(newSrc) {
     const imageElement = document.getElementById('displayImage');
     imageElement.src = newSrc;
 }
+function changeText(newText) {
+    const textElement = document.getElementById('displayText');
+    textElement.innerText = newText;
+}
