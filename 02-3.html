@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣傳統建築欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '01_introductory';
+        const thisSide = 'side_default';
+
+        const mainBackground = 'images/02_style/m01_bg.jpg';
+        const navButtonGroupImage = 'images/02_style/top01_03.jpg';
+        const navLogoImage = 'images/02_style/top01.gif';
+        const navBackgroundImage = 'images/02_style/top07.jpg';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .content {
+            width: 569px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+			height:310px;
+			overflow:auto; 
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: flex;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-image: url('images/02_style/left.gif');">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <div class="main-section">
+                <include src="partial/nav.html"></include>
+                <div class="section" style="display: flex;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                        <style>
+                            .image_button {
+                                display: block;
+                                width: 94px;
+                                height: 20px;
+                                font-size: 0;
+                                margin-bottom: 1px;
+                            }
+                            #link_01 img {
+                                background-image: url("images/02_style/side/01_icon01a.gif");
+                            }
+                            #link_01:hover img {
+                                background-image: url("images/02_style/side/01_icon01b.gif");
+                            }
+                            #link_02 img {
+                                background-image: url("images/02_style/side/01_icon02a.gif");
+                            }
+                            #link_02:hover img {
+                                background-image: url("images/02_style/side/01_icon02b.gif");
+                            }
+
+                        </style>
+                        <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
+                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
+                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
+                            
+                        </div>
+                    </div>
+                    
+                   <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
+                       
+                       
+                        <div class="content" id="content1">
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="">
+                            </div>
+							
+							<br>
+                            
+							<div class="content-body">
+								
+                                <p>清代中期是清代由盛而衰之轉變期，道光二十二年從鴉片戰爭中，中國暴露出在國勢上衰弱的一面。臺灣在天津條約中，由於加開臺灣（安平）、滬尾（淡水）、雞籠（基隆）及打狗（高雄）為通商口岸，因此臺灣的歷史真正進入近代歷史。此時期西方文化傳入臺灣，商館、洋行、教堂建築樣式普遍設立。在海上貿易方面，鹿港是本期初年全盛時代，後來因港口淤塞被滬尾（淡水）取而代之。開發階段已經進入山區，且重點漸移至北部；此時期臺灣的社會發展有些變化，動亂四起，地方勢力的鬥爭，這些難免也會捲入不同籍移民間的分類械鬥，分類械鬥多發生在以豪族勢力介入之開發形態的中北部，有閩粵之爭、漳泉之爭，也有同樣是泉州人之頂下郊拼或分姓之械鬥，這些對臺灣社會影響深遠。
+									
+								<br>
+								
+								<br>清代中期之豪族住宅已達臺灣中國式建築之高峰，成就最大的建築都是在這段時期完成：中北部的城市發展幾乎和豪族興起或分類械鬥有關。
+								
+								<br>
+								
+								<br>另外，清廷為加強臺灣防務，在各地建造許多砲臺城堡；社會階級逐漸複雜，多數豪族也經由科舉、貢舉走入仕途，加上一般人對士大夫階級之敬重與嚮往，也促成文風鼎盛；豪族與文士形成的仕紳階級在清代中期扮演著重要角色；清代中期五十多年是臺灣文化之高峰，在歷史過程及人文發展社會背景中有其特點，並反映在建築面貌上。</p>
+	
+								   								   
+                            </div>
+                        </div>
+                        
+                        
+                                                <!--content2頁面-->
+                        <div class="content display-none" id="content2">
+                             <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_02-1-2_1" style="width: 210px; height: 140px;" sty src="images/02_style/content/2-1-2/048-01.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>臺南臺灣城隍廟</p>
+                                   <div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-02.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-04.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b2"></a>
+                                        <a href="#" class="isb_03" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-12.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b3"></a>
+                                       
+                                    </div>                                    
+                                </div>
+                                <p>　　 公共建築方面，陳永華倡建孔廟與武廟，鄭經也興建所謂七寺八廟；至於像 <a href="#">臺灣城隍廟</a>、<a href="#">開基天后宮</a> 及 大觀音亭都經大肆興建。明代原物恐怕已經不存在，不過，其選址及範圍一直延續下來，它奠定一些重要古建築的基礎。例如臺南城市的規劃，後代還是遵循四坊的範圍，<a href="#">孔廟</a>、<a href="#">祀典武廟</a>、<a href="#"> 北極殿</a> 、 <a href="#">大天后宮</a>及府城隍廟皆仍在明鄭時期之原址上。<br />
+      　<br />
+      　　明鄭時期的官署建築有的沿用荷人留下之建築，像是<a href="#">承天府</a>，也就是我們現今的赤崁樓；天興州署以及萬年州署，原為縣署，後來經由鄭經改為州。天興州署。在清代改為臺灣府署，在今衛民街；萬年州署則改為臺灣縣署，在今忠義國小校內。<br />
+      <br />
+      　　明鄭時期之住宅建築若以人口數量推斷，應該為數不少。一般平民的住宅可能仍以竹木構造為多，隨之而來的皇族重臣及文官武將都有正式宅邸，有的還有附庭園。<br />
+      <br />
+    　　在住宅方面，澎湖張百萬大宅即為明鄭時期，傳有八座之多。當時一漁民叫張隱，常到金嶼釣魚，無意間撿到海盜留下的金磚而致富；以此資本經商，在滬尾、半線、大甲等地購置田產，這幢建築物在澎湖白沙尚存，但是否全都為明代建築則尚待研究。 　　廟宇和建築原來甚多，但都已遭改建；孔廟創建在永曆二十年，是臺灣第一座 孔廟建築。今天臺南孔廟是康熙五十一年，由陳璸修建之後的格局； 武廟則原建於永曆二十三年。</p>
+                            </div>
+                            
+                        </div><!--content2頁面 結束-->
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/content.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>

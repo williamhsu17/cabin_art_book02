@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣傳統建築欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '01_introductory';
+        const thisSide = 'side_default';
+
+        const mainBackground = 'images/03_function/m01_bg.jpg';
+        const navButtonGroupImage = 'images/03_function/top01_06.jpg';
+        const navLogoImage = 'images/03_function/top01.gif';
+        const navBackgroundImage = 'images/03_function/top07.jpg';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .content {
+            width: 569px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: flex;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-image: url('images/03_function/left.gif');">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <div class="main-section">
+                <include src="partial/nav.html"></include>
+                <div class="section" style="display: flex;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+
+                    </div>
+                    
+                   <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 772px; height: 324px;">                   
+                       					   
+                        <div class="content" id="content1">
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/00_icon01t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage" style="width: 210px; height: 140px;" sty src="images/03_function/content/3-6/117-01_big.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p id="displayText">「門迎后車」隘門（鹿港車后巷）</p>
+                                    <div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/03_function/content/3-6/117-01_big.jpg', 'displayImage');"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/03_function/content/3-6/117-02_big.jpg', 'displayImage');"><img class="image-switch-button" alt="b2"></a>
+                                    </div>                                    
+                                </div>
+                              
+                                <p>為了防禦，在防火巷裡每隔一段距離亦可築一道隘門，入夜後即行關閉。像是在金門、澎湖在明清兩朝均有海盜騷擾之史實，因此防禦是相當必要的。說到隘門，一般街屋式城市亦不乏其例，鹿港的隘門甚多，至今尚存一座「門迎后車」隘門。隘門起始於何時？亦尚未見有研究，唐代里坊的門或可視為隘門之前身。根據「三才圖會」一書中，找到一幅木刻的閭里圖，發現它在一條曲折的街道前後端，均設隘門，形式近似牌樓，為木造柵門。而街道兩側均為店屋，可見店舖之大略情形，宋清明上河圖中尚未見隘門。</p>
+								
+								
+                            </div>
+                        </div>
+                        
+                        
+                                                
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/content.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>

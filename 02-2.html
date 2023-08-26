@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣傳統建築欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '01_introductory';
+        const thisSide = 'side_default';
+
+        const mainBackground = 'images/02_style/m01_bg.jpg';
+        const navButtonGroupImage = 'images/02_style/top01_02.jpg';
+        const navLogoImage = 'images/02_style/top01.gif';
+        const navBackgroundImage = 'images/02_style/top07.jpg';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .content {
+            width: 569px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+			height:310px;
+			overflow:auto; 
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: flex;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-image: url('images/02_style/left.gif');">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <div class="main-section">
+                <include src="partial/nav.html"></include>
+                <div class="section" style="display: flex;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                        <style>
+                            .image_button {
+                                display: block;
+                                width: 94px;
+                                height: 20px;
+                                font-size: 0;
+                                margin-bottom: 1px;
+                            }
+                            #link_01 img {
+                                background-image: url("images/02_style/side/01_icon01a.gif");
+                            }
+                            #link_01:hover img {
+                                background-image: url("images/02_style/side/01_icon01b.gif");
+                            }
+                            #link_02 img {
+                                background-image: url("images/02_style/side/01_icon02a.gif");
+                            }
+                            #link_02:hover img {
+                                background-image: url("images/02_style/side/01_icon02b.gif");
+                            }
+
+                        </style>
+                        <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
+                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
+                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
+                            
+                        </div>
+                    </div>
+                    
+                   <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
+                       
+                       
+                        <div class="content" id="content1">
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="">
+                            </div>
+							
+							<br>
+                            
+							<div class="content-body">
+								
+                                <p>康熙二十二年清廷獲得臺灣，到光緒二十一年甲午戰敗割臺為止，清廷統治臺灣有二百十一年之久。清初康熙、雍正、乾隆三朝可以說是盛世。治臺之初，清廷採取重農抑商之態度，最後由施琅說明「陳臺灣棄留利害疏」，這才保住臺灣；清廷遂設一府三縣，隸屬福建。
+									
+								<br>
+								
+								<br>清代初期階段移民由明鄭時期的二十多萬，增加為二百萬人，這成為開發最大的動力。由於人口的增加，墾拓面積也增加大約康熙末年南部完全開發，再分別往南北拓展。雍正年間南方已至恆春一帶，北方則是到達新竹、臺北及基隆。到了乾隆末年，西部平原已完全由漢人掌握，嘉乾年間更進展到東部的蘭陽平原。
+								
+								<br>
+								
+								<br>當時的社會結構較明鄭時期複雜，因為歸入清朝版圖較晚，加上清廷政治不當，使得臺灣當地的居民產生遺民之民族意識。而明末時期將大陸文化傳承到臺灣，著名的八賢就可說為清初臺灣文化主要啟蒙者。另外像林朝英，善雕刻，為乾隆、嘉慶年間臺南府城最出名的畫家；再者民間畫工莊敬夫，以廟字壁畫獨樹一格。								
+							
+								<br>
+								
+								<br>臺灣經濟活絡，使得中產階級逐漸成形，鹿港在此時躍為臺灣經濟重心；臺灣經濟重心移動，可由「一府二鹿三艋舺」略窺一二。</p>
+	
+	                             <div align="center"><img style="width: 140px; height: 206px;" src="images/02_style/content/2-2-1/02_01pic01.jpg" alt=""></div>
+								   								   
+                            </div>
+                        </div>
+                        
+                        
+                                                <!--content2頁面-->
+                        <div class="content display-none" id="content2">
+                             <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_02-1-2_1" style="width: 210px; height: 140px;" sty src="images/02_style/content/2-1-2/048-01.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>臺南臺灣城隍廟</p>
+                                   <div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-02.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-04.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b2"></a>
+                                        <a href="#" class="isb_03" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-12.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b3"></a>
+                                       
+                                    </div>                                    
+                                </div>
+                                <p>　　 公共建築方面，陳永華倡建孔廟與武廟，鄭經也興建所謂七寺八廟；至於像 <a href="#">臺灣城隍廟</a>、<a href="#">開基天后宮</a> 及 大觀音亭都經大肆興建。明代原物恐怕已經不存在，不過，其選址及範圍一直延續下來，它奠定一些重要古建築的基礎。例如臺南城市的規劃，後代還是遵循四坊的範圍，<a href="#">孔廟</a>、<a href="#">祀典武廟</a>、<a href="#"> 北極殿</a> 、 <a href="#">大天后宮</a>及府城隍廟皆仍在明鄭時期之原址上。<br />
+      　<br />
+      　　明鄭時期的官署建築有的沿用荷人留下之建築，像是<a href="#">承天府</a>，也就是我們現今的赤崁樓；天興州署以及萬年州署，原為縣署，後來經由鄭經改為州。天興州署。在清代改為臺灣府署，在今衛民街；萬年州署則改為臺灣縣署，在今忠義國小校內。<br />
+      <br />
+      　　明鄭時期之住宅建築若以人口數量推斷，應該為數不少。一般平民的住宅可能仍以竹木構造為多，隨之而來的皇族重臣及文官武將都有正式宅邸，有的還有附庭園。<br />
+      <br />
+    　　在住宅方面，澎湖張百萬大宅即為明鄭時期，傳有八座之多。當時一漁民叫張隱，常到金嶼釣魚，無意間撿到海盜留下的金磚而致富；以此資本經商，在滬尾、半線、大甲等地購置田產，這幢建築物在澎湖白沙尚存，但是否全都為明代建築則尚待研究。 　　廟宇和建築原來甚多，但都已遭改建；孔廟創建在永曆二十年，是臺灣第一座 孔廟建築。今天臺南孔廟是康熙五十一年，由陳璸修建之後的格局； 武廟則原建於永曆二十三年。</p>
+                            </div>
+                            
+                        </div><!--content2頁面 結束-->
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/content.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>

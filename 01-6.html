@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣傳統建築欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '01_introductory';
+        const thisSide = 'side_default';
+
+        const mainBackground = 'images/01_history/content/m02_bg.jpg';
+        const navButtonGroupImage = 'images/01_history/top01_06.jpg';
+        const navLogoImage = 'images/01_history/top01.gif';
+        const navBackgroundImage = 'images/01_history/top07.jpg';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .content {
+            width: 569px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+	height:310px;
+	overflow:auto; 
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: flex;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('images/01_history/left.gif');">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <div class="main-section">
+                <include src="partial/nav.html"></include>
+                <div class="section" style="display: flex;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                        <style>
+                            .image_button {
+                                display: block;
+                                width: 94px;
+                                height: 20px;
+                                font-size: 0;
+                                margin-bottom: 1px;
+                            }
+                            #link_01 img {
+                                background-image: url("images/01_history/side/03_icon01a.gif");
+                            }
+                            #link_01:hover img {
+                                background-image: url("images/01_history/side/03_icon01b.gif");
+                            }
+                            #link_02 img {
+                                background-image: url("images/01_history/side/03_icon02a.gif");
+                            }
+                            #link_02:hover img {
+                                background-image: url("images/01_history/side/03_icon02b.gif");
+                            }
+
+                        </style>
+                        <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
+                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
+                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
+                            
+                        </div>
+                    </div>
+                    
+                  <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
+                       
+                       
+                        <div class="content" id="content1">
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="">
+                            </div>
+							
+							<br>							
+                            
+							<div class="content-body">
+							
+                                <p>日本在中日甲午戰爭中取得臺灣；日本對臺灣的建設主要以獲取更多利益為主，不過，從另一角度來看，這對臺灣邁向現代化也非常有貢獻。
+								
+								<br>
+								
+								<br>日治前期先從改善交通、衛生與教育為主，並建立有效的統治機構。 1920 年後，臺灣有了重大的變化，社會思想蓬勃發展，民族主義與自由民主之風興起，藝術的表現也漸趨於多元，建築設計就琳瑯滿目。</p>
+								
+								 <div align="center"><img style="width: 238px; height: 163px;" src="images/01_history/content/1-6/07_01pic01.jpg" alt=""></div>
+								
+                            </div>
+                        </div>
+                        
+                        
+                                                <!--content2頁面-->
+                        <div class="content display-none" id="content2">
+                             <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                
+                               
+                            </div>
+                            
+                        </div><!--content2頁面 結束-->
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/content.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>
