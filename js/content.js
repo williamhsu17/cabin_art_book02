@@ -8,6 +8,16 @@ function showContent(contentId) {
     // Show the selected content
     document.getElementById(contentId).style.display = 'block';
 }
+function showImageSwitcher(SwitcherId) {
+    // Hide all content divs first
+     const contentDivs = document.querySelectorAll('.inline-image-switch');
+    contentDivs.forEach(
+        div => {div.style.display = 'none';}
+    );
+
+    // Show the selected content
+    document.getElementById(SwitcherId).style.display = 'block';
+}
 function changeImage(newSrc, displayField) {
     console.log('change image')
     const imageElement = document.getElementById(displayField);
