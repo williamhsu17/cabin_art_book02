@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣傳統建築欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '01_introductory';
+        const thisSide = 'side_default';
+
+        const mainBackground = 'images/01_history/content/m02_bg.jpg';
+        const navButtonGroupImage = 'images/01_history/top01_04.jpg';
+        const navLogoImage = 'images/01_history/top01.gif';
+        const navBackgroundImage = 'images/01_history/top07.jpg';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .content {
+            width: 569px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+	height:310px;
+	overflow:auto; 
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: flex;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('images/01_history/left.gif');">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <div class="main-section">
+                <include src="partial/nav.html"></include>
+                <div class="section" style="display: flex;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                        <style>
+                            .image_button {
+                                display: block;
+                                width: 94px;
+                                height: 20px;
+                                font-size: 0;
+                                margin-bottom: 1px;
+                            }
+                            #link_01 img {
+                                background-image: url("images/01_history/side/03_icon01a.gif");
+                            }
+                            #link_01:hover img {
+                                background-image: url("images/01_history/side/03_icon01b.gif");
+                            }
+                            #link_02 img {
+                                background-image: url("images/01_history/side/03_icon02a.gif");
+                            }
+                            #link_02:hover img {
+                                background-image: url("images/01_history/side/03_icon02b.gif");
+                            }
+
+                        </style>
+                        <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
+                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
+                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
+                            
+                        </div>
+                    </div>
+                    
+                  <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
+                       
+                       
+                        <div class="content" id="content1">
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="">
+                            </div>
+							
+							<br>							
+                          
+                                <p>建築反映出一個民族在特定時空下的文化，因此文化交流的現象也可以在建築的面目上發現。臺灣的傳統建築主要源自於閩南及粵東，自從明鄭清初後，人口逐漸增加，臺灣南北形成不同口音的移民區，其分佈方式與閩粵故鄉不同。基本上，宜蘭地區多漳州移民，台北地區呈現多樣混雜情形，桃園臺地多漳與客，彰化漳泉客並存，高雄與屏東一帶則泉、漳與客家交錯。</p>
+								<p>然而經歷一段時間，自然風土之影響就顯現出來，因此在材料及構造上發生變化，所謂因地制宜與就地取材。外觀方面來說，屋頂的坡度也較緩，屋脊曲線較含蓄，雕飾呈現重點分佈，裝飾有走入繁瑣之傾向。</p>													
+								<p align="center"><img src="images/01_history/content/1-4/060-04.jpg" alt=""><br>屋頂坡緩，屋脊曲線含蓄（林安泰古厝）</p>															<p>而且相近區域的建築風格偶有混合情形，加上進入二十世紀，各械鬥逐漸消失，因此常見漳、泉、粵的混合建築。</p>
+								
+
+                        </div>
+                        
+                        
+                                                <!--content2頁面-->
+                        <div class="content display-none" id="content2">
+                             <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                
+                               
+                            </div>
+                            
+                        </div><!--content2頁面 結束-->
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/content.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>

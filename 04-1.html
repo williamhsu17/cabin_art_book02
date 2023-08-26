@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣傳統建築欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '01_introductory';
+        const thisSide = 'side_default';
+
+        const mainBackground = 'images/04_art/m01_bg.jpg';
+        const navButtonGroupImage = 'images/04_art/top01_01.jpg';
+        const navLogoImage = 'images/04_art/top01.gif';
+        const navBackgroundImage = 'images/04_art/top07.jpg';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .content {
+            width: 569px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+			height:310px;
+			overflow:auto;
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: flex;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-image: url('images/04_art/left.gif');">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <div class="main-section">
+                <include src="partial/nav.html"></include>
+                <div class="section" style="display: flex;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/04_art/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                        <style>
+                            .image_button {
+                                display: block;
+                                width: 94px;
+                                height: 20px;
+                                font-size: 0;
+                                margin-bottom: 1px;
+                            }
+                            #link_01 img {
+                                background-image: url("images/04_art/side/01_icon01a.gif");
+                            }
+                            #link_01:hover img {
+                                background-image: url("images/04_art/side/01_icon01b.gif");
+                            }
+                            #link_02 img {
+                                background-image: url("images/04_art/side/01_icon02a.gif");
+                            }
+                            #link_02:hover img {
+                                background-image: url("images/04_art/side/01_icon02b.gif");
+                            }
+
+                        </style>
+                        <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
+                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
+                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
+                            
+                        </div>
+                    </div>
+                    
+                   <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
+                       
+                       
+                        <div class="content" id="content1">
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/04_art/content/01_icon01t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                               <div align="center"><img style="width: 250px; height: 147px;" src="images/04_art/content/4-1-1/d0101-01.jpg" alt=""></div>
+                              
+                                <p>臺灣清代的民居中，一般平民的建築多係就地取材，因地制宜，利用空暇由農民自行建造房舍。但士大夫宅第或地主富商等豪宅的建材多運自閩、粵。並且匠師也聘自閩、粵，人們尊稱為「唐山師傅」。在長達三百年以上的發展過程。臺灣的民居因應自然地理條件，也產生了變化，逐漸形成地方特色。
+								
+								<br>
+
+								<br>								十九世紀末葉，臺灣的民居開始表現出不同以往的風格，尤以大木結構特別明顯。大木結構的構件傾向於繁複的彫飾，木彫精細，彩繪豐富。並且融合了閩南的漳、泉與粵東的潮、汕各地特色，匯聚成一種混合式的風格。一九三○年代到達第一次的高峰，臺灣本地匠師逐漸增多是一個主因；到了一九四九年以後，又形成第二次高峰，寺廟或民居常常混合了北京宮殿、蘇州園林等局部特色，形成了更多樣的混合風格。
+								
+								<br>
+								
+								<br>在中國南方所發現的元代以前古建築雖與宋《法式》相近，但仍有不同之處。在作法有與宋《法式》所訂北方作法略異之處，認為可能滲入了南方古代地方手法之結果。
+								
+								<br>
+								
+								<br>								臺灣的居民除了原住民九族及平埔族外，最主要的是從閩南與粵東移民的漢族，其中又分為泉州人，漳州人以及客家人。據史載，閩、粵在古代本有數支南方的民族，至五胡亂華，東晉南渡，開始有大量的中原漢族南下閩、粵。其中有家譜詳載者如客家人，其遷移路線係經由皖與贛再進入閩、粵。後來宋室南遷與明末動亂，陸續自中原再遷移許多漢族進入南方，明末清初又隨鄭成功東渡臺灣，而這些漢族南遷的史實中的民族遷移路線連帶地影響了建築的發展。
+																
+								<br>
+								
+								<br>								中原漢族從東晉之後幾次南遷的路線大致相同，從黃河流域經安徽、江西再進入福建與廣東。民族遷移時，隨著地理條件之差異，民居也有所調適。易言之，例如客家人在中原時也許未曾建造土圍或土樓式的民居，至贛南、閩西與粵東後，因客觀條件改變了，才嘗試建造新形式的民居。另外一個值得注意的是匠師的流動問題，古代常有南匠北調之事，明初建造北京城時，即徵用南方蘇州匠師與江西匠師。因此，漢人南移時中原匠師隨之南下，並與南方匠師相互影響，甚至合流，形成新的匠派，這是很自然的發展。
+								
+								<br>
+								
+								<br>民居的研究，從族譜下手或許是一條研究的線索。臺灣的傳統匠師，大都是清末從閩、粵渡臺後，落腳生根而成。通過臺灣各地民居大木結構之比較分析，我們粗略可判別何者來自泉州，何者來自漳州。								
+																
+								<br>
+								
+								<br>但閩、粵之間的關係如何？與浙、贛或皖南的關係又如何？臺灣民居上的大木構件與皖、贛、浙、閩、粵古建築上構件略作比較，或可作個參考。</p>
+								
+								
+                            </div>
+                        </div>
+                        
+                        
+                                                <!--content2頁面-->
+                        <div class="content display-none" id="content2">
+                             <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_02-1-2_1" style="width: 210px; height: 140px;" sty src="images/02_style/content/2-1-2/048-01.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>臺南臺灣城隍廟</p>
+                                   <div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-02.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-04.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b2"></a>
+                                        <a href="#" class="isb_03" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-12.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b3"></a>
+                                       
+                                    </div>                                    
+                                </div>
+                                <p>　　 公共建築方面，陳永華倡建孔廟與武廟，鄭經也興建所謂七寺八廟；至於像 <a href="#">臺灣城隍廟</a>、<a href="#">開基天后宮</a> 及 大觀音亭都經大肆興建。明代原物恐怕已經不存在，不過，其選址及範圍一直延續下來，它奠定一些重要古建築的基礎。例如臺南城市的規劃，後代還是遵循四坊的範圍，<a href="#">孔廟</a>、<a href="#">祀典武廟</a>、<a href="#"> 北極殿</a> 、 <a href="#">大天后宮</a>及府城隍廟皆仍在明鄭時期之原址上。<br />
+      　<br />
+      　　明鄭時期的官署建築有的沿用荷人留下之建築，像是<a href="#">承天府</a>，也就是我們現今的赤崁樓；天興州署以及萬年州署，原為縣署，後來經由鄭經改為州。天興州署。在清代改為臺灣府署，在今衛民街；萬年州署則改為臺灣縣署，在今忠義國小校內。<br />
+      <br />
+      　　明鄭時期之住宅建築若以人口數量推斷，應該為數不少。一般平民的住宅可能仍以竹木構造為多，隨之而來的皇族重臣及文官武將都有正式宅邸，有的還有附庭園。<br />
+      <br />
+    　　在住宅方面，澎湖張百萬大宅即為明鄭時期，傳有八座之多。當時一漁民叫張隱，常到金嶼釣魚，無意間撿到海盜留下的金磚而致富；以此資本經商，在滬尾、半線、大甲等地購置田產，這幢建築物在澎湖白沙尚存，但是否全都為明代建築則尚待研究。 　　廟宇和建築原來甚多，但都已遭改建；孔廟創建在永曆二十年，是臺灣第一座 孔廟建築。今天臺南孔廟是康熙五十一年，由陳璸修建之後的格局； 武廟則原建於永曆二十三年。</p>
+                            </div>
+                            
+                        </div><!--content2頁面 結束-->
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/content.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>
