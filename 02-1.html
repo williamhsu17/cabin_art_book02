@@ -23,7 +23,7 @@
             display: none;
         }
         .content {
-            width: 569px;
+            width: 600px;
             margin-left: 52px;
             margin-right: 63px;
             margin-bottom: 10px;
@@ -105,28 +105,90 @@
                             </div>
                             <div class="content-body">
                                 <div style="display: flex;">
-                                    <div class="image_section mt-3">
-                                        <div id="image_switch_01" class="inline-image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                        <!-- image_switch_01 -->
+                                        <div id="image_switch_01" class="inline-image-switch">
                                             <div class="image-container">
-                                                <img id="displayImage" style="max-width: 100%; height: auto;" sty src="images/02_style/content/2-1/2-1-2/048-01.jpg" alt="Image 1">
+                                                <img id="displayImage" sty src="images/02_style/content/2-1/2-1-2/048-01.jpg" alt="Image 1">
                                             </div>
                                             <p>臺南臺灣城隍廟</p>                                 
                                         </div>
-                                        <div id="image_switch_02" class="inline-image-switch display-none" style="margin-left: 10px; margin-right: 10px;">
+                                        <!-- end image_switch_01 -->
+                                        <!-- image_switch_02 -->
+                                        <div id="image_switch_02" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_02" style="max-width: 100%; height: auto;" sty src="images/02_style/content/2-1/2-1-2/049-01.jpg" alt="Image 1">
+                                                <img id="displayImage_02" sty src="images/02_style/content/2-1/2-1-2/049-01.jpg" alt="Image 1">
                                             </div>
-        
                                             <p>臺南開基天后宮</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1/2-1-2/049-01.jpg', 'displayImage_02');"></a>
-                                                <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1/2-1-2/049-04.jpg', 'displayImage_02');"></a>
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-1/2-1-2/049-01.jpg', 'displayImage_02');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-1/2-1-2/049-04.jpg', 'displayImage_02');"></a>
                                             </div>                                    
                                         </div>
+                                        <!-- end image_switch_02 -->
+                                        <!-- image_switch_03 -->
+                                        <div id="image_switch_03" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_03" sty src="images/02_style/content/2-1/2-1-2/050-01.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺南孔廟</p>                                  
+                                        </div>
+                                        <!-- end image_switch_03 -->
+                                        <!-- image_switch_04 -->
+                                        <div id="image_switch_04" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_04" src="images/02_style/content/2-1/2-1-2/b01_p02a_big.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺南祀典武廟</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-1/2-1-2/b01_p02a_big.jpg', 'displayImage_04');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-1/2-1-2/b01_p02b_big.jpg', 'displayImage_04');"></a>
+                                                <a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-1/2-1-2/b01_p02c_big.jpg', 'displayImage_04');"></a>
+                                                <a href="" class="isb_04" onclick="changeImage('images/02_style/content/2-1/2-1-2/b01_p02d_big.jpg', 'displayImage_04');"></a>
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_04 -->
+                                        <!-- image_switch_05 -->
+                                        <div id="image_switch_05" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_05" src="images/02_style/content/2-1/2-1-2/046b-03.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺南北極殿</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-1/2-1-2/046b-03.jpg', 'displayImage_05');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-1/2-1-2/046b-10.jpg', 'displayImage_05');"></a>
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_05 -->
+                                        <!-- image_switch_06 -->
+                                        <div id="image_switch_06" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_06" src="images/02_style/content/2-1/2-1-2/b01_p03.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺南大天后宮</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-1/2-1-2/046-02.jpg', 'displayImage_06');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-1/2-1-2/046-04.jpg', 'displayImage_06');"></a>
+                                                <a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-1/2-1-2/046-12.jpg', 'displayImage_06');"></a>
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_06 -->
+                                        <!-- image_switch_07 -->
+                                        <div id="image_switch_07" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_07" src="images/02_style/content/2-1/2-1-2/b01_p03.jpg" alt="Image 1">
+                                            </div>
+                                            <p>承天府(今赤崁樓)</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-1/2-1-2/b01_p03.jpg', 'displayImage_07');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-1/2-1-2/017-03.jpg', 'displayImage_07');"></a>
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_07 -->
                                     </div>
-                                    <div class="mt-3" style="display: block; max-width: 60%; height: 240px; overflow: auto;">
-                                        <p>公共建築方面，陳永華倡建孔廟與武廟，鄭經也興建所謂七寺八廟；至於像<a href="#" class="inline_image_switcher" onclick="event.preventDefault(); showImageSwitcher('image_switch_01')">臺灣城隍廟</a>、<a href="#" class="inline_image_switcher" onclick="event.preventDefault(); showImageSwitcher('image_switch_02')">開基天后宮</a>及 大觀音亭都經大肆興建。明代原物恐怕已經不存在，不過，其選址及範圍一直延續下來，它奠定一些重要古建築的基礎。例如臺南城市的規劃，後代還是遵循四坊的範圍，孔廟、祀典武廟、 北極殿 、 大天后宮及府城隍廟皆仍在明鄭時期之原址上。</p>
-                                        <p>明鄭時期的官署建築有的沿用荷人留下之建築，像是承天府，也就是我們現今的赤崁樓；天興州署以及萬年州署，原為縣署，後來經由鄭經改為州。天興州署。在清代改為臺灣府署，在今衛民街；萬年州署則改為臺灣縣署，在今忠義國小校內。</p>
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                        <p>公共建築方面，陳永華倡建孔廟與武廟，鄭經也興建所謂七寺八廟；至於像<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">臺灣城隍廟</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">開基天后宮</a>及 大觀音亭都經大肆興建。明代原物恐怕已經不存在，不過，其選址及範圍一直延續下來，它奠定一些重要古建築的基礎。例如臺南城市的規劃，後代還是遵循四坊的範圍，<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">孔廟</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_04')">祀典武廟</a>、 <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_05')">北極殿</a> 、 <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_06')">大天后宮</a>及府城隍廟皆仍在明鄭時期之原址上。</p>
+                                        <p>明鄭時期的官署建築有的沿用荷人留下之建築，像是<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_07')">承天府</a>，也就是我們現今的赤崁樓；天興州署以及萬年州署，原為縣署，後來經由鄭經改為州。天興州署。在清代改為臺灣府署，在今衛民街；萬年州署則改為臺灣縣署，在今忠義國小校內。</p>
                                         <p>明鄭時期之住宅建築若以人口數量推斷，應該為數不少。一般平民的住宅可能仍以竹木構造為多，隨之而來的皇族重臣及文官武將都有正式宅邸，有的還有附庭園。</p> 
                                         <p>在住宅方面，澎湖張百萬大宅即為明鄭時期，傳有八座之多。當時一漁民叫張隱，常到金嶼釣魚，無意間撿到海盜留下的金磚而致富；以此資本經商，在滬尾、半線、大甲等地購置田產，這幢建築物在澎湖白沙尚存，但是否全都為明代建築則尚待研究。</p>
                                         <p>廟宇和建築原來甚多，但都已遭改建；孔廟創建在永曆二十年，是臺灣第一座 孔廟建築。今天臺南孔廟是康熙五十一年，由陳璸修建之後的格局； 武廟則原建於永曆二十三年。</p>

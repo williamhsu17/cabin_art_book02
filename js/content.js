@@ -1,6 +1,7 @@
 function showContent(contentId) {
     // Hide all content divs first
-     const contentDivs = document.querySelectorAll('.content');
+    event.preventDefault();
+    const contentDivs = document.querySelectorAll('.content');
     contentDivs.forEach(
         div => {div.style.display = 'none';}
     );
@@ -10,7 +11,8 @@ function showContent(contentId) {
 }
 function showImageSwitcher(SwitcherId) {
     // Hide all content divs first
-     const contentDivs = document.querySelectorAll('.inline-image-switch');
+    event.preventDefault();
+    const contentDivs = document.querySelectorAll('.inline-image-switch');
     contentDivs.forEach(
         div => {div.style.display = 'none';}
     );
@@ -19,11 +21,12 @@ function showImageSwitcher(SwitcherId) {
     document.getElementById(SwitcherId).style.display = 'block';
 }
 function changeImage(newSrc, displayField) {
-    console.log('change image')
+    event.preventDefault();
     const imageElement = document.getElementById(displayField);
     imageElement.src = newSrc;
 }
 function changeText(newText, displayField) {
+    event.preventDefault();
     const textElement = document.getElementById(displayField);
     textElement.innerText = newText;
 }

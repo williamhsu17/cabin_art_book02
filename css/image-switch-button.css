@@ -1,3 +1,13 @@
+.inline-image-switch {
+    width: 200px; 
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+.inline-image-switch .image-container img {
+    max-width: 100%;
+    width: auto;
+    max-height: 160px;
+}
 .button-container {
     display: flex;
 }
