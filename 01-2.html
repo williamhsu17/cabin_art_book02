@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>臺灣原住民-樂舞欣賞</title>
+    <title>臺灣傳統建築欣賞</title>
 
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
@@ -13,7 +13,7 @@
         const thisPage = '01_introductory';
         const thisSide = 'side_default';
 
-        const mainBackground = 'images/01_history/content/m_bg.jpg';
+        const mainBackground = 'images/01_history/content/m02_bg.jpg';
         const navButtonGroupImage = 'images/01_history/top01_02.jpg';
         const navLogoImage = 'images/01_history/top01.gif';
         const navBackgroundImage = 'images/01_history/top07.jpg';
@@ -44,6 +44,12 @@
         .content-body img {
             width: 100%;
         }
+		.img_zoom:
+			
+			
+			
+			}
+		
     </style>
 </head>
 <body style="background-image: url('images/01_history/left.gif');">
@@ -52,7 +58,9 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                     <!--側邊選單-->
+                     
+                      <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -62,59 +70,388 @@
                                 margin-bottom: 1px;
                             }
                             #link_01 img {
-                                background-image: url("images/01_history/side/01_icon01a.gif");
+                                background-image: url("images/01_history/side/02_icon01a.gif");
                             }
                             #link_01:hover img {
-                                background-image: url("images/01_history/side/01_icon01b.gif");
+                                background-image: url("images/01_history/side/02_icon01b.gif");
                             }
                             #link_02 img {
-                                background-image: url("images/01_history/side/01_icon02a.gif");
+                                background-image: url("images/01_history/side/02_icon02a.gif");
                             }
                             #link_02:hover img {
-                                background-image: url("images/01_history/side/01_icon02b.gif");
+                                background-image: url("images/01_history/side/02_icon02b.gif");
                             }
                             #link_03 img {
-                                background-image: url("images/01_history/side/01_icon03a.gif");
+                                background-image: url("images/01_history/side/02_icon03a.gif");
                             }
                             #link_03:hover img {
-                                background-image: url("images/01_history/side/01_icon03b.gif");
+                                background-image: url("images/01_history/side/02_icon03b.gif");
                             }
+							
+							#link_04 img {
+                                background-image: url("images/01_history/side/02_icon04a.gif");
+                            }
+                            #link_04:hover img {
+                                background-image: url("images/01_history/side/02_icon04b.gif");
+                            }
+                            #link_05 img {
+                                background-image: url("images/01_history/side/02_icon05a.gif");
+                            }
+                            #link_05:hover img {
+                                background-image: url("images/01_history/side/02_icon05b.gif");
+                            }
+							
+							#link_06 img {
+                                background-image: url("images/01_history/side/02_icon06a.gif");
+                            }
+                            #link_06:hover img {
+                                background-image: url("images/01_history/side/02_icon06b.gif");
+                            }
+                            #link_07 img {
+                                background-image: url("images/01_history/side/02_icon07a.gif");
+                            }
+                            #link_07:hover img {
+                                background-image: url("images/01_history/side/02_icon07b.gif");
+                            }
+							
+							#link_08 img {
+                                background-image: url("images/01_history/side/02_icon08a.gif");
+                            }
+                            #link_08:hover img {
+                                background-image: url("images/01_history/side/02_icon08b.gif");
+                            }
+                            #link_09 img {
+                                background-image: url("images/01_history/side/02_icon09a.gif");
+                            }
+                            #link_09:hover img {
+                                background-image: url("images/01_history/side/02_icon09b.gif");
+                            }
+							
+                            #link_10 img {
+                                background-image: url("images/01_history/side/02_icon10a.gif");
+                            }
+                            #link_10:hover img {
+                                background-image: url("images/01_history/side/02_icon10b.gif");
+                            }
+							
                         </style>
-                        <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
+                        <div class="side_button_group" style="margin-top: 105px; margin-left: 2px;">
+                                                        <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
                             <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
                             <a href="#" id="link_03" onclick="showContent('content3')"><img class="image_button" alt="link3"></a>
+							
+							<a href="#" id="link_04" onclick="showContent('content4')"><img class="image_button" alt="link4"></a>
+                            <a href="#" id="link_05" onclick="showContent('content5')"><img class="image_button" alt="link5"></a>
+                            <a href="#" id="link_06" onclick="showContent('content6')"><img class="image_button" alt="link6"></a>
+							
+							<a href="#" id="link_07" onclick="showContent('content7')"><img class="image_button" alt="link7"></a>
+                            <a href="#" id="link_08" onclick="showContent('content8')"><img class="image_button" alt="link8"></a>
+                            <a href="#" id="link_09" onclick="showContent('content9')"><img class="image_button" alt="link9"></a>
+							
+							<a href="#" id="link_10" onclick="showContent('content10')"><img class="image_button" alt="link10"></a>
+
                         </div>
                     </div>
+                    
+                    <!--主要內容區-->
+                    
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
                         <div class="content" id="content1">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/01_icon01t.gif" alt="">
+                                <img class="content-title-image" src="images/01_history/content/02_icon01t.gif" alt="">
                             </div>
                             <div class="content-body">
-                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-1/01_01map.png" alt="">
+                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2-1/02_01map.gif" alt="">
                                 <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
                                     <div class="image-container">
-                                        <img id="displayImage" style="width: 130px; height: 200px;" sty src="images/01_history/content/1-1/001_01.jpg" alt="Image 1">
+                                      <img id="displayImage" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2-1/a0201_p01_big.jpg" alt="Image 1">
                                     </div>
 
-                                    <p>長濱文化遺址</p>
+                                    <p id="displayText"> 阿美族住屋</p>
                                     <div class="button-container">
-                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_01.jpg', 'displayImage');"><img class="image-switch-button" alt="b1"></a>
-                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_02.jpg', 'displayImage');"><img class="image-switch-button" alt="b2"></a>
-                                        <a href="" class="isb_03" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_03.jpg', 'displayImage');"><img class="image-switch-button" alt="b3"></a>
-                                        <a href="" class="isb_04" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_04.jpg', 'displayImage');"><img class="image-switch-button" alt="b4"></a>
+                                      <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-1/a0201_p01_big.jpg', 'displayImage');"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-1/a0201_p02_big.jpg', 'displayImage');"><img class="image-switch-button" alt="b2"></a>
+                                        <a href="" class="isb_03" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-1/a0201_p03_big.jpg', 'displayImage');"><img class="image-switch-button" alt="b3"></a>
+                                        
                                     </div>                                    
                                 </div>
-                                <p>臺灣史前人類的活動遺蹟可以由三萬年以前的台南「左鎮人」，以及一萬五千年以前台東「長濱文化」來看，兩者皆屬於舊石器時代；如同世界其他地區的人類文明發展，舊石器時代的居所常常利用天然的洞穴， 長濱文化所發現之地即為一處巨大的岩洞。</p>
+                                <p>阿美族的住屋分佈從花蓮到臺東與屏東皆有，建築有南北上的差異；阿美族為母系社會，公眾事務仍由男性參與。住宅除了主屋外，也有公廨、祖祠、廚房、穀倉、水車、樁米房、家畜寮舍或墓園。一般認為阿美族是漢化較深的一族。
+								
+    <br>
+	
+								<br>阿美族的住屋有單室前門室與複室側門式，所謂單室即是長方形平面不隔間，中央有火塘，四周為睡覺之所；而複室則為室內有木板隔間，較為隱私。</p>
                             </div>
                         </div>
+                        
+                        
+                        <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                            <p>content 2</p>
-                        </div>
+                                                    <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/02_icon02t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2-2/02_02map.gif" alt="">
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_1-2" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2-2/a0202_p01_big.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>泰雅族住屋</p>
+                                    <div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-2/a0202_p01_big.jpg', 'displayImage_1-2')"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-2/a0202_p02_big.jpg', 'displayImage_1-2')"><img class="image-switch-button" alt="b2"></a>
+                                        <a href="" class="isb_03" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-2/a0202_p03_big.jpg', 'displayImage_1-2')"><img class="image-switch-button" alt="b3"></a>
+                                        
+                                    </div>                                    
+                                </div>
+                                <p>泰雅族分佈最廣，包括臺北、宜蘭、桃園、新竹、苗栗、臺中、南投與花蓮各地山區內。雖各地建築亦不同，但大都包括主屋、穀倉、家畜與家禽舍、獸骨架、頭骨架與望樓。    
+								
+    <br>
+	
+								<br>住屋平面多呈長方形，室內有平地式或平地穴式，採半地穴式能獲禦寒取暖的功能。
+								
+    <br>
+	
+								<br>望樓設村莊的入口，原本有守望監視之功能，後來轉變成為眺望風景之用。平台覆以草頂，牆上闢窗，室內中央舖石板可生火取暖。</p>
+                            </div>
+                          
+                        </div><!--content2頁面 結束-->
+                        
+                        <!--content3頁面-->
                         <div class="content display-none" id="content3">
-                            <p>content 3</p>
-                        </div>
+                                                    <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/02_icon03t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2-3/02_03map.gif" alt="">
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_1-3" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2-3/a0203_p01_big.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>排灣族住屋</p>
+                                    <div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-3/a0203_p01_big.jpg', 'displayImage_1-3')"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-3/a0203_p02_big.jpg', 'displayImage_1-3')"><img class="image-switch-button" alt="b2"></a>
+                                        <a href="" class="isb_03" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-3/a0203_p03_big.jpg', 'displayImage_1-3')"><img class="image-switch-button" alt="b3"></a>
+                                        
+                                    </div>                                    
+                                </div>
+                                <p>排灣族建築最富藝術氣氛，多分佈在南部的山區，包括屏東及臺東一帶。排灣族與魯凱族和卑南族在文化上互相交流，因此有共通之處；排灣族重視社會階段，實施封建制度。排灣族中有世襲的宗主頭目，也有因戰功而形成的軍事頭目，也有專司祭典的頭目，也有長老。土地為少數地主所有，耕種的人要繳交租稅給地主，這種情形頗像中國或歐洲古代的領土宗主權社會。    
+								
+    <br>
+	
+								<br>排灣族的建築以豐富的木雕彰顯屋主的貴族身分，今日的好茶與古樓為保存完整的聚落。室內有木雕祖先像，門楣上雕有許多百步蛇的紋樣；頭目家屋前的庭院有象徵頭目威權的司令台及目標石，上面雕著人形與百步蛇，是其他族沒有的。
+</p>
+                            </div>
+                          
+                        </div><!--content3頁面 結束-->
+						
+                        
+<!--content4頁面-->
+                        <div class="content display-none" id="content4">
+                                                    <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/02_icon04t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2-4/02_04map.gif" alt="">
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_1-4" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2-4/a0204_p01_big.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>布農族住屋</p>
+                                    <!--<div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-3/a0203_p01_big.jpg', 'displayImage_1-3')"><img class="image-switch-button" alt="b1"></a>
+
+                                        
+                                    </div>-->                                    
+                                </div>
+								
+                                <p>布農族分佈南投、高雄與臺東三縣交界山區，是原住民住得最高的一族，是父系社會。建築材料多用片岩、木板及茅草，就地取材且因地制宜。								
+								
+    <br>
+								<br>布農族喜歡半地穴，室內略比室外低，室內有一穀倉，貯藏小米。住屋外面常以石片圍成矮牆與附屬小屋，構成一個院落的生活空間，表示他們的生活領域超出室內範圍，周圍環境是他們生活起居作息空間的延長。</p>
+								
+								
+                            </div>
+                          
+                        </div><!--content4頁面 結束-->                        
+      
+	  
+<!--content5頁面-->
+                        <div class="content display-none" id="content5">
+                                                    <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/02_icon05t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2-5/02_05map.gif" alt="">
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_1-5" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2-5/a0205_p01_big.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>卑南族住屋</p>
+                                    <!--<div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-3/a0203_p01_big.jpg', 'displayImage_1-3')"><img class="image-switch-button" alt="b1"></a>
+
+                                        
+                                    </div>-->                                    
+                                </div>
+								
+                                <p>卑南族分佈臺東，他們漢化較深，逐漸喪失自己傳統古文化。															
+    <br>
+								<br>他們的住屋平面為長方形，用竹管編成牆體，以茅草蓋屋頂，地面不凹下，很接近台灣南部的平埔族建築。卑南族採室內葬，即是在住屋挖掘墓穴，將死者的屍身葬於穴內。另外，有一種放棄舊屋的習俗，若死者為凶死，不是善終，那麼家人要另建新屋。
+							
+<br>							
+								<br>	卑南族的兒童到一定年齡要到少年會所受訓練，目的在訓練生活禮節、體能知識與戰鬥技術。少年會所用木柱支撐高架式，上面平台為圓形，屋頂蓋茅草頂，讓受訓的中青年人被孤立起來，集中教導，是種很成功的學校建築。</p>
+								
+								
+                            </div>
+                          
+                        </div><!--content5頁面 結束-->
+      
+	  
+<!--content6頁面-->
+                        <div class="content display-none" id="content6">
+                                                    <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/02_icon06t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2-6/02_06map.gif" alt="">
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_1-6" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2-6/a0206_p01.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>魯凱族住屋</p>
+                                    <div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-6/a0206_p01.jpg', 'displayImage_1-6')"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-6/a0206_p02.jpg', 'displayImage_1-6')"><img class="image-switch-button" alt="b2"></a>
+                                        
+                                    </div>                                    
+                                </div>
+								
+                                <p>魯凱族分佈於高雄、屏東與臺東交界山區，文化特性接近排灣。其住屋多用片岩砌成，牆壁與屋頂皆以片岩排成。室內地板也都舖成大片石板，四周用木板墊成床舖，中央設有火爐；室內的木柱呈扁平狀，主柱視為神聖的，有守護神的象徵。室外通常有庭院，舖大片石板，邊緣凸出石臺作為椅子，屋簷下有石椅供作家事，設計顯示出室內室外空間的充分利用。</p>
+								
+								
+                            </div>
+                          
+                        </div><!--content6頁面 結束-->
+
+						
+<!--content7頁面-->
+                        <div class="content display-none" id="content7">
+                                                    <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/02_icon07t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2-7/02_07map.gif" alt="">
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_1-7" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2-7/a0207_p01.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>鄒族住屋</p>
+                                    <div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-7/a0207_p01.jpg', 'displayImage_1-7')"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-7/a0207_p02_big.jpg', 'displayImage_1-7')"><img class="image-switch-button" alt="b2"></a>
+                                        
+                                    </div>                                    
+                                </div>
+								
+                                <p>鄒族分佈嘉義阿里山一帶，為父系社會。住宅平面有長方形及橢圓形，茅草屋頂；在阿里山達邦社尚有完整的大型集會所，屬於干欄式構造，平時不可隨便上去，可能冒瀆神明。</p>
+								
+								
+                            </div>
+                          
+                        </div><!--content7頁面 結束-->
+
+						
+<!--content8頁面-->
+                        <div class="content display-none" id="content8">
+                                                    <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/02_icon08t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2-8/02_08map.gif" alt="">
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_1-8" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2-8/a0208_p01.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>賽夏族住屋</p>
+                                    <div class="button-container">
+
+                                        
+                                    </div>                                    
+                                </div>
+								
+                                <p>賽夏族分佈新竹與苗栗之山區，人口為九族中最少者。建築物與泰雅族人相近，且深受漢人影響，房屋內有明顯隔間，各有獨立機能，反映出家庭私密性要求高，外觀上很像漢人的房屋。</p>
+																
+                            </div>
+                          
+                        </div><!--content8頁面 結束-->
+
+
+<!--content9頁面-->
+                        <div class="content display-none" id="content9">
+                                                    <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/02_icon09t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2-9/02_09map.gif" alt="">
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_1-9" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2-9/a0209_p01.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>達悟族住屋</p>
+                                    <div class="button-container">
+                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-9/a0209_p01.jpg', 'displayImage_1-9')"><img class="image-switch-button" alt="b1"></a>
+                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-9/a0209_p02.jpg', 'displayImage_1-9')"><img class="image-switch-button" alt="b2"></a>
+                                        <a href="" class="isb_03" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-9/a0209_p03.jpg', 'displayImage_1-9')"><img class="image-switch-button" alt="b3"></a>
+                                        
+                                    </div>                                    
+                                </div>
+								
+                                <p>達悟族居住在蘭嶼以打漁維生，由於未受其他族群影響，所以保存完整濃厚古老傳統文化。達悟族為父系社會，社會分工有序。為了防颱風，建屋在凹坑中，地底有排水道，室內形成前後室，主屋建在凹坑下。
+															
+<br>							
+								<br>	涼臺為達悟族人最重要的休閒空間，平日閒話家常及聯絡感情皆在涼台上；他們注重家庭成員的感情，因此在主屋前的平地上有大石頭併成的靠背石，供坐躺及話家常之用。</p>
+																
+                            </div>
+                          
+                        </div><!--content9頁面 結束-->    						
+
+                        
+<!--content10頁面-->
+                        <div class="content display-none" id="content10">
+                                                    <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/02_icon10t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-2-10/02_10map.gif" alt="">
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                    <div class="image-container">
+                                        <img id="displayImage_1-10" style="width: 210px; height: 140px;" sty src="images/01_history/content/1-2-10/a0210_p01_big.jpg" alt="Image 1">
+                                    </div>
+
+                                    <p>平埔族住屋</p>
+                                    <div class="button-container">
+                                        
+                                        
+                                    </div>                                    
+                                </div>
+								
+                               <p>平埔族的建築不容易見到，很少能保存下來。早在明清的文獻提及，北部有凱達格蘭族，宜蘭有噶瑪蘭族，台中有巴布薩拉族及和安雅族，嘉南平原有西拉雅族，高雄有馬卡道族（<a href="images/01_history/content/1-2-10/a0210_p02_big.jpg" onclick="MM_openBrWindow('images/01_history/content/1-2-10/a0210_p02_big.jpg','','width=350,height=467')">平埔族分布圖</a>）。據荷蘭人記載他們的建築多以長方形平面，多用竹子、木材及茅草為主要建材。    
+    <br>
+								<br>平埔族漢化很深，根據清代文獻描述，平埔族建築有高土台基，其屋頂、門窗、牆體及屋架，則可能以編竹或編藤製作。</p>
+								
+                            </div>
+                          
+                        </div><!--content10頁面 結束-->
+                        
                 </div>
             </div>
         </div>
