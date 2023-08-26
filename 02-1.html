@@ -36,7 +36,8 @@
             width: 100%;
         }
         .content-body {
-            display: flex;
+            display: block;
+            height: 240px;
         }
         .content-body p {
             margin-left: 2px;
@@ -62,58 +63,58 @@
                                 margin-bottom: 1px;
                             }
                             #link_01 img {
-                                background-image: url("images/01_history/side/01_icon01a.gif");
+                                background-image: url("images/02_style/side/01_icon01a.gif");
                             }
                             #link_01:hover img {
-                                background-image: url("images/01_history/side/01_icon01b.gif");
+                                background-image: url("images/02_style/side/01_icon01b.gif");
                             }
                             #link_02 img {
-                                background-image: url("images/01_history/side/01_icon02a.gif");
+                                background-image: url("images/02_style/side/01_icon02a.gif");
                             }
                             #link_02:hover img {
-                                background-image: url("images/01_history/side/01_icon02b.gif");
-                            }
-                            #link_03 img {
-                                background-image: url("images/01_history/side/01_icon03a.gif");
-                            }
-                            #link_03:hover img {
-                                background-image: url("images/01_history/side/01_icon03b.gif");
+                                background-image: url("images/02_style/side/01_icon02b.gif");
                             }
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
                             <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
                             <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
-                            <a href="#" id="link_03" onclick="showContent('content3')"><img class="image_button" alt="link3"></a>
                         </div>
                     </div>
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
                         <div class="content" id="content1">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/01_icon01t.gif" alt="">
+                                <img class="content-title-image" src="images/02_style/content/2-1/2-1-1/01_icon01t.gif" alt="">
                             </div>
-                            <div class="content-body">
-                                <img style="width: 150px; height: 206px;" src="images/01_history/content/1-1/01_01map.png" alt="">
-                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
-                                    <div class="image-container">
-                                        <img id="displayImage" style="width: 130px; height: 200px;" sty src="images/01_history/content/1-1/001_01.jpg" alt="Image 1">
-                                    </div>
-
-                                    <p>長濱文化遺址</p>
-                                    <div class="button-container">
-                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_01.jpg', 'displayImage');"><img class="image-switch-button" alt="b1"></a>
-                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_02.jpg', 'displayImage');"><img class="image-switch-button" alt="b2"></a>
-                                        <a href="" class="isb_03" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_03.jpg', 'displayImage');"><img class="image-switch-button" alt="b3"></a>
-                                        <a href="" class="isb_04" onclick="event.preventDefault(); changeImage('images/01_history/content/1-1/001_04.jpg', 'displayImage');"><img class="image-switch-button" alt="b4"></a>
-                                    </div>                                    
+                            <div class="content-body" style=" overflow: auto;">
+                                <div style="display: flex;">
+                                    <p style="width: 100%; margin-top: 20px;">從現今保存少數的明代民居來看，可以知道明清建築無論在形式格局或建材用料，都沒有什麼差別。其次明鄭時期對日本、暹羅、安南及呂宋皆有貿易往來，閩南地區亦早有南洋方面的接觸，因此，臺灣的閩南式建築受外來影響，尤其是南洋應自鄭氏時期始。</p>
+                                    <img style="width: 100%; height: auto;" src="images/02_style/content/2-1/2-1-1/01_01pic00.jpg" alt="">
                                 </div>
-                                <p>臺灣史前人類的活動遺蹟可以由三萬年以前的台南「左鎮人」，以及一萬五千年以前台東「長濱文化」來看，兩者皆屬於舊石器時代；如同世界其他地區的人類文明發展，舊石器時代的居所常常利用天然的洞穴， 長濱文化所發現之地即為一處巨大的岩洞。</p>
+                                <p>明鄭時期主要的建樹出自鄭成功之子—鄭經與參軍陳永華。明鄭入台後，為安頓軍隊實施屯田制度，估計超過四十多個屯墾區，今天仍有地名曾為營盤田，例如：新營、柳營等。鄭經獎勵人民燒磚，並派兵入山伐木建造房屋。</p> 
+                                <p>明鄭時期的臺南城為承天府，城市規制仿唐代的里坊制度。承天府劃分為東安坊、西定坊、寧南坊與鎮北坊(<a href="images/02_style/content/2-1/2-1-1/b01_p01big.jpg" class="in_text_image" target="_blank" rel="noopener noreferrer">古台南地圖</a>)。</p>
                             </div>
                         </div>
                         <div class="content display-none" id="content2">
-                            <p>content 2</p>
-                        </div>
-                        <div class="content display-none" id="content3">
-                            <p>content 3</p>
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/02_style/content/2-1/2-1-1/05_icon02t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <div style="display: flex;">
+                                    <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+                                        <div class="image-container">
+                                            <img id="displayImage" style="max-width: 100%; height: auto;" sty src="images/02_style/content/2-1/2-1-2/048-01.jpg" alt="Image 1">
+                                        </div>
+                                        <p>臺南臺灣城隍廟</p>                                 
+                                    </div>
+                                    <div style="display: block; max-width: 60%; height: 240px; overflow: auto; margin-top: 20px;">
+                                        <p>公共建築方面，陳永華倡建孔廟與武廟，鄭經也興建所謂七寺八廟；至於像 <a href="images/02_style/content/2-1/2-1-2/048-01.jpg" class="in_text_image" target="_blank" rel="noopener noreferrer">臺灣城隍廟</a>、開基天后宮 及 大觀音亭都經大肆興建。明代原物恐怕已經不存在，不過，其選址及範圍一直延續下來，它奠定一些重要古建築的基礎。例如臺南城市的規劃，後代還是遵循四坊的範圍，孔廟、祀典武廟、 北極殿 、 大天后宮及府城隍廟皆仍在明鄭時期之原址上。</p>
+                                        <p>明鄭時期的官署建築有的沿用荷人留下之建築，像是承天府，也就是我們現今的赤崁樓；天興州署以及萬年州署，原為縣署，後來經由鄭經改為州。天興州署。在清代改為臺灣府署，在今衛民街；萬年州署則改為臺灣縣署，在今忠義國小校內。</p>
+                                        <p>明鄭時期之住宅建築若以人口數量推斷，應該為數不少。一般平民的住宅可能仍以竹木構造為多，隨之而來的皇族重臣及文官武將都有正式宅邸，有的還有附庭園。</p> 
+                                        <p>在住宅方面，澎湖張百萬大宅即為明鄭時期，傳有八座之多。當時一漁民叫張隱，常到金嶼釣魚，無意間撿到海盜留下的金磚而致富；以此資本經商，在滬尾、半線、大甲等地購置田產，這幢建築物在澎湖白沙尚存，但是否全都為明代建築則尚待研究。</p>
+                                        <p>廟宇和建築原來甚多，但都已遭改建；孔廟創建在永曆二十年，是臺灣第一座 孔廟建築。今天臺南孔廟是康熙五十一年，由陳璸修建之後的格局； 武廟則原建於永曆二十三年。</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
             </div>
