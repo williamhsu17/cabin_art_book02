@@ -8,6 +8,7 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
     <script>
         // 按照頁面需求更換
         const thisPage = '01_introductory';
@@ -21,6 +22,9 @@
     <style>
         .display-none {
             display: none;
+        }
+        .main-section {
+            position: relative;
         }
         .content {
             width: 569px;
@@ -171,13 +175,31 @@
 								
                             </div>
                             
-                        </div><!--content3頁面 結束-->
-                        
+                        </div>
+                        <!--content3頁面 結束-->
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section">
+                            <img src="images/01_history/content/lion01.gif" alt="Click to view details" id="image" onclick="openModal('lionModal')">
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/01_history/content/popup0101.gif');">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                                <p>※台灣史前的十三行文化屬於下列什麼時代？</p>
+                                <ol>
+                                    <li>舊石器時代</li>
+                                    <li>新石器時代</li>
+                                    <li>金屬時代<span id="lion_right_answer">（正確答案）</span></li>
+                                    <button id="lion_answer_button" onclick="display_answer()">看解答</button>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
                 </div>
             </div>
         </div>
     </div>
     <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
     <script type="text/javascript">
         window.onload=function(){
             // 按照頁面需求更換

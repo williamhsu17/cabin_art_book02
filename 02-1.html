@@ -8,6 +8,7 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
     <script>
         // 按照頁面需求更換
         const thisPage = '01_introductory';
@@ -21,6 +22,9 @@
     <style>
         .display-none {
             display: none;
+        }
+        .main-section {
+            position: relative;
         }
         .content {
             width: 600px;
@@ -84,8 +88,6 @@
                     
                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                       
-                       
                         <div class="content" id="content1">
                             <div class="content-title">
                                 <img class="content-title-image" src="images/02_style/content/2-1/2-1-1/01_icon01t.gif" alt="">
@@ -196,11 +198,22 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section">
+                            <img src="images/02_style/content/lion01.gif" alt="Click to view details" id="image" onclick="openModal('lionModal')">
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/02_style/content/popup0101.gif'); width: 391px; height: 193px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                            </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
                 </div>
             </div>
         </div>
     </div>
     <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
     <script type="text/javascript">
         window.onload=function(){
             // 按照頁面需求更換
