@@ -8,6 +8,7 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
     <script>
         // 按照頁面需求更換
         const thisPage = '01_introductory';
@@ -17,22 +18,41 @@
         const navButtonGroupImage = 'images/01_history/top01_02.jpg';
         const navLogoImage = 'images/01_history/top01.gif';
         const navBackgroundImage = 'images/01_history/top07.jpg';
+
+        const subLinkSpacerWidth = '0px';
+        const subLink01src = '01-1.html';
+        const subLink01Width = '126px';
+        const subLink02src = '01-2.html';
+        const subLink02Width = '70px';
+        const subLink03src = '01-3.html';
+        const subLink03Width = '78px';
+        const subLink04src = '01-4.html';
+        const subLink04Width = '78px';
+        const subLink05src = '01-5.html';
+        const subLink05Width = '79px';
+        const subLink06src = '01-6.html';
+        const subLink06Width = '78px';
+        const subLink07src = '01-7.html';
+        const subLink07Width = '78px';
     </script>
     <style>
         .display-none {
             display: none;
         }
+        .main-section {
+            position: relative;
+        }
         .content {
-	width: 569px;
-	margin-left: 52px;
-	margin-right: 63px;
-	margin-bottom: 10px;
-	/* border: 1px solid #aaa; */
-	background-color: transparent;
-	color: #363637;
-	font-size: smaller;
-	height:310px;
-	overflow:auto; 
+            width: 569px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+			height:310px;
+			overflow:auto; 
         }
         .content-title-image {
             width: 100%;
@@ -46,19 +66,18 @@
         .content-body img {
             width: 100%;
         }
-
-		
     </style>
 </head>
+
 <body style="background-image: url('images/01_history/left.gif');">
     <div class="container mx-auto container-section" id="container-section-image">
         <div class="row">
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
+                    
                      <!--側邊選單-->
-                     
-                      <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                     <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -160,8 +179,7 @@
                         </div>
                     </div>
                     
-                    <!--主要內容區-->
-                    
+                   <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
                         <div class="content" id="content1">
                             <div class="content-title">
@@ -422,9 +440,8 @@
                                         <a href="" class="isb_03" onclick="event.preventDefault(); changeImage('images/01_history/content/1-2-9/a0209_p03.jpg', 'displayImage_1-9')"><img class="image-switch-button" alt="b3"></a>
                                         
                                     </div>                                    <p></p>
-                              <!--<div><a href="https://www.youtube.com/watch?v=BBLA6_Jbe7M" target="_blank"><img style=" height:22px; width:92px" sty src="images/01_history/content/02_09movieb.gif" alt="Image 1"></a> </div>-->
-                              
-                             <div> <a href="https://www.youtube.com/watch?v=BBLA6_Jbe7M" target="_blank" id="link_09movie"><img  style=" height:22px; width:92px" class="image_button" alt="link09_movie"></a> </div>
+                                                           
+                            <div style="width:92px" > <a href="https://www.youtube.com/watch?v=BBLA6_Jbe7M" target="_blank" id="link_09movie"><img  style=" height:22px; width:92px" class="image_button" alt="link09_movie"></a> </div>
                               
                               
                                </div>
@@ -468,12 +485,29 @@
                             </div>
                           
                         </div><!--content10頁面 結束-->
+                                                <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion02.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/01_history/side/popup0102.gif');">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                                <p>※ 大多數的原住民的建築反映出宗教信仰與藝術審美需求，其中刻有百步蛇紋樣的是何族？</p>
+                                <ol>
+                                    <li>泰雅族</li>
+                                    <li>排灣族<span id="lion_right_answer">（正確答案）</span></li>
+                                    <li>達悟族</li>
+                                    <button id="lion_answer_button" onclick="display_answer()">看解答</button>
+                                </ol>
+                          </div>
+                        </div>
+<!-- end 獅子問答區 -->
                         
                 </div>
             </div>
         </div>
     </div>
     <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
     <script type="text/javascript">
         window.onload=function(){
             // 按照頁面需求更換

@@ -8,19 +8,39 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
     <script>
         // 按照頁面需求更換
         const thisPage = '01_introductory';
         const thisSide = 'side_default';
 
-        const mainBackground = 'images/01_history/content/m02_bg.jpg';
+        const mainBackground = 'images/01_history/content/m_bg.jpg';
         const navButtonGroupImage = 'images/01_history/top01_04.jpg';
         const navLogoImage = 'images/01_history/top01.gif';
         const navBackgroundImage = 'images/01_history/top07.jpg';
+
+        const subLinkSpacerWidth = '0px';
+        const subLink01src = '01-1.html';
+        const subLink01Width = '126px';
+        const subLink02src = '01-2.html';
+        const subLink02Width = '70px';
+        const subLink03src = '01-3.html';
+        const subLink03Width = '78px';
+        const subLink04src = '01-4.html';
+        const subLink04Width = '78px';
+        const subLink05src = '01-5.html';
+        const subLink05Width = '79px';
+        const subLink06src = '01-6.html';
+        const subLink06Width = '78px';
+        const subLink07src = '01-7.html';
+        const subLink07Width = '78px';
     </script>
     <style>
         .display-none {
             display: none;
+        }
+        .main-section {
+            position: relative;
         }
         .content {
             width: 569px;
@@ -31,8 +51,8 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
-	height:310px;
-	overflow:auto; 
+			height:310px;
+			overflow:auto;
         }
         .content-title-image {
             width: 100%;
@@ -55,7 +75,7 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -64,28 +84,29 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
-                            #link_01 img {
+                            #link_01 {
                                 background-image: url("images/01_history/side/03_icon01a.gif");
                             }
-                            #link_01:hover img {
+                            #link_01:hover {
                                 background-image: url("images/01_history/side/03_icon01b.gif");
                             }
-                            #link_02 img {
+                            #link_02 {
                                 background-image: url("images/01_history/side/03_icon02a.gif");
                             }
-                            #link_02:hover img {
+                            #link_02:hover {
                                 background-image: url("images/01_history/side/03_icon02b.gif");
                             }
-
+                           
+                            }
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
-                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
-                            
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"></a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"></a>
                         </div>
                     </div>
                     
-                  <!--主要內容區-->
+                   
+                   <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
                        
                        
@@ -101,26 +122,74 @@
 								<p align="center"><img src="images/01_history/content/1-4/060-04.jpg" alt=""><br>屋頂坡緩，屋脊曲線含蓄（林安泰古厝）</p>															<p>而且相近區域的建築風格偶有混合情形，加上進入二十世紀，各械鬥逐漸消失，因此常見漳、泉、粵的混合建築。</p>
 								
 
-                        </div>
+                        </div><!--content1頁面 結束-->
                         
-                        
-                                                <!--content2頁面-->
+                        <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                             <div class="content-title">
+                            <div class="content-title">
                                 <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="">
                             </div>
                             <div class="content-body">
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                                              
+                                        <!-- image_switch_01 預設 -->
+                                        <div id="image_switch_01" class="inline-image-switch">
+                                            <div class="image-container">
+                                                <img id="displayImage_01" sty src="images/01_history/content/1-4/a04_p01.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺北萬華龍山寺</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-4/a04_p01.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-4/020-00.jpg', 'displayImage_01');"></a>
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_01 -->
+                                        <!-- image_switch_X -->
+                                        ***
+                                        <!-- end image_switch_X -->
+                                    </div>
+                                    
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                       <p>閩南建築則是臺灣最常見的傳統建築，強調屋脊及屋面的曲線，外牆及屋面用閩南的紅磚及紅瓦。閩南建築又可大分為漳州與泉州，外觀上較不易察覺差別，主要表現大木結構的形式及細節。【<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">臺北萬華龍山寺</a>‧<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">保安宮</a>】<br />
+      <br />
+      　　<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">淡水龍山寺</a>可以說是泉州的風格代表建築之一，主要的特徵像是：屋角起翹平緩，屋簷強調連續曲線，且雕花材較少、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">瓜筒</a>較瘦長。<br />
+      <br />
+      　　漳州的代表建築以板橋林本源三落大厝及庭園最為著名，其主要特色：<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">屋頂較大、曲線少</a>，雕花材較多、瓜筒較圓胖，多用「<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">金瓜筒</a>」，看起來很雄偉，斗栱喜歡用多曲線的螭虎栱。
+      <br />
+    　　臺灣的客家人屬於較弱勢的族群，多來自閩南及粵東，在區位上與漳州接近，和閩南相似又帶有廣東建築特色；不過，臺灣的客家建築仍有非常明顯的特徵與閩南建築不同。客家人是大家族社會，一起分工合作，所以，有集中居住一起的習慣； 客家人勤儉樸實，在裝飾上，常用卵石或石條砌為牆身之下半段，上半段喜用白灰牆或使用灰磚，不過仍有搭配閩南紅磚。牆上常鑲綠釉花磚，整體而言，客家建築的風格顯得較為簡樸內斂。【<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">新竹北埔</a>】</p>
+    
+										</div>
+                                </div>
+                            </div>
+                        </div><!--content2頁面 結束-->
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion05.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/01_history/side/popup0105.gif'); width: 391px; height: 314px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
                                 
+                                <p>※ 十七世紀初，西班牙人占領台灣北部，下列何者是西班牙人建造的建築？</p>
+                                
+                                <ol>
+                                    <li>聖薩爾瓦多城<span id="lion_right_answer">（正確答案）</span></li>
+                                    <li>熱蘭遮城</li>
+                                    <li>普羅文遮城</li>
+                                    <button id="lion_answer_button" onclick="display_answer()">看解答</button>
+                                </ol>
                                
                             </div>
-                            
-                        </div><!--content2頁面 結束-->
-                        
-                </div>
-            </div>
-        </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
+					</div><!--主內容區 結束-->
+				</div>
+			</div>
+		</div>
     </div>
     <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
     <script type="text/javascript">
         window.onload=function(){
             // 按照頁面需求更換
