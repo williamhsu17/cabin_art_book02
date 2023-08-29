@@ -8,12 +8,13 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
     <script>
         // 按照頁面需求更換
         const thisPage = '01_introductory';
         const thisSide = 'side_default';
 
-        const mainBackground = 'images/01_history/content/m02_bg.jpg';
+        const mainBackground = 'images/01_history/content/m_bg.jpg';
         const navButtonGroupImage = 'images/01_history/top01_05.jpg';
         const navLogoImage = 'images/01_history/top01.gif';
         const navBackgroundImage = 'images/01_history/top07.jpg';
@@ -38,6 +39,9 @@
         .display-none {
             display: none;
         }
+        .main-section {
+            position: relative;
+        }
         .content {
             width: 569px;
             margin-left: 52px;
@@ -47,8 +51,6 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
-	height:310px;
-	overflow:auto; 
         }
         .content-title-image {
             width: 100%;
@@ -71,7 +73,7 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -80,28 +82,27 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
-                            #link_01 img {
+                            #link_01 {
                                 background-image: url("images/01_history/side/03_icon01a.gif");
                             }
-                            #link_01:hover img {
+                            #link_01:hover {
                                 background-image: url("images/01_history/side/03_icon01b.gif");
                             }
-                            #link_02 img {
+                            #link_02 {
                                 background-image: url("images/01_history/side/03_icon02a.gif");
                             }
-                            #link_02:hover img {
+                            #link_02:hover {
                                 background-image: url("images/01_history/side/03_icon02b.gif");
                             }
-
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
-                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
-                            
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"></a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"></a>
                         </div>
                     </div>
                     
-                  <!--主要內容區-->
+                   
+                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
                        
                        
@@ -127,27 +128,90 @@
                                         <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/01_history/content/1-5/027-02.jpg', 'displayImage');"><img class="image-switch-button" alt="b2"></a></div>
 
 								
-                            </div>
-                        </div>
+									</div>
+							</div><!--content1頁面 結束-->
                         
-                        
-                                                <!--content2頁面-->
+						</div>
+                        <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                             <div class="content-title">
+                            <div class="content-title">
                                 <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="">
                             </div>
                             <div class="content-body">
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                         <!-- image_switch_01預設 -->
+                                        <div id="image_switch_01" class="inline-image-switch">
+                                            <div class="image-container">
+                                                <img id="displayImage_01" sty src="images/01_history/content/1-3/016-05.jpg" alt="Image 1">
+                                            </div>
+                                            <p>打狗英國領事館) 換字沒成功</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/030-03_big.jpg', 'displayImage_01'); changeText('熱蘭遮城牆(台南安平)');"></a>
+<a href=" " class="isb_02" onclick="changeImage('images/01_history/content/1-5/030-06_big.jpg', 'displayImage_01'); changeText('熱蘭遮城(台南安平)');"></a>
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_01 -->
+                                        <!-- image_switch_X -->
+                                        ***
+                                        <!-- end image_switch_X -->
+                                    </div>
+                                    
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                       <p>早期由於英國對於臺灣影響力最深遠，所以早期的洋樓建築傾向於英式的風格；在第一波外來建築物即為 領事館、洋行與教堂 。領事館有在西元 1865年建造的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">
+打狗英國領事館</a>、約建於西元1880年代的 安平英國領事館 和大稻埕的德國領事館、西元1891年淡水英國領事館、以及約建造於西元1890年代的安平德國領事館。現在這批領事館只有淡水及打狗的英國領事館保存下來，透過這兩座實體及其他各館的古照片，可以知道當時流行的是殖民樣式，當時英國勢力東漸後，將維多利亞風格的紅磚建築，與因應熱帶建築特色的拱廊結合，所創造出的新樣式。
+    <p>　　當時其中最古老的就是打狗英國領事館，它<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+轉角處是用雙根並柱，其他部份是單柱</a>。淡水英國領事館所使用的紅磚，根據推測是廈門運來。它擁有細緻的磚工，甚至將英國維多利亞女皇的「 VR」記號雕上去。當時這種洋樓基本上有兩種：一是中央梯間式，另一種是梯間分左右側，且四周環繞拱廊，完全將英國殖民樣式、浪板拱與壁爐直接移植過來。<br />
+      <br />
+      其次，外商在居留地或租借地所建的洋行或住宅也同樣呈現殖民地樣式之特色。當時較出名的洋行如：淡水寶順洋行、安平英商德記洋行、英商和記洋行、德商東興洋行等，今日這些洋行也所剩無幾， 安平的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+德記</a>與<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+東興洋行</a>可以說是保存不錯的兩座代表建築。</p>
+    <p>　　至於教會建築方面，主要分為南北兩系。教會建築較能入境隨俗，其中大量使用本地傳統材料，形式上也融入地方特色。傳教士中南部以臺南的蘇格蘭長老教會的巴克禮及馬雅各為主，北部以來自加拿大長老教會的馬偕為主。他們在臺灣早期蓋的是教堂、學校、宿舍；史料上所載臺灣近代最早的教堂應是 高雄的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+玫瑰聖母堂</a> ，風格上較接近西班牙式，可惜在 1930年代整個拆掉重建。馬雅各在1878年時，在臺南東門內建置洋樓，供給牧師住宿，稱為新樓。北部方面，馬偕在1873年即建造<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+滬尾教會</a> ；到1881年在附近又建一座<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+滬尾偕醫館</a> (今馬偕醫院)，這座醫館仍保存良好，平面為三開間的中國式建築，入口處有磚砌的階梯，雖有臺灣地方樣式，但大門卻顯現出西式趣味。<br />
+      <br />
+      為了培養本地的傳教士，建造<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+理學堂大書院</a>(今牛津理學堂，位淡水真理大學內) ，這座建築現仍大部份存在，平面猶如臺灣民居。山牆斜度較陡，有印度式的火焰形裝飾，據傳為緩和當地佛教信徒的反對，因此在屋脊上設有許多類似佛教的尖形物，可以說入境隨俗；這座建築可以說是反映出十九世紀外來建築樣式與臺灣本地建築的融合並存的設計。<br />
+      <br />
+      臺灣本身為了軍事防務、交通與礦業等，在重要港口建造要塞?臺，這段期間興建十多座大小?臺；交通建築方面可說是臺灣鐵路的創建， 基隆的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+獅球嶺隧道</a> 就是此時完成，工程艱鉅。</p>
+    <p>　　另外，少見的是燈塔，像是 馬祖的東莒和東引燈塔，澎湖的西嶼燈塔，<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+屏東鵝鑾鼻燈塔</a>等，這些都是今日值得珍藏的建築。<br />
+      日本領有台灣之後，繼現代化與進步的思維，經市街改正、都市計劃，新基礎設施、公共建設、公家機關、公用事業等，透過明治維新以來，全鑒西化對「西方古典菁英文化」的抄襲，延用學院派的形式模仿做，在所有的人造設施物上，穿戴文藝復興、巴洛克、新古典、新藝術…等多種西方建築形式，街屋正面穿上文藝復興的立面，間雜巴洛克的紋樣與露台作法；公共建築利用塔樓作標記、軒亭作入口玄關；銀行、金融機構蓋希臘古典式；法院與博物館蓋圓頂的羅馬式；教堂、學校建築蓋英國哥德式；水道及相關設施蓋文藝復興式；鐵道及相關設施多以各種方式的「切角頂」、「挑樓」、「法國式屋頂」…作木構造的軒亭型式為表現，使台灣大地上的景觀煥然一新，由於這種想法來自西方工業革命以後的近代化觀念，一般稱這樣的建築物為「近代建築」。 ( <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+總統府</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0X')">
+臺北賓館</a> )</p>
+										</div>
+                                </div>
+                            </div>
+                        </div><!--content2頁面 結束-->
+                         <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion06.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/01_history/side/popup0106.gif'); width: 391px; height: 314px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                                ※ 早期的洋樓建築大多傾向英式路線，最早
+　 的英國領事館建於何處？</p>
                                 
+                                <ol>
+                                    <li>安平</li>
+                                    <li>淡水<span id="lion_right_answer">（正確答案）</span></li>
+                                    <li> 大稻埕</li>
+                                    <button id="lion_answer_button" onclick="display_answer()">看解答</button>
+                                </ol>
                                
                             </div>
-                            
-                        </div><!--content2頁面 結束-->
-                        
-                </div>
-            </div>
-        </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
+					</div><!--主內容區 結束-->
+				</div>
+			</div>
+		</div>
     </div>
     <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
     <script type="text/javascript">
         window.onload=function(){
             // 按照頁面需求更換
