@@ -8,9 +8,10 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
     <script>
         // 按照頁面需求更換
-        const thisPage = '01_introductory';
+        const thisPage = '02_style';
         const thisSide = 'side_default';
 
         const mainBackground = 'images/02_style/m01_bg.jpg';
@@ -29,17 +30,20 @@
         const subLink04Width = '49px';
         const subLink05src = '02-5.html';
         const subLink05Width = '60px';
-        const subLink06src = '01-6.html';
+        const subLink06src = '';
         const subLink06Width = '0px';
-        const subLink07src = '01-7.html';
+        const subLink07src = '';
         const subLink07Width = '0px';
     </script>
     <style>
         .display-none {
             display: none;
         }
+        .main-section {
+            position: relative;
+        }
         .content {
-            width: 569px;
+            width: 600px;
             margin-left: 52px;
             margin-right: 63px;
             margin-bottom: 10px;
@@ -47,14 +51,15 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
-			height:310px;
-			overflow:auto; 
+			/*height:310px;
+			overflow:auto;*/
         }
         .content-title-image {
             width: 100%;
         }
         .content-body {
-            display: flex;
+            display: block;
+            height: 240px;
         }
         .content-body p {
             margin-left: 2px;
@@ -70,7 +75,7 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -79,96 +84,276 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
-                            #link_01 img {
+                            #link_01 {
                                 background-image: url("images/02_style/side/01_icon01a.gif");
                             }
-                            #link_01:hover img {
+                            #link_01:hover {
                                 background-image: url("images/02_style/side/01_icon01b.gif");
                             }
-                            #link_02 img {
+                            #link_02 {
                                 background-image: url("images/02_style/side/01_icon02a.gif");
                             }
-                            #link_02:hover img {
+                            #link_02:hover {
                                 background-image: url("images/02_style/side/01_icon02b.gif");
                             }
 
+                           	#link_03movie img {
+                                background-image: url("images/01_history/content/movie.gif");
+                            }
+							
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
-                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
-                            
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"></a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"></a>
                         </div>
                     </div>
                     
                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                       
-                       
+                    
+                        <!--content1頁面-->
                         <div class="content" id="content1">
                             <div class="content-title">
                                 <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="">
                             </div>
-							
-							<br>
-                            
-							<div class="content-body">
-								
-                                <p>康熙二十二年清廷獲得臺灣，到光緒二十一年甲午戰敗割臺為止，清廷統治臺灣有二百十一年之久。清初康熙、雍正、乾隆三朝可以說是盛世。治臺之初，清廷採取重農抑商之態度，最後由施琅說明「陳臺灣棄留利害疏」，這才保住臺灣；清廷遂設一府三縣，隸屬福建。
+                            <div class="content-body" style=" overflow: auto;">
+                                <div style="display: flex;">
+                                    <p style="width: 100%; margin-top: 20px;">康熙二十二年清廷獲得臺灣，到光緒二十一年甲午戰敗割臺為止，清廷統治臺灣有二百十一年之久。清初康熙、雍正、乾隆三朝可以說是盛世。治臺之初，清廷採取重農抑商之態度，最後由施琅說明「陳臺灣棄留利害疏」，這才保住臺灣；清廷遂設一府三縣，隸屬福建。</br>
+									<br>									清代初期階段移民由明鄭時期的二十多萬，增加為二百萬人，這成為開發最大的動力。由於人口的增加，墾拓面積也增加大約康熙末年南部完全開發，再分別往南北拓展。雍正年間南方已至恆春一帶，北方則是到達新竹、臺北及基隆。到了乾隆末年，西部平原已完全由漢人掌握，嘉乾年間更進展到東部的蘭陽平原。</p> 
 									
-								<br>
+                                    <img style="width: 40%; height: 40%; margin-top: 20px; margin-bottom: 20px" src="images/02_style/content/2-2-1/02_01pic01.jpg" alt="">
+                                </div>							
 								
-								<br>清代初期階段移民由明鄭時期的二十多萬，增加為二百萬人，這成為開發最大的動力。由於人口的增加，墾拓面積也增加大約康熙末年南部完全開發，再分別往南北拓展。雍正年間南方已至恆春一帶，北方則是到達新竹、臺北及基隆。到了乾隆末年，西部平原已完全由漢人掌握，嘉乾年間更進展到東部的蘭陽平原。
+								<p>當時的社會結構較明鄭時期複雜，因為歸入清朝版圖較晚，加上清廷政治不當，使得臺灣當地的居民產生遺民之民族意識。而明末時期將大陸文化傳承到臺灣，著名的八賢就可說為清初臺灣文化主要啟蒙者。另外像林朝英，善雕刻，為乾隆、嘉慶年間臺南府城最出名的畫家；再者民間畫工莊敬夫，以廟字壁畫獨樹一格。
 								
-								<br>
-								
-								<br>當時的社會結構較明鄭時期複雜，因為歸入清朝版圖較晚，加上清廷政治不當，使得臺灣當地的居民產生遺民之民族意識。而明末時期將大陸文化傳承到臺灣，著名的八賢就可說為清初臺灣文化主要啟蒙者。另外像林朝英，善雕刻，為乾隆、嘉慶年間臺南府城最出名的畫家；再者民間畫工莊敬夫，以廟字壁畫獨樹一格。								
-							
-								<br>
-								
-								<br>臺灣經濟活絡，使得中產階級逐漸成形，鹿港在此時躍為臺灣經濟重心；臺灣經濟重心移動，可由「一府二鹿三艋舺」略窺一二。</p>
-	
-	                             <div align="center"><img style="width: 140px; height: 206px;" src="images/02_style/content/2-2-1/02_01pic01.jpg" alt=""></div>
-								   								   
-                            </div>
-                        </div>
+								<p>臺灣經濟活絡，使得中產階級逐漸成形，鹿港在此時躍為臺灣經濟重心；臺灣經濟重心移動，可由「一府二鹿三艋舺」略窺一二。</p>
+                                    
+                             </div>
+                                
+                        </div><!--content1頁面 結束-->
                         
-                        
-                                                <!--content2頁面-->
+                        <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                             <div class="content-title">
+                            <div class="content-title">
                                 <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="">
                             </div>
                             <div class="content-body">
-                                
-                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
-                                    <div class="image-container">
-                                        <img id="displayImage_02-1-2_1" style="width: 210px; height: 140px;" sty src="images/02_style/content/2-1-2/048-01.jpg" alt="Image 1">
-                                    </div>
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                      <!-- image_switch_01預設 -->
+                                        <div id="image_switch_01" class="inline-image-switch">
+                                            <div class="image-container">
+                                                <img id="displayImage_01" src="images/02_style/content/2-2-2/052-09.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText">鹿港街屋：三落</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-2-2/052-09.jpg', 'displayImage_01'); changeText('鹿港街屋：三落', 'displayText');"></a>
+												<a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-2-2/052-15.jpg', 'displayImage_01'); changeText('鹿港街屋：三落', 'displayText');"></a>												
+												<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-2-2/b02_p01a.jpg', 'displayImage_01'); changeText('迪化街街屋：木頭立面', 'displayText');"></a>
+												<a href="" class="isb_04" onclick="changeImage('images/02_style/content/2-2-2/b02_p01b.jpg', 'displayImage_01'); changeText('迪化街街屋：木頭立面', 'displayText');"></a>
+												<a href="" class="isb_05" onclick="changeImage('images/02_style/content/2-2-2/b02_p02a.jpg', 'displayImage_01'); changeText('金山老街：木頭立面', 'displayText');"></a>
+												<a href="" class="isb_06" onclick="changeImage('images/02_style/content/2-2-2/b02_p02b.jpg', 'displayImage_01'); changeText('金山老街：木頭立面', 'displayText');"></a>
+                                           </div>
+                                            <div style="margin-top:5px">
+												<a href="https://www.youtube.com/watch?v=sFTzp8fACtI" target="_blank" id="link_03movie"><img  style=" height:22px; width:78px" class="image_button" alt="link_03movie"></a></div>                                    
+                                        </div>
+                                        <!-- end image_switch_01 -->
+										<!-- image_switch_02 -->
+                                        <div id="image_switch_02" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_02" src="images/02_style/content/2-2-2/053-03.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText_02">「元昌」商宅</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-2-2/053-03.jpg', 'displayImage_02'); changeText('「元昌」商宅', 'displayText_02');"></a>
+												<a href=" " class="isb_02" onclick="changeImage('images/02_style/content/2-2-2/053-01.jpg', 'displayImage_02'); changeText('室內天井', 'displayText_02');"></a>
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_02 -->
+										 <!-- image_switch_03 --> 
+										 <div id="image_switch_03" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_03" sty src="images/02_style/content/2-2-2/053-02.jpg" alt="Image 1">
+                                            </div>
+                                            <p>施水龍作品（元昌商宅）</p>
 
-                                    <p>臺南臺灣城隍廟</p>
-                                   <div class="button-container">
-                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-02.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b1"></a>
-                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-04.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b2"></a>
-                                        <a href="#" class="isb_03" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-12.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b3"></a>
-                                       
-                                    </div>                                    
+                                        </div>
+                                         <!-- end image_switch_03 -->
+										 <!-- image_switch_04 -->
+										 <div id="image_switch_04" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_04" sty src="images/02_style/content/2-2-2/055-01.jpg" alt="Image 1">
+                                            </div>
+                                            <p>麻豆「郭舉人宅」</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-2-2/055-01.jpg', 'displayImage_04');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-2-2/055-08.jpg', 'displayImage_04');"></a>
+												
+                                            </div>											
+                                        </div>
+                                         <!-- end image_switch_04 -->
+										 <!-- image_switch_05 --> 
+										 <div id="image_switch_05" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_05" sty src="images/02_style/content/2-2-2/055-06.jpg" alt="Image 1">
+                                            </div>
+                                            <p>旗竿礎（麻豆郭舉人宅）</p>
+
+                                        </div>
+                                         <!-- end image_switch_05 -->
+										 <!-- image_switch_06 --> 
+										 <div id="image_switch_06" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_06" sty src="images/02_style/content/2-2-2/056-01.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺南孔廟 大成殿</p>
+                               
+                                        </div>
+                                         <!-- end image_switch_06 -->
+										 <!-- image_switch_07 --> 
+										 <div id="image_switch_07" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_07" sty src="images/02_style/content/2-2-2/b02_p05a.jpg" alt="Image 1">
+                                            </div>
+                                            <p>屏東書院</p>
+											<div class="button-container">
+											<a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-2-2/b02_p05a.jpg', 'displayImage_07');"><img class="image-switch-button" alt="b1"></a>
+											<a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-2-2/b02_p05b.jpg', 'displayImage_07');"><img class="image-switch-button" alt="b2"></a>
+											<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-2-2/b02_p05c.jpg', 'displayImage_07');"><img class="image-switch-button" alt="b2"></a>
+                                            </div>
+										
+                                        </div>
+                                         <!-- end image_switch_07 -->
+										 <!-- image_switch_08 --> 
+										 <div id="image_switch_08" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_08" sty src="images/02_style/content/2-2-2/057-01_big.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText">鹿港龍山寺三川殿</p>
+											<div class="button-container">
+											<a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-2-2/057-01_big.jpg', 'displayImage_08'); changeText('鹿港龍山寺三川殿', 'displayText');"></a>
+											<a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-2-2/057-06_big.jpg', 'displayImage_08'); changeText('歇山重簷式山門', 'displayText');"></a>
+											<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-2-2/057-05_big.jpg', 'displayImage_08'); changeText('鹿港龍山寺', 'displayText');"></a>
+                                            </div>
+											<div style="margin-top:5px">
+												<a href="https://youtu.be/RR86V0OGo1s" target="_blank" id="link_03movie"><img  style=" height:22px; width:78px" class="image_button" alt="link_03movie"></a></div>											
+                                        </div>
+                                         <!-- end image_switch_08 -->
+                                         <!-- image_switch_09 --> 
+										 <div id="image_switch_09" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_09" sty src="images/02_style/content/2-2-2/058-01.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText">臺南三山國王廟</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-2-2/058-01.jpg', 'displayImage_09');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-2-2/058-02.jpg', 'displayImage_09');"></a>
+												<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-2-2/058-03.jpg', 'displayImage_09');"></a>
+												
+                                            </div>                                  
+                                        </div>
+                                         <!-- end image_switch_09 -->
+										 <!-- image_switch_10 --> 
+										 <div id="image_switch_10" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_10" sty src="images/02_style/content/2-2-2/03.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText">臺南泮宮坊</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-2-2/03.jpg', 'displayImage_10');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-2-2/02.jpg', 'displayImage_10');"></a>
+												<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-2-2/01.jpg', 'displayImage_10');"></a>
+												
+                                            </div>                                  
+                                        </div>
+                                         <!-- end image_switch_10 -->
+										 <!-- image_switch_11 --> 
+										 <div id="image_switch_11" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_11" sty src="images/02_style/content/2-2-2/a01.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText">臺南接官亭坊</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-2-2/a01.jpg', 'displayImage_11');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-2-2/a02.jpg', 'displayImage_11');"></a>
+												<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-2-2/a03.jpg', 'displayImage_11');"></a>
+												
+                                            </div>                                  
+                                        </div>
+                                         <!-- end image_switch_11 -->
+										 <!-- image_switch_12 --> 
+										 <div id="image_switch_12" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_12" sty src="images/02_style/content/2-2-2/b01.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText">臺南蕭氏節孝坊</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-2-2/b01.jpg', 'displayImage_12');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-2-2/b02.jpg', 'displayImage_12');"></a>
+												<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-2-2/b03.jpg', 'displayImage_12');"></a>
+												
+                                            </div>                                  
+                                        </div>
+                                         <!-- end image_switch_12 -->
+										 <!-- image_switch_13 --> 
+										 <div id="image_switch_13" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_13" sty src="images/02_style/content/2-2-2/c01.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText">臺南重道崇文坊</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-2-2/c01.jpg', 'displayImage_13');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-2-2/c02.jpg', 'displayImage_13');"></a>
+												<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-2-2/c03.jpg', 'displayImage_13');"></a>
+												
+                                            </div>                                  
+                                        </div>
+                                         <!-- end image_switch_13 -->
+                                         
+                                    </div>
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                        <p>清代初期的住宅原貌保留不多，木造建築的年限及家族之興衰可以說是建築保存的重要關鍵。這段時期至少有兩種基本建築形式，一是院落式，一是連幢式街屋的建築式，院落式多散置於市街後面的巷中。
+										<p><a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">街屋建築</a>有很長的進深，通常多在三落以上，為求空間充分利用，往往為兩層樓或夾層之設置。街屋屬於清代初期已不多見，只有在鹿港還可以看見。鹿港在當時不是由政府建立起來的城市，而是由商人建立出來的，所以可說鹿港為一個商業市街。</p> <p>這樣商業性質的城市，本應築城防衛，不過，當地人民卻選擇另一種防禦方式。也就是將店面緊鄰著一條曲曲折折的窄街，這樣店面不過五公尺，所以居住空間只好向後延伸，並垂直向上發展成為二、三樓的建築。</p>
+										<p>一般多分為三進，有點雷同於合院式住宅，第一進為店面及神堂，進深較大，需要兩個連續雙面坡屋頂才能解決。這樣一來不能開窗透光，所以將兩雙坡屋頂錯開，開個天窗，這樣一來可以獲得充足光線，這也形成二樓的夾層或閣樓。二樓作樓井，有精雕的欄杆，相當美麗。</p>
+										<p>第一進後半部常為主人的居所，可以照顧生意；第二進與第三進多設有二樓的室內天井，便於採光；第二進供奉祖先神位，第三進供奉佛祖。</p>
+										<p>構造以磚牆承重為主，屋頂排滿圓樑；裝飾方面並不重視正面的華麗，倒是將重點放到廳堂的樓閣木作部分，以雕刻細緻的花樣。</p>
+										<p>鹿港的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">「元昌」商宅</a>為這街屋例子之一，此為三層樓之佳作，二、三樓皆有挖室內天井。木作雕工相當精緻，色彩華麗，為鹿港老師傅<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">施水龍作品</a>。</p>
+										<p>另外一例是鹿港的「日茂行」，據傳建於乾隆年間，為鹿港全盛時期船商林振嵩住宅，其現今位置在鹿港國小附近，依據史料得知，為兩落式格局，屋脊為馬背式，屋頂鋪筒瓦，前面廣場全部舖石，正門為亭子式的歇山頂形式。</p>
+										<p>
+										除了鹿港的代表建築物，另外還有<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_04')">麻豆郭舉人宅</a> ，前面有二對<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_05')">旗竿礎</a>，門上有「文魁」匾額（目前已被偷），為乾隆年間郭廷機中舉人所立；另外，次年郭蘊玉中武舉又立一對旗竿，可以說是官宅，宅為簡單之兩落式建築，缺護龍。歷代稍修，主要木構及舖地石板皆為原樣，形式古樸。</p>
+										<p>     此期的文教建築，沿襲明代舊規，其文教設施有儒學、義學、社學、民學及書院。清初至嘉慶年間共設立了六處儒學，設有臺灣縣儒學、鳳山縣儒學、諸羅縣儒學、臺灣府儒學、彰化縣儒學；其中臺灣府儒學，也就是臺南孔廟，是由明永曆年間的學宮改建成，在康熙二十四年改為臺灣府學，在康熙五十一年增建朱子祠與文昌閣；乾隆十四年又重修增建，而後有修建許多次。</p>
+										<p>
+										<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_06')">大成殿</a>是孔廟重點，為重簷歇山式，在比例上臺南孔廟大成殿顯得較高，其本身屋面、牆身及臺基為臺灣孔廟建築中佳作。</p>
+										<p> 書院扮演著輔助府縣學的重要角色，明鄭以來多義學，清初之書院就是就有義學改建。臺灣的書院由崇文書院開始，隨後，各縣都增設。在這段時期的書院分佈最多，乾隆年間彰化及新竹都已經有書院之設置，像是崇文書院、海東書院、奎樓書院、白沙書院、龍門書院、玉峰書院、明志書院、文石書院、仰山書院、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_07')">屏東書院</a>等皆為此時所設置的書院。</p>
+										<p>海東書院為清代臺灣規模最大的書院，此址在臺南忠義國小，也就是在臺南府儒學右側，創建於康熙五十九年。裡面有講堂、齋舍等建築，可惜日據時期拆除。</p>
+										<p>      臺灣寺廟為臺灣文化之特色，廟的年代表示開發時間，廟的規模則表示其地方經濟力量，廟宇建築是閩南建築中最主要的典型。廟宇可以說是移民精神生活的焦點。廟宇與住宅建築各有其傳統，各有特色。隨著社會結構複雜，祀神之種類亦增加，重視子弟教育形成文昌祠；因職業分化有職業團體守護神祉廟宇；為祈求生活平安、脫離苦海的廟堂；移民時祭拜於地緣關係所形成之廟宇；代代相傳形成之家廟及家祠；街市發展成為城市有的文廟及城隍廟，藉以宣揚教化，移風易俗。台灣的廟宇相當多，不過大規模的作品並不多見，<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_08')">鹿港龍山寺</a>即建於乾隆五十一年，寺廟為坐東朝西，由外而內為山門、五門、戲臺、拜亭、大殿及後殿，南北兩側各有廂房。形式是泉州式，山門為歇山重簷式，結構突出，比例均衡美好，為難得佳作。</p>
+										<p>
+										另外一佳例，為<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_09')">臺南三山國王廟</a>，此為臺灣唯一留存廣東式廟宇建築，為乾隆七年廣東商民所建，平面格局坐東朝西，正面寬廣，中央部分為主殿奉祀三山國王。結構主要為承重牆結構，並有浮雕花紋。屋脊形式平緩，只有山牆收尾處略微上揚捲起，成花葉形脊尾。</p>
+										<p>
+										屬於清初的坊表皆在臺南，有<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_10')">泮宮坊</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_11')">接官亭坊</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_12')">蕭氏節孝坊</a>以及<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_13')">重道崇文坊</a>，共有四座。由於臺灣缺乏優良石材，所以石坊皆採簡單形式，臺灣石坊多採四柱三間式，其構造仿木架，由石榫頭接合起來。</p>
+										<p>橋樑方面較出名的有：大坊橋、磚仔橋、鯽魚潭橋、駝龜橋、鳳山東福橋皆是在清初所建。不論官建或民捐的，其形式有竹橋、木橋、石橋及磚橋等。</p>
+                                    </div>
                                 </div>
-                                <p>　　 公共建築方面，陳永華倡建孔廟與武廟，鄭經也興建所謂七寺八廟；至於像 <a href="#">臺灣城隍廟</a>、<a href="#">開基天后宮</a> 及 大觀音亭都經大肆興建。明代原物恐怕已經不存在，不過，其選址及範圍一直延續下來，它奠定一些重要古建築的基礎。例如臺南城市的規劃，後代還是遵循四坊的範圍，<a href="#">孔廟</a>、<a href="#">祀典武廟</a>、<a href="#"> 北極殿</a> 、 <a href="#">大天后宮</a>及府城隍廟皆仍在明鄭時期之原址上。<br />
-      　<br />
-      　　明鄭時期的官署建築有的沿用荷人留下之建築，像是<a href="#">承天府</a>，也就是我們現今的赤崁樓；天興州署以及萬年州署，原為縣署，後來經由鄭經改為州。天興州署。在清代改為臺灣府署，在今衛民街；萬年州署則改為臺灣縣署，在今忠義國小校內。<br />
-      <br />
-      　　明鄭時期之住宅建築若以人口數量推斷，應該為數不少。一般平民的住宅可能仍以竹木構造為多，隨之而來的皇族重臣及文官武將都有正式宅邸，有的還有附庭園。<br />
-      <br />
-    　　在住宅方面，澎湖張百萬大宅即為明鄭時期，傳有八座之多。當時一漁民叫張隱，常到金嶼釣魚，無意間撿到海盜留下的金磚而致富；以此資本經商，在滬尾、半線、大甲等地購置田產，這幢建築物在澎湖白沙尚存，但是否全都為明代建築則尚待研究。 　　廟宇和建築原來甚多，但都已遭改建；孔廟創建在永曆二十年，是臺灣第一座 孔廟建築。今天臺南孔廟是康熙五十一年，由陳璸修建之後的格局； 武廟則原建於永曆二十三年。</p>
                             </div>
-                            
                         </div><!--content2頁面 結束-->
-                        
-                </div>
-            </div>
-        </div>
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/02_style/side/lion01.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/02_style/side/popup0101.gif'); width: 391px; height: 193px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                                
+                               
+                            </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
+					</div><!--主內容區 結束-->
+				</div>
+			</div>
+		</div>
     </div>
     <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
     <script type="text/javascript">
         window.onload=function(){
             // 按照頁面需求更換

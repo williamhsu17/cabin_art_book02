@@ -8,12 +8,13 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
     <script>
         // 按照頁面需求更換
-        const thisPage = '01_introductory';
+        const thisPage = '02_style';
         const thisSide = 'side_default';
 
-        const mainBackground = 'images/02_style/m01_bg.jpg';
+        const mainBackground = 'images/02_style/m00_bg.jpg';
         const navButtonGroupImage = 'images/02_style/top01_04.jpg';
         const navLogoImage = 'images/02_style/top01.gif';
         const navBackgroundImage = 'images/02_style/top07.jpg';
@@ -29,17 +30,20 @@
         const subLink04Width = '102px';
         const subLink05src = '02-5.html';
         const subLink05Width = '60px';
-        const subLink06src = '01-6.html';
+        const subLink06src = '';
         const subLink06Width = '0px';
-        const subLink07src = '01-7.html';
+        const subLink07src = '';
         const subLink07Width = '0px';
     </script>
     <style>
         .display-none {
             display: none;
         }
+        .main-section {
+            position: relative;
+        }
         .content {
-            width: 569px;
+            width: 600px;
             margin-left: 52px;
             margin-right: 63px;
             margin-bottom: 10px;
@@ -47,14 +51,15 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
-			height:310px;
-			overflow:auto; 
+			/*height:310px;
+			overflow:auto;*/
         }
         .content-title-image {
             width: 100%;
         }
         .content-body {
-            display: flex;
+            display: block;
+            height: 240px;
         }
         .content-body p {
             margin-left: 2px;
@@ -70,7 +75,7 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -79,100 +84,174 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
-                            #link_01 img {
+                            #link_01 {
                                 background-image: url("images/02_style/side/01_icon01a.gif");
                             }
-                            #link_01:hover img {
+                            #link_01:hover {
                                 background-image: url("images/02_style/side/01_icon01b.gif");
                             }
-                            #link_02 img {
+                            #link_02 {
                                 background-image: url("images/02_style/side/01_icon02a.gif");
                             }
-                            #link_02:hover img {
+                            #link_02:hover {
                                 background-image: url("images/02_style/side/01_icon02b.gif");
                             }
 
+                           	#link_03movie img {
+                                background-image: url("images/01_history/content/movie.gif");
+                            }
+							
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
-                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
-                            
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"></a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"></a>
                         </div>
                     </div>
                     
                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                       
-                       
+                    
+                        <!--content1頁面-->
                         <div class="content" id="content1">
                             <div class="content-title">
                                 <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="">
                             </div>
-							
-							<br>
-                            
-							<div class="content-body">
-								
-                                <p>光緒元年到二十一年割臺，短短二十一年的臺灣歷史可說是清代統治臺灣二百多年中最有為的一段時間，其關鍵除了整個大環境的變化使然，主政者的抱負也是很重要的因素。
-									
-								<br>
-								
-								<br>清代末期的臺灣是以沈葆楨、丁日昌以及劉銘傳三個人為重心。由於日人覬覦臺灣，這才喚起清廷對臺灣的重視；沈葆楨曾在同治十三年與光緒元年兩度來臺積極經營，除設置招墾局，召募閩粵移民來臺，另外由於臺灣之重心北移，在光緒元年奏准在艋舺設置臺北府，並增設縣廳，由一府四縣變成二府八縣五廳，自此臺北成為臺灣另一個政治重心。
-								
-								<br>
-								
-								<br>光緒十一年臺灣正式建省，劉銘傳為首任巡撫，臺灣真正奠定近代化之基礎始於此時，重用仕紳，從事建設，新政包括開山通道、安撫山胞、建造基隆與新竹之間鐵路，創立學堂，培植人才。行政區又稱為三府十一縣四廳一直隸州。甲午戰爭後，清廷割讓臺灣才結束清代臺灣歷史。						
-							
-								<br>
-								
-								<br>本期住宅建築甚為蓬勃，年代較晚，現存情況相當良好。很多作品均為本地的材料或技術所完成。期間臺灣對外關係大為開放，官府控制力大，因此許多富戶大宅不敢逾越使用燕尾式；座落在郊區或鄉下的大宅成為一種發源地之象徵，有宗祠之意味，城市中的頭人以取代早期鄉村仕紳的影響圈。
-								
-								<br>
-								
-								<br>住宅建築在表現上的特色是磚石多於木作，木雕繁瑣，且流行木材原色，不上彩繪。</p>
-	
-	                             <div align="center"><img style="width: 250px; height: 131px;" src="images/02_style/content/2-4-1/03_01pic01.jpg" alt=""></div>
-								   								   
+							<div class="content-body" style=" overflow: auto;">
+                                <div style="display: flex;">
+                                    <p style="width: 100%; margin-top: 20px;">光緒元年到二十一年割臺，短短二十一年的臺灣歷史可說是清代統治臺灣二百多年中最有為的一段時間，其關鍵除了整個大環境的變化使然，主政者的抱負也是很重要的因素。</p>
+                                    <img style="width: 100%; height: auto;" src="images/02_style/content/2-4-1/03_01pic01.jpg" alt="">
+                                </div>
+                                <p>清代末期的臺灣是以沈葆楨、丁日昌以及劉銘傳三個人為重心。由於日人覬覦臺灣，這才喚起清廷對臺灣的重視；沈葆楨曾在同治十三年與光緒元年兩度來臺積極經營，除設置招墾局，召募閩粵移民來臺，另外由於臺灣之重心北移，在光緒元年奏准在艋舺設置臺北府，並增設縣廳，由一府四縣變成二府八縣五廳，自此臺北成為臺灣另一個政治重心。</p> 
+                                <p>光緒十一年臺灣正式建省，劉銘傳為首任巡撫，臺灣真正奠定近代化之基礎始於此時，重用仕紳，從事建設，新政包括開山通道、安撫山胞、建造基隆與新竹之間鐵路，創立學堂，培植人才。行政區又稱為三府十一縣四廳一直隸州。甲午戰爭後，清廷割讓臺灣才結束清代臺灣歷史。</p>                            
+								<p>本期住宅建築甚為蓬勃，年代較晚，現存情況相當良好。很多作品均為本地的材料或技術所完成。期間臺灣對外關係大為開放，官府控制力大，因此許多富戶大宅不敢逾越使用燕尾式；座落在郊區或鄉下的大宅成為一種發源地之象徵，有宗祠之意味，城市中的頭人以取代早期鄉村仕紳的影響圈。</p>								
+								<p>
+								住宅建築在表現上的特色是磚石多於木作，木雕繁瑣，且流行木材原色，不上彩繪。</p>
+	                                
                             </div>
-                        </div>
+                        </div><!--content1頁面 結束-->
                         
-                        
-                                                <!--content2頁面-->
+                        <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                             <div class="content-title">
+                            <div class="content-title">
                                 <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="">
                             </div>
                             <div class="content-body">
-                                
-                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
-                                    <div class="image-container">
-                                        <img id="displayImage_02-1-2_1" style="width: 210px; height: 140px;" sty src="images/02_style/content/2-1-2/048-01.jpg" alt="Image 1">
-                                    </div>
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                      
+                                        
+                                        <!-- image_switch_01預設 -->
+                                        <div id="image_switch_01" class="inline-image-switch">
+                                         <div class="image-container">
+                                                <img id="displayImage_01" src="images/02_style/content/2-4-2/b04_p00.jpg" alt="Image 1">
+                                            </div>
+                                            <p>麻豆林宅</p>
+                                                 <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-4-2/b04_p00.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-4-2/077b-02.jpg', 'displayImage_01');"></a>
+                                                
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_01 -->                                
+										<!-- image_switch_02 -->
+										<div id="image_switch_02" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_02" sty src="images/02_style/content/2-4-2/055-04.jpg" alt="Image 1">
+                                            </div>
+                                            <p> 鐵剪刀（郭舉人宅）</p>                                  
+                                        </div>
+                                         <!-- end image_switch_02 -->
+										 <!-- image_switch_03 --> 
+										 <div id="image_switch_03" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_03" sty src="images/02_style/content/2-4-2/077b-05_big.jpg" alt="Image 1">
+                                            </div>
+                                            <p>圓厚造型木雕（麻豆林宅）</p>
+											<div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-4-2/077b-05_big.jpg', 'displayImage_03');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-4-2/077b-03_big.jpg', 'displayImage_03');"></a>
+												
+                                            </div>	
 
-                                    <p>臺南臺灣城隍廟</p>
-                                   <div class="button-container">
-                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-02.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b1"></a>
-                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-04.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b2"></a>
-                                        <a href="#" class="isb_03" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-12.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b3"></a>
-                                       
-                                    </div>                                    
+                                        </div>
+                                         <!-- end image_switch_03 -->
+										 <!-- image_switch_04 -->
+										 <div id="image_switch_04" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_04" sty src="images/02_style/content/2-4-2/078-01.jpg" alt="Image 1">
+                                            </div>
+                                            <p>彰化永靖 陳厝餘三館</p>
+											
+                                        </div>
+                                         <!-- end image_switch_04 -->
+										 <!-- image_switch_05 --> 
+										 <div id="image_switch_05" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_05" sty src="images/02_style/content/2-4-2/b04_p01_big.jpg" alt="Image 1">
+                                            </div>
+                                            <p>魚飾排水口（彰化永靖陳厝餘三館）</p>
+												
+
+                                        </div>
+                                         <!-- end image_switch_05 -->
+										 <!-- image_switch_06 --> 
+										 <div id="image_switch_06" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_06" sty src="images/02_style/content/2-4-2/078-02b_big.jpg" alt="Image 1">
+                                            </div>
+                                            <p>綠釉花磚（彰化永靖陳厝餘三館）</p>
+                               
+                                        </div>
+                                         <!-- end image_switch_06 -->
+										 <!-- image_switch_07 --> 
+										 <div id="image_switch_07" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_07" sty src="images/02_style/content/2-4-2/b04_p02a.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺中 筱雲山莊</p>
+											<div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-4-2/b04_p02a.jpg.jpg', 'displayImage_07');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-4-2/b04_p02b.jpg', 'displayImage_07');"></a>
+												<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-4-2/b04_p02c.jpg', 'displayImage_07');"></a>
+											</div>
+										
+                                        </div>
+                                         <!-- end image_switch_07 -->
+                                         
+                                         
+                                    </div>
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                       <p>住宅建築在表現上的特色是磚石多於木作，木雕繁瑣，且流行木材原色，不上彩繪。</p>
+									   <p>
+									   其中建於光緒元年的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">麻豆林宅</a>為此期的代表建築之一，其日治後尚保存完整，然因部分後人賣地蓋公寓， 受到破壞，殊為可惜。</p>
+									   <p>									   形式為三進雙護龍式，即為一般俗稱「三落百二門」，意味有一百多個門窗，整個平面佈局為正方形。</p>
+									   <p>護龍為輩份最低的族人居住的，在複雜的大家庭中為顧及私密性及方便的考慮平面形態，因此左右另闢兩邊門以便進出。在木作方面彩繪較少，以一種素木的古典效果呈現，山牆上嵌有固定樑木的 「<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">鐵剪刀</a>」裝飾，這是臺南一帶常出現的手法。<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">木雕</a>的花草枝葉為圓厚造型，人物也傾向圓雕的手法。大木比例適切，為住宅建築之最大成功處。</p>
+									   <p>
+									   另外，建於光緒十五年的永靖南港西庄<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_04')">陳厝餘三館</a>，這幢建築為三合院形制，有獨立之三開間外門，正堂為馬背脊的歇山軒亭。外護龍較長，也就是護龍向外發展，長度漸增，形成「凸」字型的前埕。</p>
+									   <p>族人雖有獲得功名，但這建築仍作馬背頂；內護龍雖分為兩側，但是卻各有獨立形態，為五開間建築，入口有簷柱。磚工及木作均相當精細，軒亭與正堂屋頂之交接處有一<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_05')">魚飾排水口</a>，製作精良。內庭之隔牆有露明的花窗；<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_06')">前面嵌上綠釉花磚，後面疊砌磚花</a>。這棟建築在格局及細部表現均值得研究，是重要作品之一。</p>
+									   <p>竹山林宅敦本堂年代約為光緒末年，可惜九二一地震後已毀。格局為兩落式，有護龍，不過前後兩落之間缺少兩護龍，以兩道剔透的磚花矮牆代替，將中庭劃分為三區域。最大特點是將磚、石及木材結構各自發揮所長，作一緊密且嚴整的搭配。 ( <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_07')">臺中筱雲山莊</a> )</p>
+									   <p>其作法相當細膩，中庭以矮牆分隔，這周密的考慮到生活延展空間之關係，第一落門廳有寬大的簷廊，中庭有趨於獨立的形態，這樣設計較接近一般廟宇的主殿。牆身高，所以在山牆馬背下或屋簷下另開小圓洞，做為通氣孔。外觀典雅，屋脊曲線微緩，在此發現介於硬山與歇山之間的屋頂形式，這是臺灣僅發先一例。磚工上特地建磚窯燒製出來使用，磚的色澤為橙紅色，規格為閩南式；砌疊方式及轉角處之收頭有很多種，以利於半圓拱、圓洞及轉角磚的特殊用途。</p>
+                                    </div>
                                 </div>
-                                <p>　　 公共建築方面，陳永華倡建孔廟與武廟，鄭經也興建所謂七寺八廟；至於像 <a href="#">臺灣城隍廟</a>、<a href="#">開基天后宮</a> 及 大觀音亭都經大肆興建。明代原物恐怕已經不存在，不過，其選址及範圍一直延續下來，它奠定一些重要古建築的基礎。例如臺南城市的規劃，後代還是遵循四坊的範圍，<a href="#">孔廟</a>、<a href="#">祀典武廟</a>、<a href="#"> 北極殿</a> 、 <a href="#">大天后宮</a>及府城隍廟皆仍在明鄭時期之原址上。<br />
-      　<br />
-      　　明鄭時期的官署建築有的沿用荷人留下之建築，像是<a href="#">承天府</a>，也就是我們現今的赤崁樓；天興州署以及萬年州署，原為縣署，後來經由鄭經改為州。天興州署。在清代改為臺灣府署，在今衛民街；萬年州署則改為臺灣縣署，在今忠義國小校內。<br />
-      <br />
-      　　明鄭時期之住宅建築若以人口數量推斷，應該為數不少。一般平民的住宅可能仍以竹木構造為多，隨之而來的皇族重臣及文官武將都有正式宅邸，有的還有附庭園。<br />
-      <br />
-    　　在住宅方面，澎湖張百萬大宅即為明鄭時期，傳有八座之多。當時一漁民叫張隱，常到金嶼釣魚，無意間撿到海盜留下的金磚而致富；以此資本經商，在滬尾、半線、大甲等地購置田產，這幢建築物在澎湖白沙尚存，但是否全都為明代建築則尚待研究。 　　廟宇和建築原來甚多，但都已遭改建；孔廟創建在永曆二十年，是臺灣第一座 孔廟建築。今天臺南孔廟是康熙五十一年，由陳璸修建之後的格局； 武廟則原建於永曆二十三年。</p>
                             </div>
-                            
                         </div><!--content2頁面 結束-->
-                        
-                </div>
-            </div>
-        </div>
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/02_style/side/lion01.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/02_style/side/popup0101.gif'); width: 391px; height: 193px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+
+                            </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
+					</div><!--主內容區 結束-->
+				</div>
+			</div>
+		</div>
     </div>
     <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
     <script type="text/javascript">
         window.onload=function(){
             // 按照頁面需求更換

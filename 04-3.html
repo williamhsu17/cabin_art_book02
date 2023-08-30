@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣傳統建築欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '04_art';
+        const thisSide = 'side_default';
+
+       const mainBackground = 'images/04_art/m01_bg.jpg';
+        const navButtonGroupImage = 'images/04_art/top01_03.jpg';
+        const navLogoImage = 'images/04_art/top01.gif';
+        const navBackgroundImage = 'images/04_art/top07.jpg';
+
+        const subLinkSpacerWidth = '165px';
+        const subLink01src = '04-1.html';
+        const subLink01Width = '71px';
+        const subLink02src = '04-2.html';
+        const subLink02Width = '37px';
+        const subLink03src = '04-3.html';
+        const subLink03Width = '37px';
+        const subLink04src = '04-4.html';
+        const subLink04Width = '37px';
+        const subLink05src = '04-5.html';
+        const subLink05Width = '53px';
+        const subLink06src = '04-6.html';
+        const subLink06Width = '70px';
+        const subLink07src = '';
+        const subLink07Width = '0px';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .main-section {
+            position: relative;
+        }
+        .content {
+            width: 600px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+			/*height:310px;
+			overflow:auto;*/
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: block;
+            height: 240px;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-image: url('images/04_art/left.gif');">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <div class="main-section">
+                <include src="partial/nav.html"></include>
+                <div class="section" style="display: flex;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                        <style>
+                            .image_button {
+                                display: block;
+                                width: 94px;
+                                height: 20px;
+                                font-size: 0;
+                                margin-bottom: 1px;
+                            }                           
+
+                        </style>
+                        
+                    </div>
+                    
+                   <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
+                    
+                        <!--content1頁面-->
+                        <div class="content" id="content1">
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/04_art/content/01_icon02t.gif" alt="">
+                            </div>
+                            <div class="content-body" >
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                        <!-- image_switch_00預設 -->
+                                        <div id="image_switch_00" class="inline-image-switch">
+                                         <div class="image-container">
+                                                <img id="displayImage_00" src="images/04_art/content/4-3/109-08dream.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText">彩繪油漆欣賞(臺南夢蝶園)</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/04_art/content/4-3/109-08dream.jpg', 'displayImage_00'); changeText('彩繪油漆欣賞(臺南夢蝶園)', 'displayText');"></a>
+						<a href=" " class="isb_02" onclick="changeImage('images/04_art/content/4-3/122-01temper.jpg', 'displayImage_00'); changeText('彩繪油漆欣賞(臺南開元寺)', 'displayText');"></a>
+						<a href=" " class="isb_03" onclick="changeImage('images/04_art/content/4-3/123-04temper.jpg', 'displayImage_00'); changeText('彩繪油漆欣賞(鹿港天后宮)', 'displayText');"></a>
+                                            </div>      
+
+                                        </div>
+                                        <!-- end image_switch_00 -->
+                                        
+                                        <!-- image_switch_01 -->
+                                        <div id="image_switch_01" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_01" src="images/04_art/content/4-3/tempdoor1_big.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText">門神(臺南開元寺)</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/04_art/content/4-3/tempdoor1_big.jpg', 'displayImage_01'); changeText('門神(臺南開元寺)', 'displayText');"></a>
+						<a href=" " class="isb_02" onclick="changeImage('images/04_art/content/4-3/tempdoor2_big.jpg', 'displayImage_01'); changeText('門神(鹿港天后宮))', 'displayText');"></a>
+						
+                                            </div>  
+                                        </div>
+                                        <!-- end image_switch_01 -->
+                                        <!-- image_switch_X -->
+                                        ***
+                                        <!-- end image_switch_X -->
+                                       
+                                    </div>
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                       
+                                       <div style="height:20px; width:95px; float:right;" > <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_00')"><img sty src="images/04_art/content/03_detail01.gif" alt="Image 1"></a></div>
+                                       
+                                       <br>
+									
+                                       <p>中國古代建築至遲在春秋戰國時期即有彩繪，現存漢代的明器陶樓亦可見建築樑枋上施有彩繪，宋代《營造法式》書中規定宮式建築的彩畫制度，謂「佈彩於樑棟斗栱謂之裝鑾」。<br />
+    <br />
+    　　在一座傳統建築中，大木的柱、樑、枋大多以油漆保護之，但牆垛、門扇則常有帶主題的繪畫，尤其是<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">門神</a>，為一座建築入口的主要視焦點，門神兼具風俗、信仰、社會地位以及藝術性的要求，歷來頗受重視，其發展也特別豐富。
+    <p>　　在 台灣的寺廟門上，多用<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">神荼</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">鬱壘</a>，或是唐朝名將秦叔寶、尉遲恭為門神 ，另外 還可視主祀神之特性，配以<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">天官</a>、太監、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">宮娥</a>等充為門神。 至於佛寺，則繪<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">韋馱</a>及<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">伽藍</a>護法、哼哈二將及<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">四大天王</a>等，道教的廟則又不同，有繪四大元帥、二十八星宿、三十六官將、二十四節氣或龍鳳諸神。</p>
+    <p>　　當然，在古代一般民宅沒有資格繪門神、官衙及士紳豪宅可繪門神，以臺灣在清代的布政使司衙門有門神，臺中霧峰林朝棟官拜提督，其巨宅宮保第有<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">文官門神</a>，而臺北板橋林本源五落大宅也有武將門神，屏東佳冬蕭宅也有<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">加冠晉祿門神</a>，這些都是現存年代較早的門神。</p>
+    <p>　　這些年代較早的門神與近代寺廟的門神相互比較會發現，在構圖上，早期光緒年間的門神神態溫文儒雅，帽冠及衣飾較簡潔，而用色較少，面部、手部及衣褶只用線條勾勒，不作光影。但二十世紀以後的門神造型趨於複雜，帽冠、服飾、配件齊全，用色較多，色彩明艷，而且臉部作出明暗陰影，可能受到西洋肖像畫之影響。<br />
+      <br />
+      近代臺灣寺廟的門神彩繪，最著名的有鹿港畫師、臺南畫師及臺北畫師三大派。鹿港畫師所以郭姓為主，最早可上溯至清同治年間畫豐原筱雲山莊、社口林宅大夫第及摘星山莊的郭友梅 ，近代則以繪 鹿港龍山寺的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">郭新林</a> 最為人所知。臺南畫師則以<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">潘春源</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">麗水</a>及陳玉峰 最著名。臺北畫師則以 洪寶真、吳烏棕及黃榮貴 最著名。可惜彩繪作品有些不易久存，過了五十年即丹青剝落，被新的彩繪取而代之了。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--content1頁面 結束-->
+                        
+                        <!--content2頁面-->
+                        <div class="content display-none" id="content2">
+                            
+                        </div><!--content2頁面 結束-->
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/04_art/side/lion03.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/04_art/side/popup0301.gif'); width: 391px; height: 298px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                               
+                            </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
+					</div><!--主內容區 結束-->
+				</div>
+			</div>
+		</div>
+    </div>
+    <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>

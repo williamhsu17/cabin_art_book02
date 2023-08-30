@@ -8,22 +8,42 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
     <script>
         // 按照頁面需求更換
-        const thisPage = '01_introductory';
+        const thisPage = '03_function';
         const thisSide = 'side_default';
 
         const mainBackground = 'images/03_function/m01_bg.jpg';
         const navButtonGroupImage = 'images/03_function/top01_03.jpg';
         const navLogoImage = 'images/03_function/top01.gif';
         const navBackgroundImage = 'images/03_function/top07.jpg';
+
+        const subLinkSpacerWidth = '90px';
+        const subLink01src = '03-1.html';
+        const subLink01Width = '42px';
+        const subLink02src = '03-2.html';
+        const subLink02Width = '42px';
+        const subLink03src = '03-3.html';
+        const subLink03Width = '42px';
+        const subLink04src = '03-4.html';
+        const subLink04Width = '60px';
+        const subLink05src = '03-5.html';
+        const subLink05Width = '42px';
+        const subLink06src = '03-6.html';
+        const subLink06Width = '42px';
+        const subLink07src = '03-7.html';
+        const subLink07Width = '40px';
     </script>
     <style>
         .display-none {
             display: none;
         }
+        .main-section {
+            position: relative;
+        }
         .content {
-            width: 569px;
+            width: 600px;
             margin-left: 52px;
             margin-right: 63px;
             margin-bottom: 10px;
@@ -31,12 +51,15 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
+			/*height:310px;
+			overflow:auto;*/
         }
         .content-title-image {
             width: 100%;
         }
         .content-body {
-            display: flex;
+            display: block;
+            height: 240px;
         }
         .content-body p {
             margin-left: 2px;
@@ -52,7 +75,7 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -61,78 +84,77 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
-                            #link_01 img {
+                            #link_01 {
                                 background-image: url("images/03_function/side/03_icon01a.gif");
                             }
-                            #link_01:hover img {
+                            #link_01:hover {
                                 background-image: url("images/03_function/side/03_icon01b.gif");
                             }
-                            #link_02 img {
+                            #link_02 {
                                 background-image: url("images/03_function/side/03_icon02a.gif");
                             }
-                            #link_02:hover img {
+                            #link_02:hover {
                                 background-image: url("images/03_function/side/03_icon02b.gif");
                             }
-							                            #link_03 img {
+							                            		                            #link_03 {
                                 background-image: url("images/03_function/side/03_icon03a.gif");
                             }
-                            #link_03:hover img {
+                            #link_03:hover {
                                 background-image: url("images/03_function/side/03_icon03b.gif");
                             }
+							
 
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
-                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
-                            <a href="#" id="link_03" onclick="showContent('content3')"><img class="image_button" alt="link3"></a>
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"></a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"></a>
+                            <a href="#" class="" id="link_02-1" onclick="showContent('content2')" style="font-size:12px"> 林家花園</a></br>
+                            <a href="#" class="" id="link_02-3" onclick="showContent('content2-2')" style="font-size:12px"> 夢蝶園</a></br>
+                            <a href="#" class="" id="link_02-3" onclick="showContent('content2-2')" style="font-size:12px"> 萊園</a></br>
+                            <a href="#" class="" id="link_02-4" onclick="showContent('content2-2')" style="font-size:12px"> 吳鸞旂庭園</a>
+                            <a href="#" class="image_button" id="link_03" onclick="showContent('content3')"></a>
                             
                         </div>
                     </div>
                     
                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                       
-                       
+                    
+                        <!--content1頁面-->
                         <div class="content" id="content1">
                             <div class="content-title">
                                 <img class="content-title-image" src="images/03_function/content/03_icon01t.gif" alt="">
                             </div>
-							
-							<br>
-							
-                            <div class="content-body">
-                              
-                            <p>臺灣庭園方面，有其客觀環境因素。庭園為較高層面文化的產物，無論就空間結構之特性或組織形態之品味視之，本應有很多相通之處。
-							
-							<br>
-							
-							<br>事實上，從新竹潛園（目前已不存在）可以發現其佈局比較靈巧，可以反映出臺灣士大夫階級的心態，第一是懷念故鄉的山水景物，因此有了興建庭園的念頭，這可能是臺灣的建造庭園特有原因，來此開墾定居或被派來此任官的人，多少需要有覺悟的勇氣，所以特別懷念故鄉，使得他們必須將記憶中家鄉景色具體而微的搬來，建在自己的庭園裡，藉以隨時警惕自己不忘根，不忘本。第二是以詩文詞句為模擬而想像創造出來的庭園設施景觀，藉以陶冶性情為由。
-							
-							<br>
-							
-							<br>臺灣的文化形成期短促，士大夫對於所謂中國江南的文人庭園有部分的看法不同，清末輾轉於官商之間的這些豪族之中，並沒有真正達到類似內地的世家水準的，與中國傳統的文人逸士對於庭園之看法有一點距離，更不會去追求日本「禪園」的境界了（日治後，有些庭園卻深受日本園影響）。</p>						
-							
-							</div>
-                        </div>
-                        
-                        
-                                                <!--content2頁面-->
-                        <div class="content display-none" id="content2">
-                             <div class="content-title">
-                                <img class="content-title-image" src="images/03_function/content/03_icon01t.gif" alt="">
+                            <div class="content-body" style=" overflow: auto;">
+                             
+                              <p>臺灣庭園方面，有其客觀環境因素。庭園為較高層面文化的產物，無論就空間結構之特性或組織形態之品味視之，本應有很多相通之處。</p>
+    <p>　　事實上，從 新竹潛園（目前已不存在） 可以發現其佈局比較靈巧，可以反映出臺灣士大夫階級的心態，第一是懷念故鄉的山水景物，因此有了興建庭園的念頭，這可能是臺灣的建造庭園特有原因，來此開墾定居或被派來此任官的人，多少需要有覺悟的勇氣，所以特別懷念故鄉，使得他們必須將記憶中家鄉景色具體而微的搬來，建在自己的庭園裡，藉以隨時警惕自己不忘根，不忘本。；第二是以詩文詞句為模擬而想像創造出來的庭園設施景觀，藉以陶冶性情為由。</p>
+    　　
+    <p>臺灣的文化形成期短促，士大夫對於所謂中國江南的文人庭園有部分的看法不同，清末輾轉於官商之間的這些豪族之中，並沒有真正達到類似內地的世家水準的，與中國傳統的文人逸士對於庭園之看法有一點距離，更不會去追求日本「禪園」的境界了（日治後，有些庭園卻深受日本園影響）。 </p>
                             </div>
-                            <div class="content-body">
-                                
+                        </div><!--content1頁面 結束-->
+                        
+                        <!--content2頁面-->
+                        <div class="content display-none" id="content2">
+                        
+                        </div><!--content2頁面 結束-->
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion03.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/03_function/side/popup0301.gif'); width: 391px; height: 198px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
                                
                             </div>
-                            
-                        </div><!--content2頁面 結束-->
-                        
-                </div>
-            </div>
-        </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
+					</div><!--主內容區 結束-->
+				</div>
+			</div>
+		</div>
     </div>
     <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
     <script type="text/javascript">
         window.onload=function(){
             // 按照頁面需求更換

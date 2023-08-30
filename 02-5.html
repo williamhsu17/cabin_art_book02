@@ -8,12 +8,13 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
     <script>
         // 按照頁面需求更換
-        const thisPage = '01_introductory';
+        const thisPage = '02_style';
         const thisSide = 'side_default';
 
-        const mainBackground = 'images/02_style/m01_bg.jpg';
+        const mainBackground = 'images/02_style/m00_bg.jpg';
         const navButtonGroupImage = 'images/02_style/top01_05.jpg';
         const navLogoImage = 'images/02_style/top01.gif';
         const navBackgroundImage = 'images/02_style/top07.jpg';
@@ -29,17 +30,20 @@
         const subLink04Width = '49px';
         const subLink05src = '02-5.html';
         const subLink05Width = '100px';
-        const subLink06src = '01-6.html';
+        const subLink06src = '';
         const subLink06Width = '0px';
-        const subLink07src = '01-7.html';
+        const subLink07src = '';
         const subLink07Width = '0px';
     </script>
     <style>
         .display-none {
             display: none;
         }
+        .main-section {
+            position: relative;
+        }
         .content {
-            width: 569px;
+            width: 600px;
             margin-left: 52px;
             margin-right: 63px;
             margin-bottom: 10px;
@@ -47,14 +51,15 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
-			height:310px;
-			overflow:auto; 
+			/*height:310px;
+			overflow:auto;*/
         }
         .content-title-image {
             width: 100%;
         }
         .content-body {
-            display: flex;
+            display: block;
+            height: 240px;
         }
         .content-body p {
             margin-left: 2px;
@@ -70,7 +75,7 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/a_mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -79,104 +84,268 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
-                            #link_01 img {
+                            #link_01 {
                                 background-image: url("images/02_style/side/01_icon01a.gif");
                             }
-                            #link_01:hover img {
+                            #link_01:hover {
                                 background-image: url("images/02_style/side/01_icon01b.gif");
                             }
-                            #link_02 img {
+                            #link_02 {
                                 background-image: url("images/02_style/side/01_icon02a.gif");
                             }
-                            #link_02:hover img {
+                            #link_02:hover {
                                 background-image: url("images/02_style/side/01_icon02b.gif");
                             }
 
+                           	#link_03movie img {
+                                background-image: url("images/01_history/content/movie.gif");
+                            }
+							
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" id="link_01" onclick="showContent('content1')"><img class="image_button" alt="link1"></a>
-                            <a href="#" id="link_02" onclick="showContent('content2')"><img class="image_button" alt="link2"></a>
-                            
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"></a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"></a>
                         </div>
                     </div>
                     
                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                       
-                       
+                    
+                        <!--content1頁面-->
                         <div class="content" id="content1">
                             <div class="content-title">
                                 <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="">
                             </div>
-							
-							<br>
-                            
-							<div class="content-body">
-								
-                                <p>日治五十年間建築有多方面的發展，在樣式上有閩南式系統、日本式系統，西洋式建築系統都並存著；技術上則以鋼筋混凝土取代原來東方傳統木結構。
+                            <div class="content-body" style=" overflow: auto;">
+							    <div style="display: flex;">
+                                    <p style="width: 100%; margin-top: 20px;">日治五十年間建築有多方面的發展，在樣式上有閩南式系統、日本式系統，西洋式建築系統都並存著；技術上則以鋼筋混凝土取代原來東方傳統木結構。</br>
+									<br>
+									在思潮上，近代建築的思想導入臺灣建築發展上。</p> 
 									
-								<br>
-								
-								<br>在思潮上，近代建築的思想導入臺灣建築發展上。
-								
-								<br>
-								
-								<br>二十世紀初，日人對其殖民地臺灣所熱衷的，以第一代的日本西化建築為主幹；大正年間，日本的現代建築運動與西方真正有了關係。在 1930 年左右，所謂國際式樣建築在日本生根，臺灣也很快的有了一些作品出現。						
-							
-								<br>
-								
-								<br>1929 年的經濟危機，使得帝國主義指揮墮落的藝術陷入狹義的民族浪漫主義，建築也披上日本民族主義的外衣，此時所謂的帝國冠帽式建築出現，也就是鋼筋混凝土的結構體，上面戴上一種傳統的斜屋頂。
+                                    <img style="width: 100%; height: 100%; margin-top: 20px" src="images/02_style/content/2-5-1/05_01pic01.jpg" alt="">
+                                </div>							
+															
+								<p>二十世紀初，日人對其殖民地臺灣所熱衷的，以第一代的日本西化建築為主幹；大正年間，日本的現代建築運動與西方真正有了關係。在 1930 年左右，所謂國際式樣建築在日本生根，臺灣也很快的有了一些作品出現。</p>														
+								<p>1929 年的經濟危機，使得帝國主義指揮墮落的藝術陷入狹義的民族浪漫主義，建築也披上日本民族主義的外衣，此時所謂的帝國冠帽式建築出現，也就是鋼筋混凝土的結構體，上面戴上一種傳統的斜屋頂。</p>
 
-								<br>
+								<p>
+								日本對臺灣的改造是很有計畫性，在所謂同化目標下，臺灣建築及城市都改觀。在 1895 到 1907 年間，此期為日本式建築試驗期，多為松杉之木造，材料及工匠也有來自日本，部分並用臺灣的磚石，不過，後因與臺灣高溫潮濕的環境不合，這批建築使用壽命相當短。</p>
 								
-								<br>日本對臺灣的改造是很有計畫性，在所謂同化目標下，臺灣建築及城市都改觀。在 1895 到 1907 年間，此期為日本式建築試驗期，多為松杉之木造，材料及工匠也有來自日本，部分並用臺灣的磚石，不過，後因與臺灣高溫潮濕的環境不合，這批建築使用壽命相當短。
-
-								<br>
-																
-								<br>一般官方建築由各州廳營繕係負責人設計及施工，重要的建築則由臺灣總督府營繕課的技師掌理設計；軍方工程即交由陸軍的技師繪圖，多為木造及磚造平房；民間建築則委託地方執業技師設計；日治中期以後，臺北市也出現出現建築事務所，多由日人建築師主持。施工方面多為私人營造組織，臺灣人及日本人均有；類似今天建設公司的組織也有。</p>
-	
-	                             <div align="center"><img style="width: 194px; height: 113px;" src="images/02_style/content/2-5-1/05_01pic01.jpg" alt=""></div>
-								   								   
-                            </div>
-                        </div>
+								<p>一般官方建築由各州廳營繕係負責人設計及施工，重要的建築則由臺灣總督府營繕課的技師掌理設計；軍方工程即交由陸軍的技師繪圖，多為木造及磚造平房；民間建築則委託地方執業技師設計；日治中期以後，臺北市也出現出現建築事務所，多由日人建築師主持。施工方面多為私人營造組織，臺灣人及日本人均有；類似今天建設公司的組織也有。</p>
+                               
+                             </div>
+								
+                        </div><!--content1頁面 結束-->
                         
-                        
-                                                <!--content2頁面-->
+                        <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                             <div class="content-title">
+                            <div class="content-title">
                                 <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="">
                             </div>
                             <div class="content-body">
-                                
-                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
-                                    <div class="image-container">
-                                        <img id="displayImage_02-1-2_1" style="width: 210px; height: 140px;" sty src="images/02_style/content/2-1-2/048-01.jpg" alt="Image 1">
-                                    </div>
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                      
+                                        
+                                        <!-- image_switch_01預設 -->
+                                        <div id="image_switch_01" class="inline-image-switch">
+                                         <div class="image-container">
+                                                <img id="displayImage_01" src="images/02_style/content/2-5-2/b05_p01a.jpg" alt="Image 1">
+                                            </div>
+                                            <p>鹿港中山路</p>
+                                                 <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-5-2/b05_p01a.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-5-2/b05_p01b.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-5-2/b05_p01c.jpg', 'displayImage_01');"></a>
+                                                
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_01 -->
+										<!-- image_switch_02 -->
+										<div id="image_switch_02" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_02" sty src="images/02_style/content/2-5-2/081-04.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺北自來水博物館</p>
+                                                 <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-5-2/081-04.jpg', 'displayImage_02');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-5-2/081-03.jpg', 'displayImage_02');"></a>
+                                                <a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-5-2/081-01.jpg', 'displayImage_02');"></a>                                  
+                                        </div>
+                                      </div>
+                                         <!-- end image_switch_02 -->
+										 <!-- image_switch_03 --> 
+										 <div id="image_switch_03" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_03" sty src="images/02_style/content/2-5-2/b04_p03a.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺北高等法院</p>
+											<div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-5-2/b04_p03a.jpg', 'displayImage_03');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-5-2/b04_p03b.jpg', 'displayImage_03');"></a>
+												
+                                            </div>	
 
-                                    <p>臺南臺灣城隍廟</p>
-                                   <div class="button-container">
-                                        <a href="" class="isb_01" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-02.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b1"></a>
-                                        <a href="" class="isb_02" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-04.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b2"></a>
-                                        <a href="#" class="isb_03" onclick="event.preventDefault(); changeImage('images/02_style/content/2-1-2/046-12.jpg', 'displayImage_02-1-2_1')"><img class="image-switch-button" alt="b3"></a>
-                                       
-                                    </div>                                    
+                                        </div>
+                                         <!-- end image_switch_03 -->
+										 <!-- image_switch_04 -->
+										 <div id="image_switch_04" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_04" sty src="images/02_style/content/2-5-2/b04_p04.jpg" alt="Image 1">
+                                            </div>
+                                            <p>高雄市政府</p>
+											
+                                        </div>
+                                         <!-- end image_switch_04 -->
+										 <!-- image_switch_05 --> 
+										 <div id="image_switch_05" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_05" sty src="images/02_style/content/2-5-2/081c-01.jpg" alt="Image 1">
+                                            </div>
+                                            <p>總統府</p>
+											<div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-5-2/081c-01.jpg', 'displayImage_05');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-5-2/081c-02.jpg', 'displayImage_05');"></a>
+												
+                                            </div>	
+
+                                        </div>
+                                         <!-- end image_switch_05 -->
+										 <!-- image_switch_06 --> 
+										 <div id="image_switch_06" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_06" sty src="images/02_style/content/2-5-2/082-01.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺北郵局</p>
+                               
+                                        </div>
+                                         <!-- end image_switch_06 -->
+										 <!-- image_switch_07 --> 
+										 <div id="image_switch_07" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_07" sty src="images/02_style/content/2-5-2/083-01.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺北公會堂（今中山堂）</p>
+
+										
+                                        </div>
+                                         <!-- end image_switch_07 -->
+										 <!-- image_switch_08 --> 
+										 <div id="image_switch_08" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_08" sty src="images/02_style/content/2-5-2/000-32.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺灣總督府博物館（今國立臺灣博物館）</p>
+                                  
+                                        </div>
+                                         <!-- end image_switch_08 -->
+                                         <!-- image_switch_09 --> 
+										 <div id="image_switch_09" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_09" sty src="images/02_style/content/2-5-2/b04_p08c.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺灣總督府交通局鐵道部（今鐵路局）</p>
+											 <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-5-2/b04_p08c.jpg', 'displayImage_09');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-5-2/b04_p08a.jpg', 'displayImage_09');"></a>
+												<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-5-2/b04_p08b.jpg', 'displayImage_09');"></a>
+												
+                                            </div> 
+                           
+                                        </div>
+                                         <!-- end image_switch_09 -->
+										 <!-- image_switch_10 --> 
+										 <div id="image_switch_10" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_10" sty src="images/02_style/content/2-5-2/084-02.jpg" alt="Image 1">
+                                            </div>
+                                            <p>師範大學</p>
+                              
+                                        </div>
+                                         <!-- end image_switch_10 -->
+										 <!-- image_switch_11 --> 
+										 <div id="image_switch_11" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_11" sty src="images/02_style/content/2-5-2/085-02.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺灣大學文學院</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-5-2/085-02.jpg', 'displayImage_11');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-5-2/085-03.jpg', 'displayImage_11');"></a>
+												
+                                            </div>                                  
+                                        </div>
+                                         <!-- end image_switch_11 -->
+										 <!-- image_switch_12 --> 
+										 <div id="image_switch_12" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_12" sty src="images/02_style/content/2-5-2/086b-02_big.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText_12">黑瓦 ─ 臺北大安區</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-5-2/086b-02_big.jpg', 'displayImage_12'); changeText('黑瓦 ─ 臺北大安區', 'displayText_12');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-5-2/086b-03_big.jpg', 'displayImage_12'); changeText('黑瓦 ─ 臺北大安區', 'displayText_12');"></a>
+												<a href="" class="isb_03" onclick="changeImage('images/02_style/content/2-5-2/086b-04_big.jpg', 'displayImage_12'); changeText('黑瓦 ─ 臺北中正區', 'displayText_12');"></a>
+												<a href="" class="isb_04" onclick="changeImage('images/02_style/content/2-5-2/086b-05_big.jpg', 'displayImage_12'); changeText('黑瓦 ─ 臺北中正區', 'displayText_12');"></a>
+												
+											</div>   
+											
+                                        </div>
+                                         <!-- end image_switch_12 -->
+										 <!-- image_switch_13 --> 
+										 <div id="image_switch_13" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_13" sty src="images/02_style/content/2-5-2/086-03.jpg" alt="Image 1">
+                                            </div>
+                                            <p> 臺北 圓山別莊（今臺北故事館）</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/02_style/content/2-5-2/086-03.jpg', 'displayImage_13');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/02_style/content/2-5-2/086-02.jpg', 'displayImage_13');"></a>
+
+                                            </div>                                  
+                                        </div>
+                                         <!-- end image_switch_13 -->
+                                        
+                                         
+                                    </div>
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                         <p>日人在臺灣的都市建築是似西方計畫觀念著手，內容是殖民政策與近代路徑相輔相成的結果。為了貫徹目標，臺灣的中國古老傳統必定要成為犧牲品，在殖民化過程中，是要使臺灣日本化。
+										 <p>日治五十年中，實在是臺灣傳統建築面臨危急存亡關頭，在一九○○年後確定幾個都市計畫：</p>
+										 <p><strong>第一、</strong>是所謂「市區改正」，倡導所謂的大正型、昭和型立面，<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">鹿港大街</a>即為一個例子。</p>
+										 <p><strong>第二、</strong>下水道等衛生工程及公共設施之計畫，為近代都市之發展定下基礎。【<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">臺北自來水博物館</a>】</p>
+										 <p><strong>第三、</strong>以西方巴洛克幾何精神的方式套進臺灣舊有的城市中。</p>
+										 <p><strong>第四、</strong>
+										 樹立都市擴張之長期計畫，尤其對<a href="images/02_style/content/2-5-2/b04_06big.jpg" target="_blank">臺北</a>、臺中、嘉義及高雄等均極早就確定長程發展。</p>
+										 <p><strong>第五、</strong>開始塑造城市性質及風格，臺北作為全島之政治中心，臺中為全部重劃的住宅型都市，高雄及基隆為海港工業城市。臺北在清末的近代建設已經有想當基礎，不過，計畫未全部實現，日人即來，故其風格是參半；臺中在清末本欲開始規劃為省城，但尚未實現，日人即接收，故其風格是十足的計畫性城市，日本色彩濃厚；臺南則是經過明鄭以來兩百多年之經營，純為中國舊有模式，日人改變不多，可說是比較能維持中國風格的城市。</p>
+										 
+										 <p>日治時期的重要建築如廳舍建築、公用建築、學校建築、醫院、商店及住宅建築，從中可以看出幾種樣式的流行。西方有仿文藝復興、後期巴洛克、折衷派、表現主義或機能主義之現代建築，日本式及臺灣閩南是也多並存。</p>
+										 <p> 廳舍建築包括：總督府、各軍政部門、各州廳郡街政府辦公建築等，設計幾乎全出自官方的營繕機構。施工及細部都相當良好。（<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">臺北高等法院</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_04')">高雄市政府</a>）</p>
+										 <p>廳舍建築多坐落在城市中重要的位置，最常見的是中央入口有寬敞的大廳及梯間，向左右伸長的兩翼有中央走道或單邊走道的成列辦公室，中央常有高聳的塔狀突出建築，以強調其紀念性。像是總督府，也就是現今的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_05')">總統府</a>。</p> 
+										 <p> 公共建築則包括火車站、公會堂、郵局、飯店、圖書館、銀行及劇場等建築，形式依年代而有所不同，規模均頗可觀。現今仍可見<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_06')">臺北郵局</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_07')">臺北公會堂</a>（今中山堂）、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_08')">臺灣總督府博物館</a>（今國立臺灣博物館）、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_09')">臺灣總督府交通局鐵道部</a>（今鐵路局）等，皆屬於此時期所建的公共建築。</p>
+										 <p> 學校建築有公學校、小學校、高等學校、職業學校、專科學校及大學，創建年代不同，導致風格及構造皆有很大差異。這時期所建的學校保留至今的有<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_10')">師範大學</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_11')">臺灣大學椰林大道兩側教室</a>等。</p>
+										 <p>而日治時期的住宅，一般鄉間仍繼續原有清代之中國傳統建築，多為三合院或四合院，只不過材料大幅度改變，開始以日式規格磚頭代閩南磚，很多細部裝飾被簡化。城市中的街屋則經街道更新後，出現大正型及昭和型之形式，建材多為洗石子及貼面磚，平面格局仍為清代街屋延續。另一方面，日人開始在各地興建日式小住宅，多為木造<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_12')">黑瓦</a>之形式；一九三○後逐漸出現歐式現代住宅建築，<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_13')">臺北圓山別莊</a>（今臺北故事館）即為此時代表性建築物。</p>
+                                    </div>
                                 </div>
-                                <p>　　 公共建築方面，陳永華倡建孔廟與武廟，鄭經也興建所謂七寺八廟；至於像 <a href="#">臺灣城隍廟</a>、<a href="#">開基天后宮</a> 及 大觀音亭都經大肆興建。明代原物恐怕已經不存在，不過，其選址及範圍一直延續下來，它奠定一些重要古建築的基礎。例如臺南城市的規劃，後代還是遵循四坊的範圍，<a href="#">孔廟</a>、<a href="#">祀典武廟</a>、<a href="#"> 北極殿</a> 、 <a href="#">大天后宮</a>及府城隍廟皆仍在明鄭時期之原址上。<br />
-      　<br />
-      　　明鄭時期的官署建築有的沿用荷人留下之建築，像是<a href="#">承天府</a>，也就是我們現今的赤崁樓；天興州署以及萬年州署，原為縣署，後來經由鄭經改為州。天興州署。在清代改為臺灣府署，在今衛民街；萬年州署則改為臺灣縣署，在今忠義國小校內。<br />
-      <br />
-      　　明鄭時期之住宅建築若以人口數量推斷，應該為數不少。一般平民的住宅可能仍以竹木構造為多，隨之而來的皇族重臣及文官武將都有正式宅邸，有的還有附庭園。<br />
-      <br />
-    　　在住宅方面，澎湖張百萬大宅即為明鄭時期，傳有八座之多。當時一漁民叫張隱，常到金嶼釣魚，無意間撿到海盜留下的金磚而致富；以此資本經商，在滬尾、半線、大甲等地購置田產，這幢建築物在澎湖白沙尚存，但是否全都為明代建築則尚待研究。 　　廟宇和建築原來甚多，但都已遭改建；孔廟創建在永曆二十年，是臺灣第一座 孔廟建築。今天臺南孔廟是康熙五十一年，由陳璸修建之後的格局； 武廟則原建於永曆二十三年。</p>
                             </div>
-                            
                         </div><!--content2頁面 結束-->
-                        
-                </div>
-            </div>
-        </div>
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/02_style/side/lion01.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/02_style/side/popup0101.gif'); width: 391px; height: 193px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                               
+                               
+                            </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
+					</div><!--主內容區 結束-->
+				</div>
+			</div>
+		</div>
     </div>
     <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
     <script type="text/javascript">
         window.onload=function(){
             // 按照頁面需求更換

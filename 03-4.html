@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣傳統建築欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '03_function';
+        const thisSide = 'side_default';
+
+        const mainBackground = 'images/03_function/m01_bg.jpg';
+        const navButtonGroupImage = 'images/03_function/top01_04.jpg';
+        const navLogoImage = 'images/02_style/top01.gif';
+        const navBackgroundImage = 'images/03_function/top07.jpg';
+
+        const subLinkSpacerWidth = '90px';
+        const subLink01src = '03-1.html';
+        const subLink01Width = '42px';
+        const subLink02src = '03-2.html';
+        const subLink02Width = '42px';
+        const subLink03src = '03-3.html';
+        const subLink03Width = '42px';
+        const subLink04src = '03-4.html';
+        const subLink04Width = '60px';
+        const subLink05src = '03-5.html';
+        const subLink05Width = '42px';
+        const subLink06src = '03-6.html';
+        const subLink06Width = '42px';
+        const subLink07src = '03-7.html';
+        const subLink07Width = '40px';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .main-section {
+            position: relative;
+        }
+        .content {
+            width: 600px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+			/*height:310px;
+			overflow:auto;*/
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: block;
+            height: 240px;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-image: url('images/03_function/left.gif');">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <div class="main-section">
+                <include src="partial/nav.html"></include>
+                <div class="section" style="display: flex;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                        <style>
+                            .image_button {
+                                display: block;
+                                width: 94px;
+                                height: 20px;
+                                font-size: 0;
+                                margin-bottom: 1px;
+                            }
+
+                        </style>
+                       
+                    </div>
+                    
+                   <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
+                    
+                        <!--content1頁面-->
+                        <div class="content" id="content1">
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/00_icon01t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                        
+                                        <!-- image_switch_01 -->
+                                        <div id="image_switch_01" class="inline-image-switch">
+                                         <div class="image-container">
+                                                <img id="displayImage_01" src="images/03_function/content/3-4/000-1.jpg" alt="Image 1">
+                                            </div>
+                                            <p>金門山后王氏宅群</p>
+                                                 <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-4/000-1.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-4/000-2.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_03" onclick="changeImage('images/03_function/content/3-4/000-3.jpg', 'displayImage_01');"></a>
+                                                
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_01 -->
+                                  
+<!-- image_switch_02 -->                                        <div id="image_switch_02" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_02" sty src="images/03_function/content/3-4/c04_p02a.jpg" alt="Image 1">
+                                            </div>
+                                            <p>澎湖二崁聚落</p>
+                                                 <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-4/c04_p02a.jpg', 'displayImage_02');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-4/c04_p02b.jpg', 'displayImage_02');"></a>
+												 <a href="" class="isb_03" onclick="changeImage('images/03_function/content/3-4/c04_p02c.jpg', 'displayImage_02');"></a>
+												  <a href="" class="isb_04" onclick="changeImage('images/03_function/content/3-4/c04_p02d.jpg', 'displayImage_02');"></a>
+												   <a href="" class="isb_05" onclick="changeImage('images/03_function/content/3-4/c04_p02e.jpg', 'displayImage_02');"></a>
+                                                                                
+                                        </div>
+                                      </div>
+                                         <!-- end image_switch_02 -->                                       
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">							
+                                    
+                                   <p>嚴整的棋盤式配置之集居形態的村落在中國南方是很普遍的，而且是相當重要的類型。臺灣的實例則以沿海的漁村為多，不過臺灣出現這種形式的村莊的機會已大大減小，地緣村莊多於血緣村莊或者是原因之一，其他的社會、經濟條件相信也是原因。</p>    <p>      回溯中國建築史，新石器時代仰韶文化的西安半坡先民居住遺址，就顯示出氏族部落共同生產、防禦與居住的特性。唐代<a href="images/03_function/content/3-4/001.jpg" target="_blank">長安城採里坊制</a>，里坊與里坊之間即為街道，有一種城中城的觀念。宋以後里坊制漸消失，南方商業城市盛行街屋建築。這兩種集居模式多運用於城市或村鎮裡，至少具備了商業的條件。蘇州及泉州所代表的線性街屋式配置是商業機能的產物，密度較高，而棋盤模式的村落則是農業機能的產物。</p>
+								   <p>     「棋盤式」配置之組合其實可有兩個觀點視之，一是視為橫的左右排列，另一是縱的前後排列，亦即有些村莊傾向於每個住宅單元左右對齊，有些強調前後對齊，而 <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">金門山后王氏宅群</a>之例，竟然將前後左右都對齊了，其秩序的嚴整性高，可視為這種棋盤配置之最理想狀態。左右對齊的類型來說，那麼台灣新竹北門外的鄭用鍚宅群及台北大龍峒陳悅記老師府亦屬之。</p>
+								   <p>棋盤配置的村落整個尺度不大，居民的生產方式與自然的土地、海洋發生直接關係，商業機能幾乎是不必要的，因而村莊裡所謂的「街道」存在性甚低。金門山后的王氏宅群作為典型的實例。山后王氏宅群一般的說法都認為起建於清光緒二十六年，歷經十多年。據現存物之特色看，這十八棟建築雖不是同一年落成，且有風格上之差異，但很明顯地在貫徹棋盤配置是無可置疑的。十八棟建築中有兩棟公共建築，一為祠堂，另一為學堂，前後排列，有著「承先」與「啟後」的意味。</p>
+								   <p>每棟之前都設鋪石庭院，除最後一列外，均築有牆垣圍住。因此，嚴格講起來，雖是密度提高，距離拉近的集居形態，但每戶均是封閉的個體，具備著「開放交流」與「封閉自守」之彈性，這是棋盤式佈局空間性質的最大特色。每條縱列住宅之間又留窄巷來，具防火功能，古代即稱之為防火巷。王氏宅群有一條防火巷窄至令山牆上的燕尾脊相觸，形狀至為動人。</p>
+								   <p>
+								   而<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">澎湖的村落</a>為了防風，大多興築在海邊的山窪避風處。屋宇俱結於山凹之內、水隈之處，故名曰「澳」。由於開發早，單姓聚族而居，形成血緣村莊不少，如港仔尾許家、雙頭掛蔡家。澎湖的許氏多為金門遷來，因此其村落形態大多承繼著金門之傳統。以農為主，以漁為輔的產業形態可能是重要的影響因素，因為漁船通常是數戶人家共有。再來惡劣的氣候亦是決定因素，聚集居住能守望相助，互得其利。而居住單元多為有牆門的三合院，屋身低而屋頂斜度和緩，這是為防風。</p>
+								   <p>臺灣方面因為近代化的關係，較難完整地保有棋盤佈局之實例。其中以彰化以南的靠海漁村較明顯，這類型之村落，居住單元主要仍以三合院為主，它的棋盤佈局較偏於橫列取向，亦即多棟左右並列，屋前自然形成通路，而屋側的防火巷系統較不明顯。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--content1頁面 結束-->
+                        
+                       <!--content2頁面-->
+                        <div class="content display-none" id="content2">
+                            
+                        </div><!--content2頁面 結束-->
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion04.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/03_function/side/popup0401.gif'); width: 391px; height: 198px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                                
+                                
+                               
+                            </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
+					</div><!--主內容區 結束-->
+				</div>
+			</div>
+		</div>
+    </div>
+    <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>

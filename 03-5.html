@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣傳統建築欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '03_function';
+        const thisSide = 'side_default';
+
+        const mainBackground = 'images/03_function/m01_bg.jpg';
+        const navButtonGroupImage = 'images/03_function/top01_05.jpg';
+        const navLogoImage = 'images/02_style/top01.gif';
+        const navBackgroundImage = 'images/03_function/top07.jpg';
+
+        const subLinkSpacerWidth = '90px';
+        const subLink01src = '03-1.html';
+        const subLink01Width = '42px';
+        const subLink02src = '03-2.html';
+        const subLink02Width = '42px';
+        const subLink03src = '03-3.html';
+        const subLink03Width = '42px';
+        const subLink04src = '03-4.html';
+        const subLink04Width = '60px';
+        const subLink05src = '03-5.html';
+        const subLink05Width = '42px';
+        const subLink06src = '03-6.html';
+        const subLink06Width = '42px';
+        const subLink07src = '03-7.html';
+        const subLink07Width = '40px';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .main-section {
+            position: relative;
+        }
+        .content {
+            width: 600px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+			/*height:310px;
+			overflow:auto;*/
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: block;
+            height: 240px;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-image: url('images/03_function/left.gif');">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <div class="main-section">
+                <include src="partial/nav.html"></include>
+                <div class="section" style="display: flex;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                        <style>
+                            .image_button {
+                                display: block;
+                                width: 94px;
+                                height: 20px;
+                                font-size: 0;
+                                margin-bottom: 1px;
+                            }
+                            
+
+                        </style>
+                       
+                    </div>
+                    
+                   <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
+                    
+                        <!--content1頁面-->
+                        <div class="content" id="content1">
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/01_history/content/00_icon01t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                                                            
+                                        
+                                        <!-- image_switch_01 預設 -->
+                                        <div id="image_switch_01" class="inline-image-switch">
+                                         <div class="image-container">
+                                                <img id="displayImage_01" sty src="images/03_function/content/3-5/115-04.jpg" alt="Image 1">
+                                            </div>
+                                            <p>四柱三間式（臺北新公園急公好義坊）</p>                                     
+                                        </div>
+                                        <!-- end image_switch_01 -->
+										<!-- image_switch_02 -->
+										<div id="image_switch_02" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_02" sty src="images/03_function/content/3-5/116-02.jpg" alt="Image 1">
+                                            </div>
+                                            <p>邱良功母節孝坊</p>
+                                                 <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-5/116-02.jpg', 'displayImage_02');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-5/116-03.jpg', 'displayImage_02');"></a>
+												 <a href="" class="isb_03" onclick="changeImage('images/03_function/content/3-5/116-07.jpg', 'displayImage_02');"></a>                                       
+                                        </div>
+                                      </div>
+                                         <!-- end image_switch_02 -->               
+ 										 <!-- image_switch_03 --> 
+										 <div id="image_switch_03" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_03" sty src="images/03_function/content/3-5/071-03.jpg" alt="Image 1">
+                                            </div>
+                                            <p>楊氏節孝坊</p>
+											<div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-5/071-03.jpg', 'displayImage_03');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-5/071-02.jpg', 'displayImage_03');"></a>
+												
+                                            </div>	
+
+                                        </div>
+                                         <!-- end image_switch_03 -->
+										 <!-- image_switch_04 -->
+										 <div id="image_switch_04" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_04" sty src="images/03_function/content/3-5/072-01.jpg" alt="Image 1">
+                                            </div>
+                                            <p>張氏節孝坊</p>
+											<div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-5/072-01.jpg', 'displayImage_04');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-5/072-02.jpg', 'displayImage_04');"></a>
+												
+                                            </div>
+										</div>											
+                                         <!-- end image_switch_04 -->
+                                     </div>										 
+                                        
+                                    
+                                    
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                        <div style="height:16px; width:105px; float:right;" > <a href="03-5_detail.html"><img sty src="images/03_function/content/05_detail01.gif" alt="Image 1"></a></div>
+                                       <br>
+                                   <p>牌坊很容易讓人聯想到貞節牌坊，在中國社會中，貞節與忠義是公認的美德。牌坊的存在，深切的表現出中國固有文化的特質，立牌坊的用意除了表彰個人的道德外，教化的意義更加重大。清代是臺灣立坊最多的年代，但是外觀都大同小異。</p>
+								   <p>
+								   臺灣的牌坊多為「<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">四柱三間式</a>」，意思就是四根柱子，造成三個門的樣式。</p>
+								   <p>牌坊有記功坊、忠義坊、孝子坊、貞孝坊、節孝坊以及節烈坊，這些可以分為兩大類：一是入口型的牌坊，類似古代里坊制度的坊門，強調的只是空間入口的界定，一般多立在重要建築物前，除了作為入口標示，往往也具有表揚善者的功能。</p>
+								   <p>另一種則是旌表牌坊，旌表牌坊是傳統社會中特有的表揚建築，最大目的即是教化人心，多立於熱鬧大街或受表揚者住宅前。凡有優良事蹟者，經由社會上具公信力的人推薦，經過查證確認，即可由地方官上奏，並於奉旨後設立牌坊。</p>
+								   <p>
+								   根據清朝《欽定大清會典事例》，能受旌表而建坊者包括：熱心公益者、節烈孝順者、及得享耆壽者等。</p>
+								   <p>中國牌坊有石牌坊、木牌坊及琉璃坊三種，臺灣只有石牌坊，所以一般人稱「石坊」，其石材方面都是使用大陸福建所產的石材，其中泉州白石多用魚牌坊的主體；青斗石則因質地可細鑿且不易風化，所以多半在裝飾的位置。</p>
+								   <p>石坊可以說是建築物中最附有故事性；牌坊前四根柱子的前後皆有當時名人題的楹聯石雕文字，柱礎旁有固定作用的夾柱石，有的尚雕小石獅；中間上方的橫方雕有一對雲龍，各自張大嘴咬住橫坊，有象徵的效果，橫坊上有一石塊，陰刻著被表揚者的事蹟。石塊上方有另一片刻著石坊的性質，例如：孝子坊、紀功坊等。最上方立了一塊刻有「聖旨」的石片，表示立坊是需要由地方推薦，經過最高當局准許才可建立。</p>
+								   <p>
+								   清代臺灣立過石坊據文獻記載約有十四座，在造型上，臺灣早期可能缺乏優良石材，所以作法上不是很精細複雜。金門的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">邱良功母節孝坊</a>可以算是非常精工的作品，臺灣現存的石坊中，最簡單的是臺南的蕭氏節孝坊，另外新竹的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">楊氏節孝坊</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_04')">張氏節孝坊</a>、蘇氏節孝坊以及李氏孝子坊，在比例、雕工上算是上乘之作。</p>
+								   
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--content1頁面 結束-->
+                        
+                       <!--content2頁面-->
+                        <div class="content display-none" id="content2">
+                            
+                        </div><!--content2頁面 結束-->
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion05.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/03_function/side/popup0501.gif'); width: 391px; height: 198px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                                
+                                
+                               
+                            </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
+					</div><!--主內容區 結束-->
+				</div>
+			</div>
+		</div>
+    </div>
+    <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>

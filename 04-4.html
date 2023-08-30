@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣傳統建築欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/image-switch-button.css">
+    <link rel="stylesheet" href="css/lionModal.css">
+    <script>
+        // 按照頁面需求更換
+        const thisPage = '04_art';
+        const thisSide = 'side_default';
+
+      	const mainBackground = 'images/04_art/m01_bg.jpg';
+        const navButtonGroupImage = 'images/04_art/top01_04.jpg';
+        const navLogoImage = 'images/04_art/top01.gif';
+        const navBackgroundImage = 'images/04_art/top07.jpg';
+
+        const subLinkSpacerWidth = '165px';
+        const subLink01src = '04-1.html';
+        const subLink01Width = '71px';
+        const subLink02src = '04-2.html';
+        const subLink02Width = '37px';
+        const subLink03src = '04-3.html';
+        const subLink03Width = '37px';
+        const subLink04src = '04-4.html';
+        const subLink04Width = '37px';
+        const subLink05src = '04-5.html';
+        const subLink05Width = '53px';
+        const subLink06src = '04-6.html';
+        const subLink06Width = '70px';
+        const subLink07src = '';
+        const subLink07Width = '0px';
+    </script>
+    <style>
+        .display-none {
+            display: none;
+        }
+        .main-section {
+            position: relative;
+        }
+        .content {
+            width: 600px;
+            margin-left: 52px;
+            margin-right: 63px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+			/*height:310px;
+			overflow:auto;*/
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            display: block;
+            height: 240px;
+        }
+        .content-body p {
+            margin-left: 2px;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-image: url('images/04_art/left.gif');">
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <div class="main-section">
+                <include src="partial/nav.html"></include>
+                <div class="section" style="display: flex;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                        <style>
+                            .image_button {
+                                display: block;
+                                width: 94px;
+                                height: 20px;
+                                font-size: 0;
+                                margin-bottom: 1px;
+                            }                           
+
+                        </style>
+                        
+                    </div>
+                    
+                   <!--主要內容區-->
+                    <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
+                    
+                        <!--content1頁面-->
+                        <div class="content" id="content1">
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/04_art/content/01_icon02t.gif" alt="">
+                            </div>
+                            <div class="content-body" >
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                         <!-- image_switch_00預設 -->
+                                        <div id="image_switch_00" class="inline-image-switch">
+                                         <div class="image-container" >
+                                                <img id="displayImage_00" src="images/04_art/content/4-4/04_01pic00.jpg" alt="Image 1">
+                                            </div>
+                                            
+
+                                        </div>
+                                        <!-- end image_switch_00 -->
+                                        
+                                        <!-- image_switch_01 -->
+                                        <div id="image_switch_01" class="inline-image-switch display-none">
+                                             <div class="image-container">
+                                                <img id="displayImage_01" src="images/04_art/content/4-4/021-19.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText">石獅(臺北保安宮)</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/04_art/content/4-4/021-19.jpg', 'displayImage_01'); changeText('石獅(臺北保安宮)', 'displayText');"></a>
+												<a href=" " class="isb_02" onclick="changeImage('images/04_art/content/4-4/127-18.jpg', 'displayImage_01'); changeText('石獅(三峽祖師廟)', 'displayText');"></a>
+                                            </div>          
+                                        </div>
+                                        <!-- end image_switch_01 -->
+                                        <!-- image_switch_X -->
+                                        ***
+                                        <!-- end image_switch_X -->
+                                       
+                                    </div>
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                <p>石雕是一座寺廟精美的指標，臺灣寺廟史上有許多例子顯示原來木結構為主的寺廟，因為信徒捐獻石雕，而逐漸改建成為具有豐富石垛的寺廟。通常，寺廟的前殿石雕最多，來訪者及善男信女很容易看到石雕，而廟門左右的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">石獅</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">石龍柱</a>及麒麟等亦都以質地較好的石材所雕成。石匠師的地位有時不下於大木匠師，因為石匠掌握著地面重要尺寸。從<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">石階、石砛</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">地牛</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">櫃檯腳</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">御路</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">柱珠</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">門枕石</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">抱鼓石</a>乃至石柱、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">石楣</a> 等都屬於石匠施工的範圍。<br />
+      <br />
+      　　臺灣寺廟的石材，在清代初期多自福建、廣東運來，包括所謂泉州白石、青草石或漳州青石。到了清代中葉，開始運用本地所產石材，例如北部所產觀音山石，或山區的砂岩。臺灣的石材質地不如泉州花崗石堅硬，所以只能作牆基或舖地面。如果要雕石獅或龍柱，大多仍取自閩、粵。不過也有少數例子，如新竹北埔慈天宮的二十四孝石柱，用的是當地所產的砂岩，歷經百年而人物形貌仍然清晰可辨。<br />
+      <br />
+    　　石匠師雕琢石料，依深淺與層次差異，可以區分為以下七種雕法，運用到不同的部位。</p>
+    <p>•  <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">素平雕法</a> ：將石面雕平可細分為單遍鑿、兩遍鑿或三遍鑿。鑿多遍則很平，也可以加水磨亮有如鏡。例如台南孔廟的抱鼓石。</p>
+    <p>•  <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">水磨沈花</a> ：在光亮的石面上雕刻陰紋圖案，俗稱為陰刻，凹入線條也可打細點，作深淺明暗之分， 臺 北龍山寺前殿即有豐富的水磨沈花雕法。</p>
+    <p>•  <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">壓地隱起 </a>：在磨平的石面上，將圖案以外的「地」鑿凹，以突顯圖案本身。台北三峽的清水祖師廟護室牆壁最多，水準奇高，乃出自畫家李梅樹之設計。</p>
+    <p>•  <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">剔地起凸 </a>：將圖案雕出圓體，其餘的地全部凹入，可以突顯主題，也稱為浮雕。一般寺廟常見的麒麟垛或龍虎垛即屬這種雕法。北港朝天宮的御路即用剔地起凸。</p>
+    <p>•  <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">內枝外葉 </a>：與上述的剔地起凸相似，但更強調凸出與凹入的對比，並且將層次表現出來，顧名思義，即將葉子浮雕出來，而枝幹深藏於內。如果枝幹太細，很容易折斷。近代有些龍柱即採內枝外葉雕法，如 臺 北龍山寺正殿。</p>
+    <p>•  <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">雙面見光 </a>：有些門窗採用內外兩面皆施雕之法，抱鼓石也屬於雙面見光雕法。</p>
+    <p>•  <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">四面見光 </a>：即四周圍皆施雕之法，如石獅、石龍柱或石雕神像。</p>
+    <p>　　以上七種雕法要穿插運用，才能使一座廟宇的牆面顯得主從分明，輕重有別。一般而言，地面為「素平」雕法，地牛與櫃台腳用「剔地起凸」，抱鼓石及石門枕用「雙面見光」或「剔地起凸」，麒麟垛用「剔地起凸」，腰垛用「水磨沈花」，窗子用「內枝外葉」或「雙面見光」，龍柱用「四面見光」，門楣用「剔地起凸」，御路也用「剔地起凸」。<br />
+      <br />
+      福建泉州惠安因盛產質優的白石及青草石，打石為業者眾，所以名匠輩出。臺灣的寺廟大多聘請惠安匠師來台承雕。 最著名的有<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">臺北龍山寺</a>、臺北青山宮、新竹城隍廟、竹南慈裕宮、彰化南瑤宮、彰化威惠宮、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">鹿港龍山寺</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_0x')">鹿港天后宮</a>、嘉義城隍廟、北港朝天宮、新港奉天宮、臺南南鯤鯓代天府及 臺 南大天后宮等皆可欣賞到最優秀的石雕傑作。</p>
+      
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--content1頁面 結束-->
+                        
+                        <!--content2頁面-->
+                        <div class="content display-none" id="content2">
+                            
+                        </div><!--content2頁面 結束-->
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/04_art/side/lion04.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        </div>
+                        <div id="lionModal" class="modal">
+                            <div class="modal-content" style="background-image: url('images/04_art/side/popup0401.gif'); width: 391px; height: 298px;">
+                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                               
+                            </div>
+                        </div>
+                        <!-- end 獅子問答區 -->
+					</div><!--主內容區 結束-->
+				</div>
+			</div>
+		</div>
+    </div>
+    <script src="js/content.js"></script>
+    <script src="js/lionModal.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const mainSection = document.getElementById("main-section")
+            mainSection.style.backgroundImage = "url('" + mainBackground + "')";
+        }
+    </script>
+</body>
+</html>
