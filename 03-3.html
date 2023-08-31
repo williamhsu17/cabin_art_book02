@@ -78,7 +78,7 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/03_function/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -96,26 +96,29 @@
                             #link_02 {
                                 background-image: url("images/03_function/side/03_icon02a.gif");
                             }
-                            #link_02:hover {
+                            /* #link_02:hover {
                                 background-image: url("images/03_function/side/03_icon02b.gif");
-                            }
+                            } */
 							                            		                            #link_03 {
                                 background-image: url("images/03_function/side/03_icon03a.gif");
                             }
                             #link_03:hover {
                                 background-image: url("images/03_function/side/03_icon03b.gif");
                             }
-							
+							.sub_image_button img {
+                                margin-left: 10px;
+                                margin-right: 2px;
+                            }
 
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
                             <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"></a>
-                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"></a>
-                            <a href="#" class="" id="link_02-1" onclick="showContent('content2')" style="font-size:12px"> 林家花園</a></br>
-                            <a href="#" class="" id="link_02-3" onclick="showContent('content2-2')" style="font-size:12px"> 夢蝶園</a></br>
-                            <a href="#" class="" id="link_02-3" onclick="showContent('content2-2')" style="font-size:12px"> 萊園</a></br>
-                            <a href="#" class="" id="link_02-4" onclick="showContent('content2-2')" style="font-size:12px"> 吳鸞旂庭園</a>
-                            <a href="#" class="image_button" id="link_03" onclick="showContent('content3')"></a>
+                            <a href="#" class="image_button" id="link_02" style="pointer-events: none;"></a>
+                            <a href="#" class="sub_image_button" id="link_02-1" onclick="showContent('content2')" style="font-size:12px"><img src="images/03_function/side/icon_dot.gif" alt="">林家花園</a></br>
+                            <a href="#" class="sub_image_button" id="link_02-3" onclick="showContent('content3')" style="font-size:12px"><img src="images/03_function/side/icon_dot.gif" alt="">夢蝶園</a></br>
+                            <a href="#" class="sub_image_button" id="link_02-3" onclick="showContent('content4')" style="font-size:12px"><img src="images/03_function/side/icon_dot.gif" alt="">萊園</a></br>
+                            <a href="#" class="sub_image_button" id="link_02-4" onclick="showContent('content5')" style="font-size:12px"><img src="images/03_function/side/icon_dot.gif" alt="">吳鸞旂庭園</a>
+                            <a href="#" class="image_button" id="link_03" onclick="showContent('content6')"></a>
                             
                         </div>
                     </div>
@@ -139,8 +142,25 @@
                         
                         <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                        
+                            <p>content2</p>
                         </div><!--content2頁面 結束-->
+                        <!--content3頁面-->
+                        <div class="content display-none" id="content3">
+                            <p>content3</p>
+                        </div><!--content3頁面 結束-->
+                        <!--content4頁面-->
+                        <div class="content display-none" id="content4">
+                            <p>content4</p>
+                        </div><!--content4頁面 結束-->
+                        <!--content5頁面-->
+                        <div class="content display-none" id="content5">
+                            <p>content5</p>
+                        </div><!--content5頁面 結束-->
+                        <!--content6頁面-->
+                        <div class="content display-none" id="content6">
+                            <p>content6</p>
+                        </div><!--content6頁面 結束-->
+                        
                         <!-- 獅子問答區 -->
                         <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion03.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
                         </div>
