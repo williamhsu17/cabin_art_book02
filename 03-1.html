@@ -114,7 +114,7 @@
                                        
                                        <!-- image_switch_00 -->
                                         <div id="image_switch_00" class="inline-image-switch">
-                                            <div class="image-container"> <a href="03-1_detail.html"><img id="displayImage" sty src="images/03_function/content/3-1/house.gif" alt="Image 1"></a>
+                                            <div class="image-container"> <a href="03-1_detail.html" onclick="showContent('content2')"><img id="displayImage" sty src="images/03_function/content/3-1/house.gif" alt="Image 1"></a>
                                             </div>
 
                                         </div>
@@ -223,7 +223,7 @@
                                     </div>
                                   <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
                                         
-                                       <div style="height:20px; width:95px; float:right;" > <a href="03-1_detail.html"><img sty src="images/03_function/content/01_detail01.gif" alt="Image 1"></a></div>
+                                       <div style="height:20px; width:95px; float:right;" > <a href="03-1_detail.html" onclick="showContent('content2')"><img sty src="images/03_function/content/01_detail01.gif" alt="Image 1"></a></div>
 									   
 									<br>
 									<p>住宅是人們最熟悉的建築，某方面與「家」是同義語。住宅可是為加除盛衰之指標，因此傳統觀念中，一旦成功必要回家鄉起大宅。臺灣住宅建築有三十多種不同型態，不過，基本上以三合院及四合院為單位擴充。 </p>
@@ -262,7 +262,53 @@
                             </div>
                        
                         </div><!--content1頁面 結束-->
-                        
+                        <!--content2頁面  這是圖片切換器-->
+                        <div class="content display-none" id="content2" style="margin-left: 0px; margin-right: 0px;">
+                            <style>
+                                .image_switch_container {
+                                    width: 669px;
+                                    height: 318px;
+                                    background-image: url('images/03_function/content/3-1/house_b (1).png');
+                                    background-size: 669px, 318px;
+                                    position: relative;
+                                }
+                                .image_switch_button_group {
+                                    position: absolute;
+                                    /* background-color: rgba(0, 0, 0, 0.5); */
+                                    width: 125px;
+                                    height: 154px;
+                                    right: 74px;
+                                    top: 137px;
+                                }
+                                .image_switch_button {
+                                    display: block;
+                                    width: 125px;
+                                    height: 22px;
+                                }
+                                .image_switch_button:hover {
+                                    background-color: rgba(256, 256, 256, 0.5);
+                                }
+                            </style>
+                            <div class="image_switch_container" id="image_switch_display">
+                                <div class="image_switch_button_group">
+                                    <a href="" class="image_switch_button" id="image_switch_button_01" onclick="switchImage('images/03_function/content/3-1/house_b (1).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_02" onclick="switchImage('images/03_function/content/3-1/house_b (2).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_03" onclick="switchImage('images/03_function/content/3-1/house_b (3).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_04" onclick="switchImage('images/03_function/content/3-1/house_b (4).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_05" onclick="switchImage('images/03_function/content/3-1/house_b (5).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_06" onclick="switchImage('images/03_function/content/3-1/house_b (6).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_07" onclick="showContent('content1')"></a>
+                                </div>
+                            </div>
+                            <script>
+                                function switchImage(imagePath) {
+                                    // Hide all content divs first
+                                    event.preventDefault();
+                                    document.getElementById('image_switch_display').style.backgroundImage = "url('" + imagePath + "')";
+                                }
+                            </script>
+                        </div>
+                        <!--content2頁面 結束-->
                        
                         <!-- 獅子問答區 -->
                         <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion01.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
