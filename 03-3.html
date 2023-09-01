@@ -99,7 +99,7 @@
                             /* #link_02:hover {
                                 background-image: url("images/03_function/side/03_icon02b.gif");
                             } */
-							                            		                            #link_03 {
+							#link_03 {
                                 background-image: url("images/03_function/side/03_icon03a.gif");
                             }
                             #link_03:hover {
@@ -109,7 +109,10 @@
                                 margin-left: 10px;
                                 margin-right: 2px;
                             }
-
+                           	#link_04movie img {
+                                background-image: url("images/01_history/content/movie.gif");
+                            }
+								
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
                             <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"></a>
@@ -133,33 +136,470 @@
                             </div>
                             <div class="content-body" style=" overflow: auto;">
                              
-                              <p>臺灣庭園方面，有其客觀環境因素。庭園為較高層面文化的產物，無論就空間結構之特性或組織形態之品味視之，本應有很多相通之處。</p>
-    <p>　　事實上，從 新竹潛園（目前已不存在） 可以發現其佈局比較靈巧，可以反映出臺灣士大夫階級的心態，第一是懷念故鄉的山水景物，因此有了興建庭園的念頭，這可能是臺灣的建造庭園特有原因，來此開墾定居或被派來此任官的人，多少需要有覺悟的勇氣，所以特別懷念故鄉，使得他們必須將記憶中家鄉景色具體而微的搬來，建在自己的庭園裡，藉以隨時警惕自己不忘根，不忘本。；第二是以詩文詞句為模擬而想像創造出來的庭園設施景觀，藉以陶冶性情為由。</p>
-    　　
-    <p>臺灣的文化形成期短促，士大夫對於所謂中國江南的文人庭園有部分的看法不同，清末輾轉於官商之間的這些豪族之中，並沒有真正達到類似內地的世家水準的，與中國傳統的文人逸士對於庭園之看法有一點距離，更不會去追求日本「禪園」的境界了（日治後，有些庭園卻深受日本園影響）。 </p>
+                              <p style="margin-top: 20px;">臺灣庭園方面，有其客觀環境因素。庭園為較高層面文化的產物，無論就空間結構之特性或組織形態之品味視之，本應有很多相通之處。</p>
+							  <p>事實上，從新竹潛園（目前已不存在）可以發現其佈局比較靈巧，可以反映出臺灣士大夫階級的心態，第一是懷念故鄉的山水景物，因此有了興建庭園的念頭，這可能是臺灣的建造庭園特有原因，來此開墾定居或被派來此任官的人，多少需要有覺悟的勇氣，所以特別懷念故鄉，使得他們必須將記憶中家鄉景色具體而微的搬來，建在自己的庭園裡，藉以隨時警惕自己不忘根，不忘本。；第二是以詩文詞句為模擬而想像創造出來的庭園設施景觀，藉以陶冶性情為由。</p>
+							  <p>臺灣的文化形成期短促，士大夫對於所謂中國江南的文人庭園有部分的看法不同，清末輾轉於官商之間的這些豪族之中，並沒有真正達到類似內地的世家水準的，與中國傳統的文人逸士對於庭園之看法有一點距離，更不會去追求日本「禪園」的境界了（日治後，有些庭園卻深受日本園影響）。 </p>
                             </div>
                         </div><!--content1頁面 結束-->
                         
                         <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                            <p>content2</p>
+						 <div class="content-title">
+                                <img class="content-title-image" src="images/03_function/content/03_icon02ta.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                        
+                                        <!-- image_switch_03同預設 -->
+                                        <div id="image_switch_03" class="inline-image-switch">
+                                             <div class="image-container">
+                                                <img id="displayImage_03" src="images/03_function/content/3-3/3-3-2/024-09.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText_03">來青閣（板橋林本源園邸）</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-2/024-09.jpg', 'displayImage_03'); changeText('來青閣（板橋林本源園邸）', 'displayText_03');"></a>
+												<a href=" " class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-2/024-02.jpg', 'displayImage_03'); changeText('汲古書屋（板橋林本源園邸）', 'displayText_03');"></a>
+												<a href=" " class="isb_03" onclick="changeImage('images/03_function/content/3-3/3-3-2/024-22.jpg', 'displayImage_03'); changeText('窗花（板橋林本源園邸）', 'displayText_03');"></a>
+                                            </div>  
+											<div style="margin-top:5px">
+												<a href="https://youtu.be/lD1jbPYh4N0" target="_blank" id="link_04movie"><img  style=" height:22px; width:78px" class="image_button" alt="link_04movie"></a></div>
+                                        </div>
+                                        <!-- end image_switch_03同預設 -->
+                                        
+                                        <!-- image_switch_01 -->
+                                        <div id="image_switch_01" class="inline-image-switch display-none">
+                                          <div class="image-container">
+                                                <img id="displayImage_01" src="images/03_function/content/3-3/3-3-2/c03_p01a.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺中筱雲山莊</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p01a.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p01b.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_03" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p01c.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_04" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p01d.jpg', 'displayImage_01');"></a>
+												<a href="" class="isb_05" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p01e.jpg', 'displayImage_01');"></a>
+                                            </div>                                     
+                                        </div>
+                                        <!-- end image_switch_01 -->
+										<!-- image_switch_02 -->
+                                        <div id="image_switch_02" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_02" src="images/03_function/content/3-3/3-3-2/c03_p02a.jpg" alt="Image 1">
+                                            </div>
+                                            <p>屏東萬巒五溝水劉氏庭園</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p02a.jpg', 'displayImage_02');"></a>
+												<a href=" " class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p02b.jpg', 'displayImage_02');"></a>
+												<a href=" " class="isb_03" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p02c.jpg', 'displayImage_02');"></a>
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_02 -->
+										 <!-- image_switch_03 --> 
+										 <div id="image_switch_03" class="inline-image-switch display-none">
+                                             <div class="image-container">
+                                                <img id="displayImage_03" src="images/03_function/content/3-3/3-3-2/024-09.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText_03">來青閣（板橋林本源園邸）</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-2/024-09.jpg', 'displayImage_03'); changeText('來青閣（板橋林本源園邸）', 'displayText_03');"></a>
+												<a href=" " class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-2/024-02.jpg', 'displayImage_03'); changeText('汲古書屋（板橋林本源園邸）', 'displayText_03');"></a>
+												<a href=" " class="isb_03" onclick="changeImage('images/03_function/content/3-3/3-3-2/024-22.jpg', 'displayImage_03'); changeText('窗花（板橋林本源園邸）', 'displayText_03');"></a>
+                                            </div>  
+											<div style="margin-top:5px">
+												<a href="https://youtu.be/lD1jbPYh4N0" target="_blank" id="link_04movie"><img  style=" height:22px; width:78px" class="image_button" alt="link_04movie"></a></div>
+                                        </div>
+                                         <!-- end image_switch_03 -->
+										 <!-- image_switch_04 -->
+										 <div id="image_switch_04" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_04" sty src="images/03_function/content/3-3/3-3-2/024-07.jpg" alt="Image 1">
+                                            </div>
+                                            <p>觀稼樓（板橋林本源園邸）</p>
+																						
+                                        </div>
+                                         <!-- end image_switch_04 -->
+										 <!-- image_switch_05 --> 
+										 <div id="image_switch_05" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_05" sty src="images/03_function/content/3-3/3-3-2/024-02.jpg" alt="Image 1">
+                                            </div>
+                                            <p>汲古書屋（板橋林本源園邸）</p>
+
+                                        </div>
+                                         <!-- end image_switch_05 -->
+										 <!-- image_switch_06 --> 
+										 <div id="image_switch_06" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_06" sty src="images/03_function/content/3-3/3-3-2/024-11.jpg" alt="Image 1">
+                                            </div>
+                                            <p>方鑑齋（板橋林本源園邸）</p>
+											  <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-2/024-11.jpg', 'displayImage_06');"></a>
+												<a href=" " class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-2/024-11 (1).jpg', 'displayImage_06');"></a>
+                                            </div>                
+                               
+                                        </div>
+                                         <!-- end image_switch_06 -->
+										 <!-- image_switch_07 --> 
+										 <div id="image_switch_07" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_07" sty src="images/03_function/content/3-3/3-3-2/024-08.jpg" alt="Image 1">
+                                            </div>
+                                            <p>來青閣（板橋林本源園邸）</p>
+											  <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-2/024-08.jpg', 'displayImage_07');"></a>
+												<a href=" " class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-2/024-09.jpg', 'displayImage_07');"></a>
+                                            </div> 
+										
+                                        </div>
+                                         <!-- end image_switch_07 -->
+										 <!-- image_switch_08 --> 
+										 <div id="image_switch_08" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_08" sty src="images/03_function/content/3-3/3-3-2/024-13.jpg" alt="Image 1">
+                                            </div>
+                                            <p>定靜堂（板橋林本源園邸）</p>
+                                        </div>
+                                         <!-- end image_switch_08 -->
+										 
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                        
+                                        <div style="height:20px; width:95px; float:right;" > <a href="#" onclick="showContent('content7')"><img sty src="images/03_function/content/03_detail01.gif" alt="Image 1"></a></div>
+
+                                       <br>
+									
+                                    
+                                  <p>我們臺灣著名的庭園有臺南一元子園、臺南陳永華別墅、臺南鄭經之母董太夫人的北園別館、臺南夢蝶園、臺南歸園、臺南紫春園、新竹北郭園、新竹潛園、臺中<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">筱雲山莊附屬花園</a>、臺北圓山太古巢、板橋林本源庭園、臺中霧峰萊園、臺中吳鸞旂庭園、嘉義大林江宅省園、屏東<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">萬巒五溝水劉氏庭園</a>。</p>
+								  <p>
+								  <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">林家花園</a>可以說富有名氣的一座庭園，林本源家約在清乾隆四十三年其始祖林應寅來臺，暫寓居當時的通商要埠新莊，不久回居內地，但其子林平侯時年十六歲，卻留在台灣，頗富經商才能，成為台灣首富。年四十時衣錦還鄉，納捐而獲得一官職，熱心社會公益，道光年間台灣興築淡水廳城、孔廟及鳳山城牆時，皆大力捐款。 </p>
+								  <p>嘉慶與道光年間，臺北盆地漳泉械鬥頻繁，地方動盪不安，林平侯舉家遷往大溪。至道光二十四年林平侯過世，林家第二代共居不分家，為人所樂道。為了收租之便，在板橋建造了弼益館。兩兄弟漸成為臺北盆地漳裔移民之領導者，為久居之計，開始在旁邊興建三落大厝，咸豐三年（西元 1853 年）始落成，以「飲水本思源」為稱號。</p>
+								  <p>								  三落大厝為有別於後來又蓋的五落大厝，林家人便稱之為三落舊大厝。這座號稱「大厝九包五，三落百二門」的精美住宅，使用最好的木材作樑柱，門窗雕刻精細有加，牆上又嵌上不同圖案的花磚及磚刻，是臺灣目前所存的清代大宅中最為華麗的。它的前面鑿有半月形水池、前埕。林家的第三代在光緒年間，林維源屢捐海防軍費，被李鴻章上奏表揚，獲御賜「樂善好施」匾。現三落大厝前尚保存一塊「聖旨」牌，即為石坊最上層之物。</p>
+								  <p>當時新舊大厝及花園合起來的面積超過五萬多平方公尺，幾乎佔掉板橋城的一半，規模之大，可想而知。林維源時期，主要居住在五落新大厝，接待客人之處為白花廳，內有戲台，建築頗具特色。林家社會公益亦不落人後，因此獲賜「積善餘慶」匾以及「尚義可風」匾，這兩個古匾現在仍高懸在三落大厝廳堂門楣上。</p>
+								  <p>庭園的建造應始於國華及國芳時期，當咸豐初年舊大厝建成時，花園即已略具規模，其中<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_04')">觀稼樓</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_05')">汲古書屋</a>及<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_06')">方鑑齋</a>可能已出現。後來繼續擴建<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_07')">來青閣</a>及<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_08')">定靜堂</a>，從光緒十四年至十九年，以巨資將迴廊牆園中大小建築連接起來，形成明確而刻意安排的遊賞路徑。庭園全部完工後的第三年，臺灣淪為日本殖民統治，林維源舉家遷回廈門，只留下少數族人居住，庭園逐漸荒廢，至近年大事整修，才恢復原貌。</p>
+									   
+                                    </div>
+                                </div>
+                            </div>
                         </div><!--content2頁面 結束-->
+                        
+                        
                         <!--content3頁面-->
                         <div class="content display-none" id="content3">
-                            <p>content3</p>
+                            							<div class="content-title">
+                                <img class="content-title-image" src="images/03_function/content/03_icon02tb.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                        
+                                        <!-- image_switch_09預設2 -->
+                                        <div id="image_switch_09" class="inline-image-switch">
+                                            <div class="image-container">
+                                                <img id="displayImage_09" src="images/03_function/content/3-3/3-3-2/109-07.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText_09">夢蝶園</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-2/109-07.jpg', 'displayImage_09'); changeText('夢蝶園', 'displayText_09');"></a>
+												<a href=" " class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-2/109-03.jpg', 'displayImage_09'); changeText('法華寺', 'displayText_09');"></a>
+                                                <a href=" " class="isb_03" onclick="changeImage('images/03_function/content/3-3/3-3-2/109-02.jpg', 'displayImage_09'); changeText('法華寺', 'displayText_09');"></a>
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_09預設2 -->
+                                      
+                                    </div>
+                                    
+                                    
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">							
+                                    
+                                  <p>另外像是夢蝶園（目前已不存在）也是庭園中出色的佳作；夢蝶園是李茂春於西元 1664 年所築，即現今之臺南法華寺。永曆十八年，茂春來到台灣，卜居在永康里，築一間草廬稱夢蝶。參軍陳永華特為之撰了一篇碑記，李茂春於此親手栽梅種竹。康熙二十二年改成佛寺，供奉釋迦牟尼佛。這個庭園的建築雖已片瓦不存，但其環境則沒有改變。依照臺灣最早的志書，由〈臺灣府志〉得知夢蝶園本為茅齋，後改成陶瓦，清流修竹。後來於西元 1683 年才由僧人集資改為佛寺的。目前法華寺亦有不少的竹林，我們可推斷當年李氏是以竹林茅舍為園的。</p>
+								  
+                                    </div>
+                                </div>
+                            </div>
                         </div><!--content3頁面 結束-->
+                        
+                        
+                        
                         <!--content4頁面-->
                         <div class="content display-none" id="content4">
-                            <p>content4</p>
+                           
+                                                     <div class="content-title">
+                                <img class="content-title-image" src="images/03_function/content/03_icon02tc.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                        
+                                        <!-- image_switch_10預設3 -->                                        <div id="image_switch_10" class="inline-image-switch">
+                                            <div class="image-container">
+                                                <img id="displayImage_10" sty src="images/03_function/content/3-3/3-3-2/c03_p03.jpg" alt="Image 1">
+                                            </div>
+                                            <p>霧峰萊園 木棉橋</p>                                  
+                                        </div>
+                                         <!-- end image_switch_10預設3 -->
+                                         
+										<!-- image_switch_11 -->
+                                        <div id="image_switch_11" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_11" src="images/03_function/content/3-3/3-3-2/c03_p04.jpg" alt="Image 1">
+                                            </div>
+                                            <p>霧峰萊園 五桂樓</p>
+                                   
+                                        </div>
+                                        <!-- end image_switch_11 -->
+										 <!-- image_switch_12 --> 
+										 <div id="image_switch_12" class="inline-image-switch display-none">
+                                             <div class="image-container">
+                                                <img id="displayImage_12" src="images/03_function/content/3-3/3-3-2/c03_p05.jpg" alt="Image 1">
+                                            </div>
+                                            <p>霧峰萊園 荔枝島</p>
+
+                                        </div>
+                                         <!-- end image_switch_12 -->
+										 <!-- image_switch_13 -->
+										 <div id="image_switch_13" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_13" sty src="images/03_function/content/3-3/3-3-2/c03_p06.jpg" alt="Image 1">
+                                            </div>
+                                            <p>霧峰萊園 夕佳亭</p>
+																					
+                                        </div>
+                                         <!-- end image_switch_13 -->
+                                         
+                                      
+                                    </div>
+                                    
+                                    
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">							
+                                    
+                                  <p>再一有名的例子是萊園（目前已不存在），其為霧峰林氏所建的庭園，林氏在清代台灣的歷史上佔有重要的地位，在台灣中部為最大的豪族。</p>
+								  <p>
+								  萊園為利用天然山谷之形勢建造而成。面積相當遼闊，園中的重要設施計有：<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_10')">木棉橋</a> ，此橋原為木橋，在西元  1920 年左右改為水泥橋；<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_11')">五桂樓</a>，為全園之中心，以其前有五株桂樹而得名。原用途為觀劇之處，但於日治時期重修，與原來形態不同，現為洋風及和風之混合式的建築；<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_12')">荔枝島</a>，池中有小島，島上有亭，現存物也已於日據時期改為水泥構造；考槃軒，為僅次於五桂樓之第二大建築物，可能日治時期就倒塌了；望月峰，千步蹬，<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_13')">夕佳亭</a>等庭園設施，近年改建為萊園中學；墓園也在庭園內之小山上，日治末年曾大修建過，水泥匠之技術相當高明，完全模仿木造建築建造。</p>
+								  <p>林文欽之子林獻堂為了社交上的理由也屢加修建，因之萊園在今天看來甚少有清代建築之色彩了。不過就其配置情況來看，與林本源庭園比較，是迥然不同的手法，予人的感覺是天然多於人工。</p>
+								  
+                                    </div>
+                                </div>
+                            </div>
+                           
+                           
                         </div><!--content4頁面 結束-->
+                        
+                        
                         <!--content5頁面-->
                         <div class="content display-none" id="content5">
-                            <p>content5</p>
+                            <div class="content-title">
+                                <img class="content-title-image" src="images/03_function/content/03_icon02td.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                        
+                                        <!-- image_switch_14預設4 -->
+                                        <div id="image_switch_14" class="inline-image-switch">
+                                            <div class="image-container">
+                                                <img id="displayImage_14" src="images/03_function/content/3-3/3-3-2/c03_p06_00a.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺中公園內門樓</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p06_00a.jpg', 'displayImage_14');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p06_00b.jpg', 'displayImage_14');"></a>
+                                                
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_14預設4 -->
+										
+										<!-- image_switch_14 -->
+                                        <div id="image_switch_14" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_14" src="images/03_function/content/3-3/3-3-2/c03_p06_00a.jpg" alt="Image 1">
+                                            </div>
+                                            <p>臺中公園內門樓</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p06_00a.jpg', 'displayImage_14');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-2/c03_p06_00b.jpg', 'displayImage_14');"></a>
+                                                
+                                            </div>                                    
+                                        </div>
+                                        <!-- end image_switch_14 -->
+                                      
+                                    </div>
+                                    
+                                    
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">							
+                                    
+                                  <p>臺中吳鸞旂庭園（現已不存在）是清末臺中富紳吳鸞旂在台中城南門附近自宅旁建了一個庭園，直到日據時期，那裡還叫作花園町。吳氏曾在光緒十五年起督建臺中城，到十七年只完成北門到西門一帶的工程。可惜因為近年拓寬馬路，大部份被毀了。宅前有小河作為屏障，現已填平，<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_14')">門樓遷至臺中公園內</a>。</p>
+								  <p>庭園依附在大宅的右護龍外側，中闢有大水池，池中有拱橋橫跨，池周環植以樹，並圍有花磚牆以分內外，依目前的情況推斷，水池可能即為庭園之重心，水榭一邊接右護龍，另一邊則懸挑於水中，榭的本身為亭子的形式，屋頂為歇山式，這種作法與台南紫春園之作法頗為接近。</p>
+								  
+                                    </div>
+                                </div>
+                            </div>
                         </div><!--content5頁面 結束-->
+                        
+                        
+                        
                         <!--content6頁面-->
                         <div class="content display-none" id="content6">
-                            <p>content6</p>
+                           <div class="content-title">
+                                <img class="content-title-image" src="images/03_function/content/03_icon03t.gif" alt="">
+                            </div>
+                            <div class="content-body">
+                                <div style="display: flex;">
+                                    <div class="image_section mt-3 mr-3" style="width: 200px;">
+                                        
+                                        <!-- image_switch_15 預設5--> 
+                                        <div id="image_switch_15" class="inline-image-switch">
+                                          <div class="image-container">
+                                                <img id="displayImage_15" src="images/03_function/content/3-3/3-3-3/024-21.jpg" alt="Image 1">
+                                            </div>
+                                            <p>庭園遊賞（板橋林本源園邸）</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-3/024-21.jpg', 'displayImage_15);"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-3/024-04.jpg', 'displayImage_15');"></a>
+                                                <a href="" class="isb_03" onclick="changeImage('images/03_function/content/3-3/3-3-3/024-05.jpg', 'displayImage_15');"></a>
+                                                
+                                            </div>                                     
+                                        </div>
+										<!-- end image_switch_15預設5 -->
+										
+										<!-- image_switch_15--> 
+                                        <div id="image_switch_15" class="inline-image-switch display-none">
+                                          <div class="image-container">
+                                                <img id="displayImage_15" src="images/03_function/content/3-3/3-3-3/024-21.jpg" alt="Image 1">
+                                            </div>
+                                            <p>庭園遊賞（板橋林本源園邸）</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-3/024-21.jpg', 'displayImage_15);"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-3/024-04.jpg', 'displayImage_15');"></a>
+                                                <a href="" class="isb_03" onclick="changeImage('images/03_function/content/3-3/3-3-3/024-05.jpg', 'displayImage_15');"></a>
+                                                
+                                            </div>                                     
+                                        </div>
+										<!-- end image_switch_15 -->
+										<!-- image_switch_16 -->
+                                        <div id="image_switch_16" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_16" src="images/03_function/content/3-3/3-3-3/024-01.jpg" alt="Image 1">
+                                            </div>
+                                            <p>亭（板橋林本源園邸 ─ 開軒一笑亭）</p>
+                                   
+                                        </div>
+                                        <!-- end image_switch_16 -->
+										 <!-- image_switch_17 --> 
+										 <div id="image_switch_17" class="inline-image-switch display-none">
+                                             <div class="image-container">
+                                                <img id="displayImage_17" src="images/03_function/content/3-3/3-3-3/024-14.jpg" alt="Image 1">
+                                            </div>
+                                            <p>榭（板橋林本源園邸 ─ 月波水榭）</p>
+
+                                        </div>
+                                         <!-- end image_switch_17 -->
+										 <!-- image_switch_18 -->
+										 <div id="image_switch_18" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_18" sty src="images/03_function/content/3-3/3-3-3/024-07.jpg" alt="Image 1">
+                                            </div>
+                                            <p>樓（板橋林本源園邸 ─ 觀稼樓）</p>
+																					
+                                        </div>
+                                         <!-- end image_switch_18 -->
+										 <!-- image_switch_19 --> 
+										 <div id="image_switch_19" class="inline-image-switch display-none">
+                                             <div class="image-container">
+                                                <img id="displayImage_19" src="images/03_function/content/3-3/3-3-3/024-08.jpg" alt="Image 1">
+                                            </div>
+                                            <p>閣（板橋林本源園邸 ─ 來青閣）</p>
+
+                                        </div>
+                                         <!-- end image_switch_19 -->
+										 <!-- image_switch_20 -->
+										 <div id="image_switch_20" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_20" sty src="images/03_function/content/3-3/3-3-3/c03_p07a.jpg" alt="Image 1">
+                                            </div>
+                                            <p id="displayText_20">小徑（板橋林本源園邸）</p>
+											   <div class="button-container">
+                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-3/3-3-3/c03_p07a.jpg', 'displayImage_20); changeText('小徑（板橋林本源園邸）', 'displayText_20');"></a>
+                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-3/3-3-3/c03_p07b.jpg', 'displayImage_20'); changeText('小徑（板橋林本源園邸）', 'displayText_20');"></a>
+                                                <a href="" class="isb_03" onclick="changeImage('images/03_function/content/3-3/3-3-3/024-18.jpg', 'displayImage_20'); changeText('遊廊（板橋林本源園邸）', 'displayText_20');"></a>
+                                                
+                                            </div> 
+																					
+                                        </div>
+                                         <!-- end image_switch_20 -->
+                                         
+                                      
+                                    </div>
+                                    
+                                    
+                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">							
+                                    
+                                  <p>臺灣庭園所著重之內容取捨，與入世通俗潮流為主因以及本地環境有關。構成庭園之要素有花木、水泉、山石、道路、建築物及其他附屬設施，這幾種元素之巧妙組合即能有成功的空間組織。 </p>
+								  <p>水泉的使用有兩種，靠近山邊如萊園者則築堤以聚水，而城市裡的庭園如紫春園、潛園、北廓園及板橋林園則引自附近溪流或護城河。</p>
+								  <p> 臺灣庭園對於石並無特殊偏好，大抵上是以疊置手法堆成一座山，作為視界之端景或權充為對外的高土牆之一部份（如臺南紫春園及板橋林本源園邸），此種手法似乎在閩南一帶為一種貫用的流行手法，石之運用於中國庭園之中為一最難也最重要的元素。</p>
+								  <p>
+								  至於庭內的建築物，臺灣庭園中仍以<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_16')">亭</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_17')">榭</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_18')">樓</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_19')">閣</a>為主。亭之作法有方形、圓形及三角形等之變化；水榭很流行，大概是南方酷熱的氣候，使得人們很需要一個臨水亭子，取其涼意也；樓及閣都是園中份量較大的建築物，依其建造年代不同，也有多樣反映流行的樣式。園中的花木、水泉、山石與建築物之連貫，就靠<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_20')">小徑或遊廊</a>來串通。</p>
+								  
+                                    </div>
+                                </div>
+                            </div>
                         </div><!--content6頁面 結束-->
+                        
+                        
+                        
+                        <!--content7頁面  這是圖片切換器-->
+                        <div class="content display-none" id="content7" style="margin-left: 0px; margin-right: 0px;">
+                            <style>
+                                .image_switch_container {
+                                    width: 669px;
+                                    height: 318px;
+                                    background-image: url('images/03_function/content/3-3/3-3-2/03_ma02a (1).png');
+                                    background-size: 669px, 318px;
+                                    position: relative;
+                                }
+                                .image_switch_button_group {
+                                    position: absolute;
+                                    /* background-color: rgba(0, 0, 0, 0.5); */
+                                    width: 125px;
+                                    height: 154px;
+                                    right: 74px;
+                                    top: 134px;
+                                }
+                                .image_switch_button {
+                                    display: block;
+                                    width: 125px;
+                                    height: 21px;
+                                }
+                                .image_switch_button:hover {
+                                    background-color: rgba(256, 256, 256, 0.5);
+                                }
+                            </style>
+                            <div class="image_switch_container" id="image_switch_display">
+                                <div class="image_switch_button_group">
+                                    <a href="" class="image_switch_button" id="image_switch_button_01" onclick="switchImage('images/03_function/content/3-3/3-3-2/03_ma02a (2).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_02" onclick="switchImage('images/03_function/content/3-3/3-3-2/03_ma02a (3).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_03" onclick="switchImage('images/03_function/content/3-3/3-3-2/03_ma02a (4).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_04" onclick="switchImage('images/03_function/content/3-3/3-3-2/03_ma02a (5).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_05" onclick="switchImage('images/03_function/content/3-3/3-3-2/03_ma02a (6).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_06" onclick="switchImage('images/03_function/content/3-3/3-3-2/03_ma02a (7).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_07" onclick="showContent('content2')"></a>
+                                </div>
+                            </div>
+                            <script>
+                                function switchImage(imagePath) {
+                                    // Hide all content divs first
+                                    event.preventDefault();
+                                    document.getElementById('image_switch_display').style.backgroundImage = "url('" + imagePath + "')";
+                                }
+                            </script>
+                        </div><!--content7頁面 結束-->
+                        
+                        
+                        
                         
                         <!-- 獅子問答區 -->
                         <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion03.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
