@@ -193,12 +193,9 @@
                         <div class="lion_section"> <a href="#"><img src="images/05_life/side/lion01.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
-                            <div class="modal-content" style="background-image: url('images/05_life/side/popup0101.gif');">
-                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
-                                <p>解答要用替換底圖的方式</p>
-
-                                    <button id="lion_answer_button" onclick="display_answer()">看解答</button>
-                                </ol>
+                            <div class="modal-content" style="height: 380px; background-image: url('images/05_life/side/popup0101.gif'); background-repeat: no-repeat;">
+                                <span class="close" style="margin-top: 300px;" onclick="closeModal('lionModal')">&times;</span>
+                                <button id="lion_answer_button" style="margin-top: 300px;" onclick="this.closest('.modal-content').style.backgroundImage='url(\'images/05_life/side/popup0101b.gif\')';return false;">看解答</button>
                             </div>
                         </div>
                         <!-- end 獅子問答區 -->
