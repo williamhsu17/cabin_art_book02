@@ -159,7 +159,10 @@
                                     
                                     
                                     <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
-                                        <div style="height:16px; width:105px; float:right;" > <a href="03-5_detail.html"><img sty src="images/03_function/content/05_detail01.gif" alt="Image 1"></a></div>
+                                        
+                                        
+                                        <div style="height:16px; width:105px; float:right;" ><a href="#" onclick="showContent('content2')"><img sty src="images/03_function/content/05_detail01.gif" alt="Image 1"></a></div>
+                                                                                
                                        <br>
                                    <p>牌坊很容易讓人聯想到貞節牌坊，在中國社會中，貞節與忠義是公認的美德。牌坊的存在，深切的表現出中國固有文化的特質，立牌坊的用意除了表彰個人的道德外，教化的意義更加重大。清代是臺灣立坊最多的年代，但是外觀都大同小異。</p>
 								   <p>
@@ -178,10 +181,55 @@
                             </div>
                         </div><!--content1頁面 結束-->
                         
-                       <!--content2頁面-->
-                        <div class="content display-none" id="content2">
-                            
+                       <!--content2頁面  這是圖片切換器-->
+                        <div class="content display-none" id="content2" style="margin-left: 0px; margin-right: 0px;">
+                            <style>
+                                .image_switch_container {
+                                    width: 669px;
+                                    height: 318px;
+                                    background-image: url('images/03_function/content/3-5/c_0504 (1).png');
+                                    background-size: 669px, 318px;
+                                    position: relative;
+                                }
+                                .image_switch_button_group {
+                                    position: absolute;
+                                    /* background-color: rgba(0, 0, 0, 0.5); */
+                                    width: 125px;
+                                    height: 154px;
+                                    right: 74px;
+                                    top: 134px;
+                                }
+                                .image_switch_button {
+                                    display: block;
+                                    width: 125px;
+                                    height: 21px;
+                                }
+                                .image_switch_button:hover {
+                                    background-color: rgba(256, 256, 256, 0.5);
+                                }
+                            </style>
+                            <div class="image_switch_container" id="image_switch_display">
+                                <div class="image_switch_button_group">
+                                    <a href="" class="image_switch_button" id="image_switch_button_01" onclick="switchImage('images/03_function/content/3-5/c_0504 (2).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_02" onclick="switchImage('images/03_function/content/3-5/c_0504 (3).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_03" onclick="switchImage('images/03_function/content/3-5/c_0504 (4).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_04" onclick="switchImage('images/03_function/content/3-5/c_0504 (5).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_05" onclick="switchImage('images/03_function/content/3-5/c_0504 (6).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_06" onclick="switchImage('images/03_function/content/3-5/c_0504 (7).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_07" onclick="showContent('content1')"></a>
+                                </div>
+                            </div>
+                            <script>
+                                function switchImage(imagePath) {
+                                    // Hide all content divs first
+                                    event.preventDefault();
+                                    document.getElementById('image_switch_display').style.backgroundImage = "url('" + imagePath + "')";
+                                }
+                            </script>
                         </div><!--content2頁面 結束-->
+                        
+                        
+                        
                         <!-- 獅子問答區 -->
                         <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion05.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
                         </div>

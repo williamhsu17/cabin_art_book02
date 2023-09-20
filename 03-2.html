@@ -108,10 +108,9 @@
                                         <!-- image_switch_00預設 -->
                                         <div id="image_switch_00" class="inline-image-switch">
                                             <div class="image-container">                                           
-                                            
-                                            <p align=""><a href="03-2_detail.html"><video src="images/03_function/content/3-2/c0201_p00.mp4" autoplay muted loop style="width:196px;"></video></a>台南大南門</p>
+                                            <p align=""> <a href="#" onclick="showContent('content2')"><video src="images/03_function/content/3-2/c0201_p00.mp4" autoplay muted loop style="width:196px;"></video></a>台南大南門</p>
                                             </div>
-
+                                          
                                         </div>
                                         <!-- end image_switch_00 -->
                                         
@@ -263,7 +262,9 @@
                                     
                                     
                                     <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
-                                        <div style="height:16px; width:105px; float:right;" > <a href="03-2_detail.html"><img sty src="images/03_function/content/02_detail01.gif" alt="Image 1"></a></div>
+                                        
+                                        <div style="height:20px; width:95px; float:right;" > <a href="#" onclick="showContent('content2')"><img sty src="images/03_function/content/02_detail01.gif" alt="Image 1"></a></div>
+
                                        <br>
 									
                                     
@@ -281,10 +282,55 @@
                             </div>
                         </div><!--content1頁面 結束-->
                         
-                       <!--content2頁面-->
-                        <div class="content display-none" id="content2">
-                            
+                       
+                         <!--content2頁面  這是圖片切換器-->
+                        <div class="content display-none" id="content2" style="margin-left: 0px; margin-right: 0px;">
+                            <style>
+                                .image_switch_container {
+                                    width: 669px;
+                                    height: 318px;
+                                    background-image: url('images/03_function/content/3-2/02_01 (1).png');
+                                    background-size: 669px, 318px;
+                                    position: relative;
+                                }
+                                .image_switch_button_group {
+                                    position: absolute;
+                                    /* background-color: rgba(0, 0, 0, 0.5); */
+                                    width: 125px;
+                                    height: 154px;
+                                    right: 74px;
+                                    top: 134px;
+                                }
+                                .image_switch_button {
+                                    display: block;
+                                    width: 125px;
+                                    height: 21px;
+                                }
+                                .image_switch_button:hover {
+                                    background-color: rgba(256, 256, 256, 0.5);
+                                }
+                            </style>
+                            <div class="image_switch_container" id="image_switch_display">
+                                <div class="image_switch_button_group">
+                                    <a href="" class="image_switch_button" id="image_switch_button_01" onclick="switchImage('images/03_function/content/3-2/02_01 (2).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_02" onclick="switchImage('images/03_function/content/3-2/02_01 (3).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_03" onclick="switchImage('images/03_function/content/3-2/02_01 (4).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_04" onclick="switchImage('images/03_function/content/3-2/02_01 (5).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_05" onclick="switchImage('images/03_function/content/3-2/02_01 (6).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_06" onclick="switchImage('images/03_function/content/3-2/02_01 (7).png')"></a>
+                                    <a href="" class="image_switch_button" id="image_switch_button_07" onclick="showContent('content1')"></a>
+                                </div>
+                            </div>
+                            <script>
+                                function switchImage(imagePath) {
+                                    // Hide all content divs first
+                                    event.preventDefault();
+                                    document.getElementById('image_switch_display').style.backgroundImage = "url('" + imagePath + "')";
+                                }
+                            </script>
                         </div><!--content2頁面 結束-->
+                        
+                        
                         <!-- 獅子問答區 -->
                         <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion02.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
                         </div>
