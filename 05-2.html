@@ -136,7 +136,24 @@
                         <div id="lionModal" class="modal">
                             <div class="modal-content" style="height: 380px; background-image: url('images/05_life/side/popup0101.gif'); background-repeat: no-repeat;">
                                 <span class="close" style="margin-top: 300px;" onclick="closeModal('lionModal')">&times;</span>
-                                <button id="lion_answer_button" style="margin-top: 300px;" onclick="this.closest('.modal-content').style.backgroundImage='url(\'images/05_life/side/popup0101b.gif\')';return false;">看解答</button>
+                                <button id="lion_answer_button" style="margin-top: 300px;" onclick="showAnswer(this)">看解答</button>
+                                <button id="lion_question_button" style="margin-top: 300px; display: none;" onclick="showQuesiton(this)">回問題</button>
+                                <script>
+                                    const lion_answer_button = document.getElementById('lion_answer_button')
+                                    const lion_question_button = document.getElementById('lion_question_button')
+                                    function showAnswer(e){
+                                        e.closest('.modal-content').style.backgroundImage='url(\'images/05_life/side/popup0101b.gif\')';
+                                        lion_answer_button.style.display='none'
+                                        lion_question_button.style.display='inline-block'
+                                        return false;
+                                    }
+                                    function showQuesiton(e){
+                                        e.closest('.modal-content').style.backgroundImage='url(\'images/05_life/side/popup0101.gif\')';
+                                        lion_answer_button.style.display='inline-block'
+                                        lion_question_button.style.display='none'
+                                        return false;
+                                    }
+                                </script>
                             </div>
                         </div>
                         <!-- end 獅子問答區 -->

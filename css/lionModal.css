@@ -41,7 +41,7 @@
     text-decoration: none;
     cursor: pointer;
 }
-#lion_answer_button {
+#lion_answer_button, #lion_question_button {
     position: absolute;
     border-width: 0;
     outline: none;
