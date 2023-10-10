@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,9 +40,11 @@
         .display-none {
             display: none;
         }
+
         .main-section {
             position: relative;
         }
+
         .content {
             width: 600px;
             margin-left: 52px;
@@ -51,34 +54,41 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
-			/*height:310px;
+            /*height:310px;
 			overflow:auto;*/
         }
+
         .content-title-image {
             width: 100%;
         }
+
         .content-body {
             display: block;
             height: 240px;
         }
+
         .content-body p {
             margin-left: 2px;
         }
+
         .content-body img {
             width: 100%;
         }
+
         .sub_links {
             margin-top: 10px !important;
         }
     </style>
 </head>
+
 <body style="background-image: url('images/03_function/left.gif');">
     <div class="container mx-auto container-section" id="container-section-image">
         <div class="row">
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section"
+                        style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -87,289 +97,382 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
-                            
-
                         </style>
-                       
+
                     </div>
-                    
-                   <!--主要內容區-->
+
+                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                    
+
                         <!--content1頁面-->
                         <div class="content" id="content1">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/00_icon01t.gif" alt="Image">
+                                <img class="content-title-image" src="images/01_history/content/00_icon01t.gif"
+                                    alt="Image">
                             </div>
                             <div class="content-body">
                                 <div style="display: flex;">
                                     <div class="image_section mt-3 mr-3" style="width: 200px;">
-                                        
-                                       
-                                        
+
+
+
                                         <!-- image_switch_01 預設 -->
                                         <div id="image_switch_01" class="inline-image-switch">
-                                         <div class="image-container">
-                                                <img id="displayImage_01" sty src="images/03_function/content/3-7/c07_p00a.jpg" alt="北港媽祖朝天宮">
+                                            <div class="image-container">
+                                                <img id="displayImage_01" sty
+                                                    src="images/03_function/content/3-7/c07_p00a.jpg" alt="北港媽祖朝天宮">
                                             </div>
-                                            <p>北港媽祖朝天宮</p>     
+                                            <p>北港媽祖朝天宮</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-7/c07_p00a.jpg', 'displayImage_01');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-7/c07_p00b.jpg', 'displayImage_01');"></a>
-												 <a href="" class="isb_03" onclick="changeImage('images/03_function/content/3-7/c07_p00c.jpg', 'displayImage_01');"></a>                                       
-                                        </div>                                
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-7/c07_p00a.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-7/c07_p00b.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/03_function/content/3-7/c07_p00c.jpg', 'displayImage_01');"></a>
+                                            </div>
                                         </div>
                                         <!-- end image_switch_01 -->
-										<!-- image_switch_02 -->
-										<div id="image_switch_02" class="inline-image-switch display-none">
+                                        <!-- image_switch_02 -->
+                                        <div id="image_switch_02" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_02" sty src="images/03_function/content/3-7/dsc04605.jpg" alt="臺南齋堂：德化堂">
+                                                <img id="displayImage_02" sty
+                                                    src="images/03_function/content/3-7/dsc04605.jpg" alt="臺南齋堂：德化堂">
                                             </div>
                                             <p>臺南齋堂：德化堂</p>
-                                                 <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-7/dsc04605.jpg', 'displayImage_02');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-7/dsc04602.jpg', 'displayImage_02');"></a>
-												                                        
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-7/dsc04605.jpg', 'displayImage_02');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-7/dsc04602.jpg', 'displayImage_02');"></a>
+
+                                            </div>
                                         </div>
-                                      </div>
-                                         <!-- end image_switch_02 -->               
- 										 <!-- image_switch_03 --> 
-										 <div id="image_switch_03" class="inline-image-switch display-none">
+                                        <!-- end image_switch_02 -->
+                                        <!-- image_switch_03 -->
+                                        <div id="image_switch_03" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_03" sty src="images/03_function/content/3-7/127-18.jpg" alt="石獅">
+                                                <img id="displayImage_03" sty
+                                                    src="images/03_function/content/3-7/127-18.jpg" alt="石獅">
                                             </div>
                                             <p id="displayText_03">石獅（三峽祖師廟）</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-7/127-18.jpg', 'displayImage_03'); changeText('石獅（三峽祖師廟）', 'displayText_03');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-7/021-19.jpg', 'displayImage_03'); changeText('石獅（臺北保安宮）', 'displayText_03');"></a>
-												
-                                            </div>	
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-7/127-18.jpg', 'displayImage_03'); changeText('石獅（三峽祖師廟）', 'displayText_03');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-7/021-19.jpg', 'displayImage_03'); changeText('石獅（臺北保安宮）', 'displayText_03');"></a>
+
+                                            </div>
 
                                         </div>
-                                         <!-- end image_switch_03 -->
-										 <!-- image_switch_04 -->
-										 <div id="image_switch_04" class="inline-image-switch display-none">
+                                        <!-- end image_switch_03 -->
+                                        <!-- image_switch_04 -->
+                                        <div id="image_switch_04" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_04" sty src="images/03_function/content/3-7/121-05_big.jpg" alt="抱鼓石">
+                                                <img id="displayImage_04" sty
+                                                    src="images/03_function/content/3-7/121-05_big.jpg" alt="抱鼓石">
                                             </div>
                                             <p id="displayText_04">抱鼓石（北港朝天宮）</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-7/121-05_big.jpg', 'displayImage_04'); changeText('抱鼓石（北港朝天宮）', 'displayText_04');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-7/057-09_big.jpg', 'displayImage_04'); changeText('抱鼓石（鹿港龍山寺）', 'displayText_04');"></a>
-												
-                                            </div>	
-											
-                                        </div>
-                                         <!-- end image_switch_04 -->
-										 <!-- image_switch_05 --> 
-										 <div id="image_switch_05" class="inline-image-switch display-none">
-                                            <div class="image-container">
-                                                <img id="displayImage_05" sty src="images/03_function/content/3-7/057-04_big.jpg" alt="龍柱">
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-7/121-05_big.jpg', 'displayImage_04'); changeText('抱鼓石（北港朝天宮）', 'displayText_04');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-7/057-09_big.jpg', 'displayImage_04'); changeText('抱鼓石（鹿港龍山寺）', 'displayText_04');"></a>
+
                                             </div>
-                                            <p id="displayText_05">龍柱（鹿港龍山寺）</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-7/057-04_big.jpg', 'displayImage_05'); changeText('龍柱（鹿港龍山寺）', 'displayText_05');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-7/065-06_big.jpg', 'displayImage_05'); changeText('龍柱（淡水鄞山寺）', 'displayText_05');"></a>
-												
-                                            </div>	
 
                                         </div>
-                                         <!-- end image_switch_05 -->
-										 <!-- image_switch_06 --> 
-										 <div id="image_switch_06" class="inline-image-switch display-none">
+                                        <!-- end image_switch_04 -->
+                                        <!-- image_switch_05 -->
+                                        <div id="image_switch_05" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_06" sty src="images/03_function/content/3-7/127-22_big.jpg" alt="人物窗（三峽祖師廟）">
+                                                <img id="displayImage_05" sty
+                                                    src="images/03_function/content/3-7/057-04_big.jpg" alt="龍柱">
+                                            </div>
+                                            <p id="displayText_05">龍柱（鹿港龍山寺）</p>
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-7/057-04_big.jpg', 'displayImage_05'); changeText('龍柱（鹿港龍山寺）', 'displayText_05');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-7/065-06_big.jpg', 'displayImage_05'); changeText('龍柱（淡水鄞山寺）', 'displayText_05');"></a>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- end image_switch_05 -->
+                                        <!-- image_switch_06 -->
+                                        <div id="image_switch_06" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_06" sty
+                                                    src="images/03_function/content/3-7/127-22_big.jpg"
+                                                    alt="人物窗（三峽祖師廟）">
                                             </div>
                                             <p> 人物窗（三峽祖師廟）</p>
-											  <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-7/127-22_big.jpg', 'displayImage_06');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-7/127-23_big.jpg', 'displayImage_06');"></a>
-												                                        
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-7/127-22_big.jpg', 'displayImage_06');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-7/127-23_big.jpg', 'displayImage_06');"></a>
+
+                                            </div>
+
                                         </div>
-                               
-                                        </div>
-                                         <!-- end image_switch_06 -->
-										 <!-- image_switch_07 --> 
-										 <div id="image_switch_07" class="inline-image-switch display-none">
+                                        <!-- end image_switch_06 -->
+                                        <!-- image_switch_07 -->
+                                        <div id="image_switch_07" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_07" sty src="images/03_function/content/3-7/022-04_big.jpg" alt="大通瓜筒及托木">
+                                                <img id="displayImage_07" sty
+                                                    src="images/03_function/content/3-7/022-04_big.jpg" alt="大通瓜筒及托木">
                                             </div>
                                             <p id="displayText_07">通（淡水龍山寺）</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-7/022-04_big.jpg', 'displayImage_07'); changeText('通（淡水龍山寺）', 'displayText_07');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-7/c07_p03_big.jpg', 'displayImage_07'); changeText('托木（淡水祖師廟）', 'displayText_07');"></a>
-												
-                                            </div>	
-										
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-7/022-04_big.jpg', 'displayImage_07'); changeText('通（淡水龍山寺）', 'displayText_07');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-7/c07_p03_big.jpg', 'displayImage_07'); changeText('托木（淡水祖師廟）', 'displayText_07');"></a>
+
+                                            </div>
+
                                         </div>
-                                         <!-- end image_switch_07 -->
-										 <!-- image_switch_08 --> 
-										 <div id="image_switch_08" class="inline-image-switch display-none">
+                                        <!-- end image_switch_07 -->
+                                        <!-- image_switch_08 -->
+                                        <div id="image_switch_08" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_08" sty src="images/03_function/content/3-7/060-08_big.jpg" alt="圓形山牆：金（林安泰古厝）">
+                                                <img id="displayImage_08" sty
+                                                    src="images/03_function/content/3-7/060-08_big.jpg"
+                                                    alt="圓形山牆：金（林安泰古厝）">
                                             </div>
                                             <p>圓形山牆：金（林安泰古厝）</p>
-                                
+
                                         </div>
-                                         <!-- end image_switch_08 -->
-                                         <!-- image_switch_09 --> 
-										 <div id="image_switch_09" class="inline-image-switch display-none">
+                                        <!-- end image_switch_08 -->
+                                        <!-- image_switch_09 -->
+                                        <div id="image_switch_09" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_09" sty src="images/03_function/content/3-7/c07_p04_big.jpg" alt="高形山牆：木（萬巒劉宅）">
+                                                <img id="displayImage_09" sty
+                                                    src="images/03_function/content/3-7/c07_p04_big.jpg"
+                                                    alt="高形山牆：木（萬巒劉宅）">
                                             </div>
                                             <p>高形山牆：木（萬巒劉宅）</p>
-                           
+
                                         </div>
-                                         <!-- end image_switch_09 -->
-										 <!-- image_switch_10 --> 
-										 <div id="image_switch_10" class="inline-image-switch display-none">
+                                        <!-- end image_switch_09 -->
+                                        <!-- image_switch_10 -->
+                                        <div id="image_switch_10" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_10" sty src="images/03_function/content/3-7/089-12_big.jpg" alt="波形山牆：水（深坑黃宅）">
+                                                <img id="displayImage_10" sty
+                                                    src="images/03_function/content/3-7/089-12_big.jpg"
+                                                    alt="波形山牆：水（深坑黃宅）">
                                             </div>
                                             <p>波形山牆：水（深坑黃宅）</p>
-                                  
+
                                         </div>
-                                         <!-- end image_switch_10 -->
-										 <!-- image_switch_11 --> 
-										 <div id="image_switch_11" class="inline-image-switch display-none">
+                                        <!-- end image_switch_10 -->
+                                        <!-- image_switch_11 -->
+                                        <div id="image_switch_11" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_11" sty src="images/03_function/content/3-7/089-13_big.jpg" alt="尖形山牆：火（深坑黃宅）">
+                                                <img id="displayImage_11" sty
+                                                    src="images/03_function/content/3-7/089-13_big.jpg"
+                                                    alt="尖形山牆：火（深坑黃宅）">
                                             </div>
                                             <p>尖形山牆：火（深坑黃宅）</p>
-                                
+
                                         </div>
-                                         <!-- end image_switch_11 -->
-										 <!-- image_switch_12 --> 
-										 <div id="image_switch_12" class="inline-image-switch display-none">
+                                        <!-- end image_switch_11 -->
+                                        <!-- image_switch_12 -->
+                                        <div id="image_switch_12" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_12" sty src="images/03_function/content/3-7/068-01_big.jpg" alt="平形山牆：土（霧峰林家）">
+                                                <img id="displayImage_12" sty
+                                                    src="images/03_function/content/3-7/068-01_big.jpg"
+                                                    alt="平形山牆：土（霧峰林家）">
                                             </div>
                                             <p>平形山牆：土（霧峰林家）</p>
- 											
+
                                         </div>
-                                         <!-- end image_switch_12 -->
-										 <!-- image_switch_13 --> 
-										 <div id="image_switch_13" class="inline-image-switch display-none">
+                                        <!-- end image_switch_12 -->
+                                        <!-- image_switch_13 -->
+                                        <div id="image_switch_13" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_13" sty src="images/03_function/content/3-7/aaa.jpg" alt="石敢當（鹿港）">
+                                                <img id="displayImage_13" sty
+                                                    src="images/03_function/content/3-7/aaa.jpg" alt="石敢當（鹿港）">
                                             </div>
                                             <p>石敢當（鹿港）</p>
- 											
+
                                         </div>
-                                         <!-- end image_switch_13 -->
-										 <!-- image_switch_14 --> 
-										 <div id="image_switch_14" class="inline-image-switch display-none">
+                                        <!-- end image_switch_13 -->
+                                        <!-- image_switch_14 -->
+                                        <div id="image_switch_14" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_14" sty src="images/03_function/content/3-7/803.jpg" alt="八卦牌（臺南安平）">
+                                                <img id="displayImage_14" sty
+                                                    src="images/03_function/content/3-7/803.jpg" alt="八卦牌（臺南安平）">
                                             </div>
                                             <p>八卦牌（臺南安平）</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-7/803.jpg', 'displayImage_14');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-7/802.jpg', 'displayImage_14');"></a>
-												                                        
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-7/803.jpg', 'displayImage_14');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-7/802.jpg', 'displayImage_14');"></a>
+
+                                            </div>
+
                                         </div>
- 											
-                                        </div>
-                                         <!-- end image_switch_14 -->
-										 <!-- image_switch_15 --> 
-										 <div id="image_switch_15" class="inline-image-switch display-none">
+                                        <!-- end image_switch_14 -->
+                                        <!-- image_switch_15 -->
+                                        <div id="image_switch_15" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_15" sty src="images/03_function/content/3-7/bbb.jpg" alt="獅咬劍牌">
+                                                <img id="displayImage_15" sty
+                                                    src="images/03_function/content/3-7/bbb.jpg" alt="獅咬劍牌">
                                             </div>
                                             <p id="displayText_15">獅咬劍泥塑（臺南安平）</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-7/bbb.jpg', 'displayImage_15'); changeText('獅咬劍泥塑（臺南安平）', 'displayText_15');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-7/801.jpg', 'displayImage_15'); changeText('獅咬劍牌（臺南安平）', 'displayText_15');"></a>
-												
-                                            </div>	
-										
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-7/bbb.jpg', 'displayImage_15'); changeText('獅咬劍泥塑（臺南安平）', 'displayText_15');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-7/801.jpg', 'displayImage_15'); changeText('獅咬劍牌（臺南安平）', 'displayText_15');"></a>
+
+                                            </div>
+
                                         </div>
-                                         <!-- end image_switch_15 -->
-										 <!-- image_switch_16 --> 
-										 <div id="image_switch_16" class="inline-image-switch display-none">
+                                        <!-- end image_switch_15 -->
+                                        <!-- image_switch_16 -->
+                                        <div id="image_switch_16" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_16" sty src="images/03_function/content/3-7/123-11-2.jpg" alt="祈求吉慶">
+                                                <img id="displayImage_16" sty
+                                                    src="images/03_function/content/3-7/123-11-2.jpg" alt="祈求吉慶">
                                             </div>
                                             <p id="displayText_16">祈求吉慶 ─ 戟、磬（鹿港天后宮）</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-7/123-11-2.jpg', 'displayImage_16'); changeText('祈求吉慶 ─ 戟、磬（鹿港天后宮）', 'displayText_16');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-7/123-10-2.jpg', 'displayImage_16'); changeText('祈求吉慶 ─ 旗、球（鹿港天后宮）', 'displayText_16');"></a>
-												
-                                            </div>	
-										
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-7/123-11-2.jpg', 'displayImage_16'); changeText('祈求吉慶 ─ 戟、磬（鹿港天后宮）', 'displayText_16');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-7/123-10-2.jpg', 'displayImage_16'); changeText('祈求吉慶 ─ 旗、球（鹿港天后宮）', 'displayText_16');"></a>
+
+                                            </div>
+
                                         </div>
-                                         <!-- end image_switch_16 -->    										 
-                                        
+                                        <!-- end image_switch_16 -->
+
                                     </div>
-                                    
-                                    
-                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
-                             
-                                    <p>臺灣的佛寺建築佈局與風格也承襲自閩、粵。閩、粵著名的佛寺如福州鼓山湧泉寺、西禪寺、莆田廣化寺、泉州開元寺、延福寺、承天寺、漳州南山寺、白礁慈濟宮、東山關帝廟 以及潮州開元寺等為臺灣清代所建佛寺之藍本。</p>
-									<p>閩粵佛寺建築佈局又多遵循中國南方叢林之制度，各殿以合院方式配置，成為院落式佈局。通常南方佛寺之佈局以中軸對稱為原則，從前面安排照牆、水池、牌樓、山門、天王殿、彌勒殿、大雄寶殿及法堂。左右安排迴廊及鐘鼓樓。中軸線之左側配置香積廚與餐廳，右側配置禪房及方丈室。</p>
-									<p>而臺灣的佛寺大都沿襲這種佈局，不過為了因地制宜，各殿建築常有增減情形。例如有的不建鐘鼓樓，直接將鐘與鼓懸掛在天王殿或大雄寶殿裡。再如天王殿與彌勒殿常常合而為一殿，並且也視為山門。</p>
-									<p>臺灣清代的佛寺建築多受福建影響，事實上明清二代福建高僧向海外弘法很盛，除了東渡臺灣之外，往日本九州長崎或到南洋諸邦也不乏其例。 因此著名的 <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">北港朝天宮媽祖廟</a>，在清康熙年間即由樹璧和尚自湄州奉請媽祖神像來臺供奉。臺灣的佛寺與一般民間信仰廟宇在建築風格上常常混合，導至佛寺的特色所存無幾，這是值得注意的。</p>
-									<p>另有屬於在家修佛的齋堂，又稱「菜堂」，為源自明代中葉羅祖所創的「無為教」與民間的「無生老母信仰」，它是將佛教改革，通俗化成為民間新興宗教，結合佛、儒、道三家的思想，主張持齋食素，在家修行。臺灣齋教是在明鄭時期由大陸傳入，早期因與天地會結合，形成反清復明的地下秘密集會結社，一度被誤解為神秘教派，有不可告人的行為。臺灣齋教一般分龍華、金幢、先天三派，龍華派在形式上比較接近佛教，齋友的數目也最多，金幢派則帶有道教色彩，先天派則持戒最嚴，是三派中唯一不得嫁娶者。齋堂見於老舊市街，與一般民宅差異不大，除非進到內部，否則無法辨明。（<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')"> 臺南齋堂：德化堂</a>）</p>
-									<p> 建築之原始目的是安全及防禦，構造堅固、空間合乎生活上之功能是初步的要求。等社會形成、文化發達後，建築為滿足人類心靈文化因此出現建築的裝飾。裝飾當其之始，皆源於材料之本性及構造之關係。匠師累積了長久的經驗，悟出了巧妙的道理，於是將材料細緻化，將構造的精神表現出來，這就是裝飾的動機。</p>
-									<p>廟宇是紀念性的精緻建築，它也是公共建築，成為眾人使用的地方，因而它的意義也就包含了中國人普遍存在的共同觀點，中國人的處世觀、人生觀乃至宇宙觀，對生命的整體看法。臺灣寺廟之裝飾，其動機與精神即在於如何去表達中國人的價值觀點，其中當然也包括了審美的判斷。論及寺廟建築之裝飾，則會包含有趨吉避凶、祈望教化與自我表彰三個動機。</p>
-									<p>廟宇建築之裝飾也因應著視覺之可及性，有強弱主從秩序之層次。簡單說，看到的部位，裝飾量及強度偏高，不易被察覺的部位則儘量減低。三川殿比正殿來得華麗，三川殿的正面又比背面考究，往往只有正面施雕，稱為「單面見光」。再者，眼睛視線容易停留之處，匠師也投下較多的心血來經營，例如入口的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">石獅</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_04')">抱鼓石</a>及<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_05')">龍柱</a>，兩側的石雕螭虎窗或<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_06')">人物窗</a>，進門之後抬頭上望的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_07')">大通瓜筒及托木</a>。這些部位的裝飾都遠比正殿來得華麗炫目。</p>
-									<p>裝飾的題材則包羅萬象，只要能合乎前述的趨吉避凶或祈望與教化，都被採用。臺灣廟宇之裝飾又比閩粵內地豐富，一座精雕細琢，富麗堂皇，五彩繽紛的寺廟無疑是這種精神之化身。</p>
-									<p>支配廟宇建築裝飾之題材與風格，最主要有四種因素，第</p>
-									<p><strong>一　道教思想    </strong><br />    這些有感情有個性的神仙題材，賦予匠師無限多的想像力，去創造裝飾之形式。</p>
-									<p><strong>二　敬天思想</strong><br />    所謂天圓地方，對自然界之觀察，體會其中的神奇奧妙。</p>
-									<p><strong>三　陰陽五行思想</strong><br />    從易經發展衍變出來的陰陽兩極理論，給予裝飾或構造上陰陽、正背、高低、方位及大小之序位觀念。</p>
-									<p><strong>四　佛教思想</strong><br />    輪迴的觀念與佛教世界豐富而神秘的故事，啟發了中國人更廣的想像力。</p>
-									<p>先秦時期，人物紋樣、動物紋樣及植物紋樣是源於敬天思想最主要的裝飾圖案。南北朝之後，中國增加了外來的火焰紋及獅子，閩粵建築亦承襲這項傳統，不過宋以後泉州對南洋的貿易，外來文化之影響當不可忽視，南方的建築裝飾趨向於華麗之風格發展。</p>
-									<p>寺廟建築的藝術表現是多方面的，建築物的設計出自世代師徒相傳的匠師，他們所學習的技藝，雖然不是現代科班訓練的藝術，但是卻融入了中國古代諸多藝術，例如繪畫、雕刻、泥塑及陶瓷等技巧。因而一座傳統寺廟，事實上匯集了中國傳統藝術之大成。特別是民間的藝術，從題材的選擇到構圖之安排，皆反映出中國古代民間藝術之精神。</p>
-									<p>論及寺廟建築之藝術，空間、形與色是三大要素。空間之佈局與殿堂大小權衡至為重要，其次形態與色彩也不可忽視。它藉著結構、雕塑、陶瓷及彩畫等技巧來達成。與世界上其他宗教建築比較，臺灣寺廟之裝飾藝術並非最複雜，但裝飾技藝種類卻屬較多。</p>
-									<p>臺灣建廟是需要勘輿，即俗稱看風水、相地。勘輿出自漢代，研究天地之道，地理一詞，也指仰觀於天文，俯察於地理。中國開始有風水術，一般都認為始於晉朝的郭樸所著的一本書，叫作「葬經」，書中謂「氣乘風則散，界水則止。古人聚之使不散，行之使有止」。又說「得水為上，藏風次之」。後代再引伸為「氣之來，以水導之。氣之止，以水界之。氣之聚，要藏風」。水在風水中佔有相當重要的地位，當有水環繞時，氣就出現，要使氣不散，就要有良好的地形。</p>
-									<p>      通常觀察地形的格局與山水的關係最重要，山的走向即是脈，如人之血氣在體運行。 山的天際線形狀有尖有圓，因此各有不同的象徵。彰州詔安地區傳統建築的山牆有<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_08')">圓形</a>（金）、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_09')">高形</a>（木）、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_10')">波形</a>（水）、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_11')">尖形</a>（火）及<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_12')">平形</a>（土）等變化，也影響了臺灣。</p>
-									<p>民間傳說各地古宅及城市也都有其穴位，環境以某種動物來比喻，取其生氣昂然特質。將人體視為外在環境之縮影的理論，為中國文化很重要的特色。</p>
-									<p>臺灣傳統建築承繼中國古老的環境觀，自然就反映出來這些特色，至少包括人與自然，人與神明，人與人之間的三種層次的關係。</p>
-									<p>      建築多方面反映上述的人與自然，人與神明，人與人的細膩關係，我們從這裡也可體會中國傳統文化的呈現。</p>
-									<p>屋頂前後兩面長度不同，前為陽坡，短而高。後為陰坡，長而低。因此前面能照到較充足的陽光。前屋簷較彎曲，後屋簷較直，俗稱「前弓後箭」。總之，向前的優先。在山牆上的小窗，也略向前偏一點。</p>
-									<p>房屋內部如果屋頂太高，要加半樓，以木板架在橫樑之上，可當作貯物之所。因為屋頂太高，則「氣」散。若屋頂太低，則「氣」脹，對居家都不好。</p>
-									<p>
-									水也是財的象徵，所以屋頂坡要向中庭，稱為「四水歸堂」，財流向中央。</p>
-									<p>
-									排水溝的方向角度自然也依法度，有所謂「走七星步」，細水長流之意。</p>
-									<p>
-									臺灣古建築在對著街角或巷口，安置「<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_13')">石敢當</a>」。嘉南平原的民宅，也常在正廳前院安設「刀劍屏」。近年最常見的是在大門門楣上懸掛<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_14')">八卦牌</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_15')">獅咬劍牌</a>、日月雙桃或鏡子。在金門的家祠上常可見有剪刀及花瓶圖形，取其諧音家家平安，為眾祈福。臺灣寺廟最常見到「旗」、「球」、「戟」、「磬」，諧音<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_16')">「祈求吉慶」</a>，這些都是趨吉避凶的妙法。</p>
-      
+
+
+                                    <div class="mt-3"
+                                        style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+
+                                        <p>臺灣的佛寺建築佈局與風格也承襲自閩、粵。閩、粵著名的佛寺如福州鼓山湧泉寺、西禪寺、莆田廣化寺、泉州開元寺、延福寺、承天寺、漳州南山寺、白礁慈濟宮、東山關帝廟
+                                            以及潮州開元寺等為臺灣清代所建佛寺之藍本。</p>
+                                        <p>閩粵佛寺建築佈局又多遵循中國南方叢林之制度，各殿以合院方式配置，成為院落式佈局。通常南方佛寺之佈局以中軸對稱為原則，從前面安排照牆、水池、牌樓、山門、天王殿、彌勒殿、大雄寶殿及法堂。左右安排迴廊及鐘鼓樓。中軸線之左側配置香積廚與餐廳，右側配置禪房及方丈室。
+                                        </p>
+                                        <p>而臺灣的佛寺大都沿襲這種佈局，不過為了因地制宜，各殿建築常有增減情形。例如有的不建鐘鼓樓，直接將鐘與鼓懸掛在天王殿或大雄寶殿裡。再如天王殿與彌勒殿常常合而為一殿，並且也視為山門。
+                                        </p>
+                                        <p>臺灣清代的佛寺建築多受福建影響，事實上明清二代福建高僧向海外弘法很盛，除了東渡臺灣之外，往日本九州長崎或到南洋諸邦也不乏其例。 因此著名的 <a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_01')">北港朝天宮媽祖廟</a>，在清康熙年間即由樹璧和尚自湄州奉請媽祖神像來臺供奉。臺灣的佛寺與一般民間信仰廟宇在建築風格上常常混合，導至佛寺的特色所存無幾，這是值得注意的。
+                                        </p>
+                                        <p>另有屬於在家修佛的齋堂，又稱「菜堂」，為源自明代中葉羅祖所創的「無為教」與民間的「無生老母信仰」，它是將佛教改革，通俗化成為民間新興宗教，結合佛、儒、道三家的思想，主張持齋食素，在家修行。臺灣齋教是在明鄭時期由大陸傳入，早期因與天地會結合，形成反清復明的地下秘密集會結社，一度被誤解為神秘教派，有不可告人的行為。臺灣齋教一般分龍華、金幢、先天三派，龍華派在形式上比較接近佛教，齋友的數目也最多，金幢派則帶有道教色彩，先天派則持戒最嚴，是三派中唯一不得嫁娶者。齋堂見於老舊市街，與一般民宅差異不大，除非進到內部，否則無法辨明。（<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_02')"> 臺南齋堂：德化堂</a>）</p>
+                                        <p> 建築之原始目的是安全及防禦，構造堅固、空間合乎生活上之功能是初步的要求。等社會形成、文化發達後，建築為滿足人類心靈文化因此出現建築的裝飾。裝飾當其之始，皆源於材料之本性及構造之關係。匠師累積了長久的經驗，悟出了巧妙的道理，於是將材料細緻化，將構造的精神表現出來，這就是裝飾的動機。
+                                        </p>
+                                        <p>廟宇是紀念性的精緻建築，它也是公共建築，成為眾人使用的地方，因而它的意義也就包含了中國人普遍存在的共同觀點，中國人的處世觀、人生觀乃至宇宙觀，對生命的整體看法。臺灣寺廟之裝飾，其動機與精神即在於如何去表達中國人的價值觀點，其中當然也包括了審美的判斷。論及寺廟建築之裝飾，則會包含有趨吉避凶、祈望教化與自我表彰三個動機。
+                                        </p>
+                                        <p>廟宇建築之裝飾也因應著視覺之可及性，有強弱主從秩序之層次。簡單說，看到的部位，裝飾量及強度偏高，不易被察覺的部位則儘量減低。三川殿比正殿來得華麗，三川殿的正面又比背面考究，往往只有正面施雕，稱為「單面見光」。再者，眼睛視線容易停留之處，匠師也投下較多的心血來經營，例如入口的<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_03')">石獅</a>、<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_04')">抱鼓石</a>及<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_05')">龍柱</a>，兩側的石雕螭虎窗或<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_06')">人物窗</a>，進門之後抬頭上望的<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_07')">大通瓜筒及托木</a>。這些部位的裝飾都遠比正殿來得華麗炫目。
+                                        </p>
+                                        <p>裝飾的題材則包羅萬象，只要能合乎前述的趨吉避凶或祈望與教化，都被採用。臺灣廟宇之裝飾又比閩粵內地豐富，一座精雕細琢，富麗堂皇，五彩繽紛的寺廟無疑是這種精神之化身。
+                                        </p>
+                                        <p>支配廟宇建築裝飾之題材與風格，最主要有四種因素，第</p>
+                                        <p><strong>一　道教思想 </strong><br /> 這些有感情有個性的神仙題材，賦予匠師無限多的想像力，去創造裝飾之形式。</p>
+                                        <p><strong>二　敬天思想</strong><br /> 所謂天圓地方，對自然界之觀察，體會其中的神奇奧妙。</p>
+                                        <p><strong>三　陰陽五行思想</strong><br /> 從易經發展衍變出來的陰陽兩極理論，給予裝飾或構造上陰陽、正背、高低、方位及大小之序位觀念。
+                                        </p>
+                                        <p><strong>四　佛教思想</strong><br /> 輪迴的觀念與佛教世界豐富而神秘的故事，啟發了中國人更廣的想像力。</p>
+                                        <p>先秦時期，人物紋樣、動物紋樣及植物紋樣是源於敬天思想最主要的裝飾圖案。南北朝之後，中國增加了外來的火焰紋及獅子，閩粵建築亦承襲這項傳統，不過宋以後泉州對南洋的貿易，外來文化之影響當不可忽視，南方的建築裝飾趨向於華麗之風格發展。
+                                        </p>
+                                        <p>寺廟建築的藝術表現是多方面的，建築物的設計出自世代師徒相傳的匠師，他們所學習的技藝，雖然不是現代科班訓練的藝術，但是卻融入了中國古代諸多藝術，例如繪畫、雕刻、泥塑及陶瓷等技巧。因而一座傳統寺廟，事實上匯集了中國傳統藝術之大成。特別是民間的藝術，從題材的選擇到構圖之安排，皆反映出中國古代民間藝術之精神。
+                                        </p>
+                                        <p>論及寺廟建築之藝術，空間、形與色是三大要素。空間之佈局與殿堂大小權衡至為重要，其次形態與色彩也不可忽視。它藉著結構、雕塑、陶瓷及彩畫等技巧來達成。與世界上其他宗教建築比較，臺灣寺廟之裝飾藝術並非最複雜，但裝飾技藝種類卻屬較多。
+                                        </p>
+                                        <p>臺灣建廟是需要勘輿，即俗稱看風水、相地。勘輿出自漢代，研究天地之道，地理一詞，也指仰觀於天文，俯察於地理。中國開始有風水術，一般都認為始於晉朝的郭樸所著的一本書，叫作「葬經」，書中謂「氣乘風則散，界水則止。古人聚之使不散，行之使有止」。又說「得水為上，藏風次之」。後代再引伸為「氣之來，以水導之。氣之止，以水界之。氣之聚，要藏風」。水在風水中佔有相當重要的地位，當有水環繞時，氣就出現，要使氣不散，就要有良好的地形。
+                                        </p>
+                                        <p> 通常觀察地形的格局與山水的關係最重要，山的走向即是脈，如人之血氣在體運行。 山的天際線形狀有尖有圓，因此各有不同的象徵。彰州詔安地區傳統建築的山牆有<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_08')">圓形</a>（金）、<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_09')">高形</a>（木）、<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_10')">波形</a>（水）、<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_11')">尖形</a>（火）及<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_12')">平形</a>（土）等變化，也影響了臺灣。</p>
+                                        <p>民間傳說各地古宅及城市也都有其穴位，環境以某種動物來比喻，取其生氣昂然特質。將人體視為外在環境之縮影的理論，為中國文化很重要的特色。</p>
+                                        <p>臺灣傳統建築承繼中國古老的環境觀，自然就反映出來這些特色，至少包括人與自然，人與神明，人與人之間的三種層次的關係。</p>
+                                        <p> 建築多方面反映上述的人與自然，人與神明，人與人的細膩關係，我們從這裡也可體會中國傳統文化的呈現。</p>
+                                        <p>屋頂前後兩面長度不同，前為陽坡，短而高。後為陰坡，長而低。因此前面能照到較充足的陽光。前屋簷較彎曲，後屋簷較直，俗稱「前弓後箭」。總之，向前的優先。在山牆上的小窗，也略向前偏一點。
+                                        </p>
+                                        <p>房屋內部如果屋頂太高，要加半樓，以木板架在橫樑之上，可當作貯物之所。因為屋頂太高，則「氣」散。若屋頂太低，則「氣」脹，對居家都不好。</p>
+                                        <p>
+                                            水也是財的象徵，所以屋頂坡要向中庭，稱為「四水歸堂」，財流向中央。</p>
+                                        <p>
+                                            排水溝的方向角度自然也依法度，有所謂「走七星步」，細水長流之意。</p>
+                                        <p>
+                                            臺灣古建築在對著街角或巷口，安置「<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_13')">石敢當</a>」。嘉南平原的民宅，也常在正廳前院安設「刀劍屏」。近年最常見的是在大門門楣上懸掛<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_14')">八卦牌</a>、<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_15')">獅咬劍牌</a>、日月雙桃或鏡子。在金門的家祠上常可見有剪刀及花瓶圖形，取其諧音家家平安，為眾祈福。臺灣寺廟最常見到「旗」、「球」、「戟」、「磬」，諧音<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_16')">「祈求吉慶」</a>，這些都是趨吉避凶的妙法。
+                                        </p>
+
                                     </div>
                                 </div>
                             </div>
                         </div><!--content1頁面 結束-->
-                        
-                       <!--content2頁面-->
+
+                        <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                            
+
                         </div><!--content2頁面 結束-->
                         <!-- 獅子問答區 -->
-                        <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion07.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion07.gif"
+                                    alt="Click to view details" name="image" id="image"
+                                    onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
-                            <div class="modal-content" style="background-image: url('images/03_function/side/popup0701.gif'); width: 391px; height: 198px;">
+                            <div class="modal-content"
+                                style="background-image: url('images/03_function/side/popup0701.gif'); width: 391px; height: 198px;">
                                 <span class="close" onclick="closeModal('lionModal')">&times;</span>
-                                
-                                
-                               
+
+
+
                             </div>
                         </div>
                         <!-- end 獅子問答區 -->
-					</div><!--主內容區 結束-->
-				</div>
-			</div>
-		</div>
+                    </div><!--主內容區 結束-->
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/content.js"></script>
     <script src="js/lionModal.js"></script>
     <script type="text/javascript">
-        window.onload=function(){
+        window.onload = function () {
             // 按照頁面需求更換
             const mainSection = document.getElementById("main-section")
             mainSection.style.backgroundImage = "url('" + mainBackground + "')";
         }
     </script>
 </body>
+
 </html>

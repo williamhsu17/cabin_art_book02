@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
         const thisPage = '04_art';
         const thisSide = 'side_default';
 
-       const mainBackground = 'images/04_art/m01_bg.jpg';
+        const mainBackground = 'images/04_art/m01_bg.jpg';
         const navButtonGroupImage = 'images/04_art/top01_06.jpg';
         const navLogoImage = 'images/04_art/top01.gif';
         const navBackgroundImage = 'images/04_art/top07.jpg';
@@ -39,9 +40,11 @@
         .display-none {
             display: none;
         }
+
         .main-section {
             position: relative;
         }
+
         .content {
             width: 600px;
             margin-left: 52px;
@@ -51,34 +54,41 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
-			/*height:310px;
+            /*height:310px;
 			overflow:auto;*/
         }
+
         .content-title-image {
             width: 100%;
         }
+
         .content-body {
             display: block;
             height: 240px;
         }
+
         .content-body p {
             margin-left: 2px;
         }
+
         .content-body img {
             width: 100%;
         }
+
         .sub_links {
             margin-top: 10px !important;
         }
     </style>
 </head>
+
 <body style="background-image: url('images/04_art/left.gif');">
     <div class="container mx-auto container-section" id="container-section-image">
         <div class="row">
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/04_art/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section"
+                        style="width: 96px; height: 324px; background-image: url('images/04_art/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -86,101 +96,126 @@
                                 height: 20px;
                                 font-size: 0;
                                 margin-bottom: 1px;
-                            }                           
-
+                            }
                         </style>
-                        
+
                     </div>
-                    
-                   <!--主要內容區-->
+
+                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                    
+
                         <!--content1頁面-->
                         <div class="content" id="content1">
                             <div class="content-title">
                                 <img class="content-title-image" src="images/04_art/content/01_icon02t.gif" alt="藝術特色">
                             </div>
-                            <div class="content-body" >
+                            <div class="content-body">
                                 <div style="display: flex;">
                                     <div class="image_section mt-3 mr-3" style="width: 200px;">
                                         <!-- image_switch_00預設 -->
                                         <div id="image_switch_00" class="inline-image-switch">
-                                         <div class="image-container">
-                                                <img id="displayImage_00" src="images/04_art/content/4-6/d06_p01a_big.jpg" alt="新莊媽祖廟剪黏作品">
+                                            <div class="image-container">
+                                                <img id="displayImage_00"
+                                                    src="images/04_art/content/4-6/d06_p01a_big.jpg" alt="新莊媽祖廟剪黏作品">
                                             </div>
                                             <p id="displayText">新莊媽祖廟剪黏作品</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/04_art/content/4-6/d06_p01a_big.jpg', 'displayImage_00');"></a>
-												<a href="" class="isb_02" onclick="changeImage('images/04_art/content/4-6/d06_p01b_big.jpg', 'displayImage_00');"></a>
-												<a href="" class="isb_03" onclick="changeImage('images/04_art/content/4-6/d06_p01c_big.jpg', 'displayImage_00');"></a>
-												<a href="" class="isb_04" onclick="changeImage('images/04_art/content/4-6/d06_p01d_big.jpg', 'displayImage_00');"></a>
-												<a href="" class="isb_05" onclick="changeImage('images/04_art/content/4-6/d06_p01e_big.jpg', 'displayImage_00');"></a>						
-                                            </div>      
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/04_art/content/4-6/d06_p01a_big.jpg', 'displayImage_00');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/04_art/content/4-6/d06_p01b_big.jpg', 'displayImage_00');"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/04_art/content/4-6/d06_p01c_big.jpg', 'displayImage_00');"></a>
+                                                <a href="" class="isb_04"
+                                                    onclick="changeImage('images/04_art/content/4-6/d06_p01d_big.jpg', 'displayImage_00');"></a>
+                                                <a href="" class="isb_05"
+                                                    onclick="changeImage('images/04_art/content/4-6/d06_p01e_big.jpg', 'displayImage_00');"></a>
+                                            </div>
 
                                         </div>
-                                        <!-- end image_switch_00 -->         
+                                        <!-- end image_switch_00 -->
                                         <!-- image_switch_01 -->
                                         <div id="image_switch_01" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_01" src="images/04_art/content/4-6/000-cutepaste.jpg" alt="「剪黏」施作過程">
+                                                <img id="displayImage_01"
+                                                    src="images/04_art/content/4-6/000-cutepaste.jpg" alt="「剪黏」施作過程">
                                             </div>
                                             <p>「剪黏」施作過程</p>
-                                             
+
                                         </div>
                                         <!-- end image_switch_01 -->
-                                        
-                                       
+
+
                                     </div>
-                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
-                                       
-                                       <div style="height:20px; width:95px; float:right;" > <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_00')"><img src="images/04_art/content/06_detail01.gif" alt="泥塑剪黏欣賞"></a></div>
-                                       
-                                       <br>
-									
-                                       <p>臺灣傳統建築承襲中國南方的傳統，不但工匠聘自閩、粵，材料亦不辭辛勞運自大陸。從移民建築的特徵來看，他們所建的建築包括住宅及祠廟實際仍為閩、粵建築之延伸。 </p>
-									   <p>閩、粵的古建築盛行在屋脊或牆上施以泥塑及剪黏的裝飾。泥塑也稱為灰塑或彩塑。早在唐代敦煌石窟中即可見到彩塑藝術。剪黏也稱為剪花或嵌瓷，將陶瓷片嵌在泥塑形體之上，中國古代較為罕見，但古羅馬或回教建築卻有這種稱為馬賽克的裝飾作法。臺灣傳統建築大量運用了泥塑與剪黏的裝飾，因而外觀上予人眩目華麗之感。這種多彩多姿的裝飾即是閩、粵、臺古建築之特色。 </p>
-									   <p>      泥塑在臺灣古建築上的運用很廣，除了屋脊的脊垛、脊頭之外，山牆的脊墜、簷下的水車垛以及牆上大幅的裝飾，皆可見到泥塑。所謂泥塑，是利用灰泥本身的可塑性，匠師在現場施工所完成的。但也有提前預鑄的作法。灰泥的成份各地稍有不同，但基本上配方應包含石灰（以石灰石燒製或海邊的蠣殼、貝殼等燒成，有專門燒的灰窯）、砂以及棉花（或麻絨）三者以一定比例混合而成。為了增加黏度，常再摻入烏糖汁或糯米汁。為了延緩乾燥，減少裂縫，也常加入煮熟的海菜汁，也稱為海菜精。這幾種材料混合之後，再以人工方式搗成糊狀，直到出油為止，此時黏度最高，最適合製作泥塑。</p>
-									   <p>泥塑的顏色除了石灰的淺灰色，也可在製作過程中摻入色粉，但近年作法常在最後才塗上油漆顏料，彩度較高。</p>
-									   <p>泥塑的題材很多，從有如浮雕的螭虎到所謂「內枝外葉」的花鳥人物，泥塑的優點是它可以在屋脊上現場製作，也可以預塑，給予匠師很多發揮的餘地。如果製作「內枝外葉」式多層次的雕塑，要以鐵絲為骨，層層加厚灰泥。一般而言，在屋脊上的龍、鳳、螭虎吐草及人物花鳥都藏入鐵絲為骨。而牆上或水車垛的浮塑較少用鐵絲。</p>
-									   <p>泥塑骨材一般都使用鐵絲，古時甚至用竹條或木條當骨材，傳統泥塑神像內部即用木質骨架。在臺灣常見的燕尾屋脊內，早期多用竹條。至於造型較細小的花鳥枝葉，所用鐵絲多作交叉纏繞，有如網狀，其固著力最好，日久灰泥不致鬆脫或龜裂。</p>
-									   <p>有些題材則可用印模技巧完成，例如人物的面孔，武士的盔甲戰袍或需要大量重覆的構件。另外，盔甲及戰甲則分片模印，黏到身體上時依手腳姿態循勢變化。</p>
-									   <p>泥塑完全乾燥之後，通常會上彩漆，近年多改用已經研成粉狀的色料，雖然色彩明亮，且顏色較多，可供選擇。例如油性水泥漆、塑膠漆，但不耐久。 </p>
-									   <p>
-									   剪黏（<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">施作過程</a>）在廣東潮州稱為剪花或嵌瓷，顧名思義即將陶瓷片嵌在泥塑的形體之上的一種裝飾藝術，它的起源不明，但據文獻記載，至少在清初乾隆年間由廣東潮州傳入臺灣。潮州古建築盛行在屋脊上裝飾剪黏這種特殊的藝術，至一九二○年代，已有潮州匠師受聘到臺灣。</p>
-									   <p>剪黏是一種在建築屋脊上現場製作的藝術，具有即興創作的特點，因此剪黏重視構圖與花鳥人物的姿態，適合遠觀，其細節大而化之，較不適合近看。但近代也有鑲嵌在壁上的作品，樓閣人物的細部一覽無遺，朝向精緻化發展。</p>
-									   <p>剪黏色彩明亮是閩、粵及臺灣建築的特色，甚至亦盛行於南洋華人地區的祠廟。但是剪黏經日曬後溫度升高，遇雨則驟降，此時陶瓷片可能斷裂。近年臺灣且多以彩色玻璃片取代傳統陶瓷片，更易碎。因而剪黏在屋脊上無法保持完整，大約每隔三十年要重修，舊物保存不易。</p>  <p>剪黏是將剪好的瓷片嵌入未乾的泥塑上面，有如穿上一件多片的瓷衣。捏塑灰泥時要稍瘦一些，才有足夠餘地嵌上瓷片。泥塑體本身也是層層加厚的，直到最後一層時，等到半乾狀態即可開始插入瓷片，依各種題材而有不同角度之插法。事實上，剪黏、泥塑以及上釉入窯燒成的「湳燙」（又稱為交趾陶）三者可以並存。例如規帶牌頭上，山景以泥塑為之，人物為交趾陶，但樹木樓閣以剪黏完成，三種技巧交互運用，更為可觀。精於此道的匠師，通常三種工法都熟練。</p>
+                                    <div class="mt-3"
+                                        style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+
+                                        <div style="height:20px; width:95px; float:right;"> <a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_00')"><img
+                                                    src="images/04_art/content/06_detail01.gif" alt="泥塑剪黏欣賞"></a></div>
+
+                                        <br>
+
+                                        <p>臺灣傳統建築承襲中國南方的傳統，不但工匠聘自閩、粵，材料亦不辭辛勞運自大陸。從移民建築的特徵來看，他們所建的建築包括住宅及祠廟實際仍為閩、粵建築之延伸。
+                                        </p>
+                                        <p>閩、粵的古建築盛行在屋脊或牆上施以泥塑及剪黏的裝飾。泥塑也稱為灰塑或彩塑。早在唐代敦煌石窟中即可見到彩塑藝術。剪黏也稱為剪花或嵌瓷，將陶瓷片嵌在泥塑形體之上，中國古代較為罕見，但古羅馬或回教建築卻有這種稱為馬賽克的裝飾作法。臺灣傳統建築大量運用了泥塑與剪黏的裝飾，因而外觀上予人眩目華麗之感。這種多彩多姿的裝飾即是閩、粵、臺古建築之特色。
+                                        </p>
+                                        <p> 泥塑在臺灣古建築上的運用很廣，除了屋脊的脊垛、脊頭之外，山牆的脊墜、簷下的水車垛以及牆上大幅的裝飾，皆可見到泥塑。所謂泥塑，是利用灰泥本身的可塑性，匠師在現場施工所完成的。但也有提前預鑄的作法。灰泥的成份各地稍有不同，但基本上配方應包含石灰（以石灰石燒製或海邊的蠣殼、貝殼等燒成，有專門燒的灰窯）、砂以及棉花（或麻絨）三者以一定比例混合而成。為了增加黏度，常再摻入烏糖汁或糯米汁。為了延緩乾燥，減少裂縫，也常加入煮熟的海菜汁，也稱為海菜精。這幾種材料混合之後，再以人工方式搗成糊狀，直到出油為止，此時黏度最高，最適合製作泥塑。
+                                        </p>
+                                        <p>泥塑的顏色除了石灰的淺灰色，也可在製作過程中摻入色粉，但近年作法常在最後才塗上油漆顏料，彩度較高。</p>
+                                        <p>泥塑的題材很多，從有如浮雕的螭虎到所謂「內枝外葉」的花鳥人物，泥塑的優點是它可以在屋脊上現場製作，也可以預塑，給予匠師很多發揮的餘地。如果製作「內枝外葉」式多層次的雕塑，要以鐵絲為骨，層層加厚灰泥。一般而言，在屋脊上的龍、鳳、螭虎吐草及人物花鳥都藏入鐵絲為骨。而牆上或水車垛的浮塑較少用鐵絲。
+                                        </p>
+                                        <p>泥塑骨材一般都使用鐵絲，古時甚至用竹條或木條當骨材，傳統泥塑神像內部即用木質骨架。在臺灣常見的燕尾屋脊內，早期多用竹條。至於造型較細小的花鳥枝葉，所用鐵絲多作交叉纏繞，有如網狀，其固著力最好，日久灰泥不致鬆脫或龜裂。
+                                        </p>
+                                        <p>有些題材則可用印模技巧完成，例如人物的面孔，武士的盔甲戰袍或需要大量重覆的構件。另外，盔甲及戰甲則分片模印，黏到身體上時依手腳姿態循勢變化。</p>
+                                        <p>泥塑完全乾燥之後，通常會上彩漆，近年多改用已經研成粉狀的色料，雖然色彩明亮，且顏色較多，可供選擇。例如油性水泥漆、塑膠漆，但不耐久。 </p>
+                                        <p>
+                                            剪黏（<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_01')">施作過程</a>）在廣東潮州稱為剪花或嵌瓷，顧名思義即將陶瓷片嵌在泥塑的形體之上的一種裝飾藝術，它的起源不明，但據文獻記載，至少在清初乾隆年間由廣東潮州傳入臺灣。潮州古建築盛行在屋脊上裝飾剪黏這種特殊的藝術，至一九二○年代，已有潮州匠師受聘到臺灣。
+                                        </p>
+                                        <p>剪黏是一種在建築屋脊上現場製作的藝術，具有即興創作的特點，因此剪黏重視構圖與花鳥人物的姿態，適合遠觀，其細節大而化之，較不適合近看。但近代也有鑲嵌在壁上的作品，樓閣人物的細部一覽無遺，朝向精緻化發展。
+                                        </p>
+                                        <p>剪黏色彩明亮是閩、粵及臺灣建築的特色，甚至亦盛行於南洋華人地區的祠廟。但是剪黏經日曬後溫度升高，遇雨則驟降，此時陶瓷片可能斷裂。近年臺灣且多以彩色玻璃片取代傳統陶瓷片，更易碎。因而剪黏在屋脊上無法保持完整，大約每隔三十年要重修，舊物保存不易。
+                                        </p>
+                                        <p>剪黏是將剪好的瓷片嵌入未乾的泥塑上面，有如穿上一件多片的瓷衣。捏塑灰泥時要稍瘦一些，才有足夠餘地嵌上瓷片。泥塑體本身也是層層加厚的，直到最後一層時，等到半乾狀態即可開始插入瓷片，依各種題材而有不同角度之插法。事實上，剪黏、泥塑以及上釉入窯燒成的「湳燙」（又稱為交趾陶）三者可以並存。例如規帶牌頭上，山景以泥塑為之，人物為交趾陶，但樹木樓閣以剪黏完成，三種技巧交互運用，更為可觀。精於此道的匠師，通常三種工法都熟練。
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div><!--content1頁面 結束-->
-                        
+
                         <!--content2頁面-->
                         <div class="content display-none" id="content2">
-                            
+
                         </div><!--content2頁面 結束-->
                         <!-- 獅子問答區 -->
-                        <div class="lion_section"> <a href="#"><img src="images/04_art/side/lion06.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        <div class="lion_section"> <a href="#"><img src="images/04_art/side/lion06.gif"
+                                    alt="Click to view details" name="image" id="image"
+                                    onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
-                            <div class="modal-content" style="background-image: url('images/04_art/side/popup0601.gif'); width: 391px; height: 298px;">
+                            <div class="modal-content"
+                                style="background-image: url('images/04_art/side/popup0601.gif'); width: 391px; height: 298px;">
                                 <span class="close" onclick="closeModal('lionModal')">&times;</span>
-                               
+
                             </div>
                         </div>
                         <!-- end 獅子問答區 -->
-					</div><!--主內容區 結束-->
-				</div>
-			</div>
-		</div>
+                    </div><!--主內容區 結束-->
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/content.js"></script>
     <script src="js/lionModal.js"></script>
     <script type="text/javascript">
-        window.onload=function(){
+        window.onload = function () {
             // 按照頁面需求更換
             const mainSection = document.getElementById("main-section")
             mainSection.style.backgroundImage = "url('" + mainBackground + "')";
         }
     </script>
 </body>
+
 </html>

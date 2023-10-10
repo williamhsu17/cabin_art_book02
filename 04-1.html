@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
         const thisPage = '04_art';
         const thisSide = 'side_default';
 
-       const mainBackground = 'images/04_art/m01_bg.jpg';
+        const mainBackground = 'images/04_art/m01_bg.jpg';
         const navButtonGroupImage = 'images/04_art/top01_01.jpg';
         const navLogoImage = 'images/04_art/top01.gif';
         const navBackgroundImage = 'images/04_art/top07.jpg';
@@ -39,9 +40,11 @@
         .display-none {
             display: none;
         }
+
         .main-section {
             position: relative;
         }
+
         .content {
             width: 600px;
             margin-left: 52px;
@@ -51,34 +54,41 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
-			/*height:310px;
+            /*height:310px;
 			overflow:auto;*/
         }
+
         .content-title-image {
             width: 100%;
         }
+
         .content-body {
             display: block;
             height: 240px;
         }
+
         .content-body p {
             margin-left: 2px;
         }
+
         .content-body img {
             width: 100%;
         }
+
         .sub_links {
             margin-top: 10px !important;
         }
     </style>
 </head>
+
 <body style="background-image: url('images/04_art/left.gif');">
     <div class="container mx-auto container-section" id="container-section-image">
         <div class="row">
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/04_art/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section"
+                        style="width: 96px; height: 324px; background-image: url('images/04_art/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -87,29 +97,34 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
+
                             #link_01 {
                                 background-image: url("images/04_art/side/01_icon01a.gif");
                             }
+
                             #link_01:hover {
                                 background-image: url("images/04_art/side/01_icon01b.gif");
                             }
+
                             #link_02 {
                                 background-image: url("images/04_art/side/01_icon02a.gif");
                             }
+
                             #link_02:hover {
                                 background-image: url("images/04_art/side/01_icon02b.gif");
                             }
-
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')" style="font-size: 0;">內容區1</a>
-                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')" style="font-size: 0;">內容區2</a>
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"
+                                style="font-size: 0;">內容區1</a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"
+                                style="font-size: 0;">內容區2</a>
                         </div>
                     </div>
-                    
-                   <!--主要內容區-->
+
+                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                    
+
                         <!--content1頁面-->
                         <div class="content" id="content1">
                             <div class="content-title">
@@ -117,106 +132,136 @@
                             </div>
                             <div class="content-body" style=" overflow: auto;">
                                 <div style="display: flex;">
-                                    <img style="width: 100%; height: 100%; margin-top: 20px" src="images/04_art/content/4-1/d0101-01.jpg" alt="Image">
-                                    <p style="width: 100%; margin-top: 20px;">臺灣清代的民居中，一般平民的建築多係就地取材，因地制宜，利用空暇由農民自行建造房舍。但士大夫宅第或地主富商等豪宅的建材多運自閩、粵。並且匠師也聘自閩、粵，人們尊稱為「唐山師傅」。在長達三百年以上的發展過程。臺灣的民居因應自然地理條件，也產生了變化，逐漸形成地方特色。</p> 									
-                                    
+                                    <img style="width: 100%; height: 100%; margin-top: 20px"
+                                        src="images/04_art/content/4-1/d0101-01.jpg" alt="Image">
+                                    <p style="width: 100%; margin-top: 20px;">
+                                        臺灣清代的民居中，一般平民的建築多係就地取材，因地制宜，利用空暇由農民自行建造房舍。但士大夫宅第或地主富商等豪宅的建材多運自閩、粵。並且匠師也聘自閩、粵，人們尊稱為「唐山師傅」。在長達三百年以上的發展過程。臺灣的民居因應自然地理條件，也產生了變化，逐漸形成地方特色。
+                                    </p>
+
                                 </div>
 
-                                <p>十九世紀末葉，臺灣的民居開始表現出不同以往的風格，尤以大木結構特別明顯。大木結構的構件傾向於繁複的彫飾，木彫精細，彩繪豐富。並且融合了閩南的漳、泉與粵東的潮、汕各地特色，匯聚成一種混合式的風格。一九三○年代到達第一次的高峰，臺灣本地匠師逐漸增多是一個主因；到了一九四九年以後，又形成第二次高峰，寺廟或民居常常混合了北京宮殿、蘇州園林等局部特色，形成了更多樣的混合風格。</p>
-								<p>在中國南方所發現的元代以前古建築雖與宋《法式》相近，但仍有不同之處。在作法有與宋《法式》所訂北方作法略異之處，認為可能滲入了南方古代地方手法之結果。</p>
-								<p>臺灣的居民除了原住民九族及平埔族外，最主要的是從閩南與粵東移民的漢族，其中又分為泉州人，漳州人以及客家人。據史載，閩、粵在古代本有數支南方的民族，至五胡亂華，東晉南渡，開始有大量的中原漢族南下閩、粵。其中有家譜詳載者如客家人，其遷移路線係經由皖與贛再進入閩、粵。後來宋室南遷與明末動亂，陸續自中原再遷移許多漢族進入南方，明末清初又隨鄭成功東渡臺灣，而這些漢族南遷的史實中的民族遷移路線連帶地影響了建築的發展。</p>
-								<p>中原漢族從東晉之後幾次南遷的路線大致相同，從黃河流域經安徽、江西再進入福建與廣東。民族遷移時，隨著地理條件之差異，民居也有所調適。易言之，例如客家人在中原時也許未曾建造土圍或土樓式的民居，至贛南、閩西與粵東後，因客觀條件改變了，才嘗試建造新形式的民居。另外一個值得注意的是匠師的流動問題，古代常有南匠北調之事，明初建造北京城時，即徵用南方蘇州匠師與江西匠師。因此，漢人南移時中原匠師隨之南下，並與南方匠師相互影響，甚至合流，形成新的匠派，這是很自然的發展。</p>
-								<p>民居的研究，從族譜下手或許是一條研究的線索。臺灣的傳統匠師，大都是清末從閩、粵渡臺後，落腳生根而成。通過臺灣各地民居大木結構之比較分析，我們粗略可判別何者來自泉州，何者來自漳州。</p>
-								
-								<p>	但閩、粵之間的關係如何？與浙、贛或皖南的關係又如何？臺灣民居上的大木構件與皖、贛、浙、閩、粵古建築上構件略作比較，或可作個參考。</p>
+                                <p>十九世紀末葉，臺灣的民居開始表現出不同以往的風格，尤以大木結構特別明顯。大木結構的構件傾向於繁複的彫飾，木彫精細，彩繪豐富。並且融合了閩南的漳、泉與粵東的潮、汕各地特色，匯聚成一種混合式的風格。一九三○年代到達第一次的高峰，臺灣本地匠師逐漸增多是一個主因；到了一九四九年以後，又形成第二次高峰，寺廟或民居常常混合了北京宮殿、蘇州園林等局部特色，形成了更多樣的混合風格。
+                                </p>
+                                <p>在中國南方所發現的元代以前古建築雖與宋《法式》相近，但仍有不同之處。在作法有與宋《法式》所訂北方作法略異之處，認為可能滲入了南方古代地方手法之結果。</p>
+                                <p>臺灣的居民除了原住民九族及平埔族外，最主要的是從閩南與粵東移民的漢族，其中又分為泉州人，漳州人以及客家人。據史載，閩、粵在古代本有數支南方的民族，至五胡亂華，東晉南渡，開始有大量的中原漢族南下閩、粵。其中有家譜詳載者如客家人，其遷移路線係經由皖與贛再進入閩、粵。後來宋室南遷與明末動亂，陸續自中原再遷移許多漢族進入南方，明末清初又隨鄭成功東渡臺灣，而這些漢族南遷的史實中的民族遷移路線連帶地影響了建築的發展。
+                                </p>
+                                <p>中原漢族從東晉之後幾次南遷的路線大致相同，從黃河流域經安徽、江西再進入福建與廣東。民族遷移時，隨著地理條件之差異，民居也有所調適。易言之，例如客家人在中原時也許未曾建造土圍或土樓式的民居，至贛南、閩西與粵東後，因客觀條件改變了，才嘗試建造新形式的民居。另外一個值得注意的是匠師的流動問題，古代常有南匠北調之事，明初建造北京城時，即徵用南方蘇州匠師與江西匠師。因此，漢人南移時中原匠師隨之南下，並與南方匠師相互影響，甚至合流，形成新的匠派，這是很自然的發展。
+                                </p>
+                                <p>民居的研究，從族譜下手或許是一條研究的線索。臺灣的傳統匠師，大都是清末從閩、粵渡臺後，落腳生根而成。通過臺灣各地民居大木結構之比較分析，我們粗略可判別何者來自泉州，何者來自漳州。
+                                </p>
+
+                                <p> 但閩、粵之間的關係如何？與浙、贛或皖南的關係又如何？臺灣民居上的大木構件與皖、贛、浙、閩、粵古建築上構件略作比較，或可作個參考。</p>
                             </div>
                         </div><!--content1頁面 結束-->
-                        
+
                         <!--content2頁面-->
                         <div class="content display-none" id="content2">
                             <div class="content-title">
                                 <img class="content-title-image" src="images/04_art/content/01_icon02t.gif" alt="藝術特色">
                             </div>
-                            <div class="content-body" >
+                            <div class="content-body">
                                 <div style="display: flex;">
                                     <div class="image_section mt-3 mr-3" style="width: 200px;">
                                         <!-- image_switch_00預設 -->
                                         <div id="image_switch_00" class="inline-image-switch">
-                                         <div class="image-container">
-                                                <img id="displayImage_00" src="images/04_art/content/4-1/01_02pic02_big.jpg" alt="大木結構綜合圖">
+                                            <div class="image-container">
+                                                <img id="displayImage_00"
+                                                    src="images/04_art/content/4-1/01_02pic02_big.jpg" alt="大木結構綜合圖">
                                             </div>
                                             <p id="displayText">螭虎形栱身、四角斗、吊筒（北港朝天宮）</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/04_art/content/4-1/01_02pic02_big.jpg', 'displayImage_00'); changeText('螭虎形栱身、四角斗、吊筒（北港朝天宮）', 'displayText');"></a>
-												<a href=" " class="isb_02" onclick="changeImage('images/04_art/content/4-1/01_02pic01_big.jpg', 'displayImage_00'); changeText('束木、瓜筒（淡水龍山寺）', 'displayText');"></a>
-                                            </div>           
-                                                       
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/04_art/content/4-1/01_02pic02_big.jpg', 'displayImage_00'); changeText('螭虎形栱身、四角斗、吊筒（北港朝天宮）', 'displayText');"></a>
+                                                <a href=" " class="isb_02"
+                                                    onclick="changeImage('images/04_art/content/4-1/01_02pic01_big.jpg', 'displayImage_00'); changeText('束木、瓜筒（淡水龍山寺）', 'displayText');"></a>
+                                            </div>
+
 
                                         </div>
-                                        <!-- end image_switch_00 -->                                        
+                                        <!-- end image_switch_00 -->
                                         <!-- image_switch_01 -->
                                         <div id="image_switch_01" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage" sty src="images/04_art/content/4-1/d0102-01_big.jpg" alt="八角斗（臺中門樓）">
+                                                <img id="displayImage" sty
+                                                    src="images/04_art/content/4-1/d0102-01_big.jpg" alt="八角斗（臺中門樓）">
                                             </div>
-                                            <p>八角斗（臺中門樓）</p>                                 
+                                            <p>八角斗（臺中門樓）</p>
                                         </div>
                                         <!-- end image_switch_01 -->
                                         <!-- image_switch_02 -->
                                         <div id="image_switch_02" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_02" sty src="images/04_art/content/4-1/d0102-02_big.jpg" alt="圓斗、蓮花斗（萬華龍山寺）">
+                                                <img id="displayImage_02" sty
+                                                    src="images/04_art/content/4-1/d0102-02_big.jpg"
+                                                    alt="圓斗、蓮花斗（萬華龍山寺）">
                                             </div>
                                             <p>圓斗、蓮花斗（萬華龍山寺）</p>
-                                                                                
+
                                         </div>
                                         <!-- end image_switch_02 -->
                                         <!-- image_switch_03 -->
                                         <div id="image_switch_03" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_03" sty src="images/04_art/content/4-1/d01_p01_big.jpg" alt="瓜柱（板橋林本源園邸）">
+                                                <img id="displayImage_03" sty
+                                                    src="images/04_art/content/4-1/d01_p01_big.jpg" alt="瓜柱（板橋林本源園邸）">
                                             </div>
-                                            <p>瓜柱（板橋林本源園邸）</p>                                  
+                                            <p>瓜柱（板橋林本源園邸）</p>
                                         </div>
                                         <!-- end image_switch_03 -->
-                                       
+
                                     </div>
-                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
-                                       
-									   	<div style="height:20px; width:95px; float:right;"><a href="images//04_art/content/4-1/01_02pic03_big.jpg" target="_blank" title="在新視窗打開連結"><img sty src="images/04_art/content/01_detail01.gif" alt="大木結構綜合圖" ></a></div>
-                                       
-                                       <br>
-									  
-                                         <p>臺灣民居的大木結構反映了年代愈晚愈有精緻化及裝飾化之傾向，例如束木的造形增加了雕飾，栱身也喜彫成螭虎形，斗的形式有六角、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">八角</a>、菱花、桃彎及<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">蓮花</a>等，瓜柱的雕飾也增加內容，一根<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">瓜柱</a>可再分為瓜蓋，瓜仁及瓜腳等三部份。小構件增多，木材內部的榫卯跟著複雜化。臺灣精巧的榫頭相對的也具有強化構造節點之作用，例如臺灣多地震與颱風之害，大木結構皆有考慮及此。</p>
-										 <p>在皖、贛、浙、閩及粵的明代以前木構造建築與宋營造法式比較，恐仍有商權餘地，宋法式為北宋官方所頒佈，其實際影響力並無法及於南方的偏遠地區，南方的木匠大約在明代將經驗總結出一本「魯班經」，魯班經內容是以南方為對象的，近代臺灣的匠師仍然使用魯班經。因此，要將皖、贛、閩、粵、臺等地區的民居木構造與魯班經所定規矩加以比較研究，或可更加明瞭魯班經的影響圈。</p>
-										 <p>歸結言之，臺灣民居主要淵源於閩南與粵東，大木結構方式一脈相承，但至二十世紀以來發生混合現象，形成了臺灣的地方風格。</p>
+                                    <div class="mt-3"
+                                        style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+
+                                        <div style="height:20px; width:95px; float:right;"><a
+                                                href="images//04_art/content/4-1/01_02pic03_big.jpg" target="_blank"
+                                                title="在新視窗打開連結"><img sty src="images/04_art/content/01_detail01.gif"
+                                                    alt="大木結構綜合圖"></a></div>
+
+                                        <br>
+
+                                        <p>臺灣民居的大木結構反映了年代愈晚愈有精緻化及裝飾化之傾向，例如束木的造形增加了雕飾，栱身也喜彫成螭虎形，斗的形式有六角、<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_01')">八角</a>、菱花、桃彎及<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_02')">蓮花</a>等，瓜柱的雕飾也增加內容，一根<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_03')">瓜柱</a>可再分為瓜蓋，瓜仁及瓜腳等三部份。小構件增多，木材內部的榫卯跟著複雜化。臺灣精巧的榫頭相對的也具有強化構造節點之作用，例如臺灣多地震與颱風之害，大木結構皆有考慮及此。
+                                        </p>
+                                        <p>在皖、贛、浙、閩及粵的明代以前木構造建築與宋營造法式比較，恐仍有商權餘地，宋法式為北宋官方所頒佈，其實際影響力並無法及於南方的偏遠地區，南方的木匠大約在明代將經驗總結出一本「魯班經」，魯班經內容是以南方為對象的，近代臺灣的匠師仍然使用魯班經。因此，要將皖、贛、閩、粵、臺等地區的民居木構造與魯班經所定規矩加以比較研究，或可更加明瞭魯班經的影響圈。
+                                        </p>
+                                        <p>歸結言之，臺灣民居主要淵源於閩南與粵東，大木結構方式一脈相承，但至二十世紀以來發生混合現象，形成了臺灣的地方風格。</p>
                                     </div>
                                 </div>
                             </div>
                         </div><!--content2頁面 結束-->
                         <!-- 獅子問答區 -->
-                        <div class="lion_section"> <a href="#"><img src="images/04_art/side/lion01.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        <div class="lion_section"> <a href="#"><img src="images/04_art/side/lion01.gif"
+                                    alt="Click to view details" name="image" id="image"
+                                    onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
-                            <div class="modal-content" style="background-image: url('images/04_art/side/popup0101.gif'); width: 391px; height: 298px;">
+                            <div class="modal-content"
+                                style="background-image: url('images/04_art/side/popup0101.gif'); width: 391px; height: 298px;">
                                 <span class="close" onclick="closeModal('lionModal')">&times;</span>
-                               
+
                             </div>
                         </div>
                         <!-- end 獅子問答區 -->
-					</div><!--主內容區 結束-->
-				</div>
-			</div>
-		</div>
+                    </div><!--主內容區 結束-->
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/content.js"></script>
     <script src="js/lionModal.js"></script>
     <script type="text/javascript">
-        window.onload=function(){
+        window.onload = function () {
             // 按照頁面需求更換
             const mainSection = document.getElementById("main-section")
             mainSection.style.backgroundImage = "url('" + mainBackground + "')";
         }
     </script>
 </body>
+
 </html>

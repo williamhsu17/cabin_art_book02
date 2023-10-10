@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,9 +40,11 @@
         .display-none {
             display: none;
         }
+
         .main-section {
             position: relative;
         }
+
         .content {
             width: 569px;
             margin-left: 52px;
@@ -52,16 +55,20 @@
             color: #363637;
             font-size: smaller;
         }
+
         .content-title-image {
             width: 100%;
         }
+
         .content-body {
             display: flex;
         }
+
         .content-body p {
             margin-left: 2px;
         }
-        .content-body img{
+
+        .content-body img {
             width: 100%;
         }
     </style>
@@ -73,7 +80,8 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section"
+                        style="width: 96px; height: 324px; background-image: url('images/01_history/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -82,183 +90,243 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
+
                             #link_01 {
                                 background-image: url("images/01_history/side/03_icon01a.gif");
                             }
+
                             #link_01:hover {
                                 background-image: url("images/01_history/side/03_icon01b.gif");
                             }
+
                             #link_02 {
                                 background-image: url("images/01_history/side/03_icon02a.gif");
                             }
+
                             #link_02:hover {
                                 background-image: url("images/01_history/side/03_icon02b.gif");
                             }
-                           
-                           
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')" style="font-size: 0;">內容區1</a>
-                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')" style="font-size: 0;">內容區2</a>
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"
+                                style="font-size: 0;">內容區1</a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"
+                                style="font-size: 0;">內容區2</a>
                         </div>
                     </div>
-                    
-                   
-                   <!--主要內容區-->
+
+
+                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                       
-                       
+
+
                         <div class="content" id="content1">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="歷史背景">
+                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif"
+                                    alt="歷史背景">
                             </div>
-							
-							<br>							
-                            
-							<div class="content-body">
-							
+
+                            <br>
+
+                            <div class="content-body">
+
                                 <p>荷蘭在萬曆三十二年（1600）侵入澎湖，以澎湖為貿易基地，後經明朝軟硬施壓，於年底撤離澎湖。十七世紀初年，天啟元年（1621），荷蘭人又入侵澎湖，並有計畫性的在澎湖風櫃尾築城，過了四年（1624），荷蘭人轉進到臺灣，著手興建熱蘭遮城，這是荷蘭人經營臺灣之始。
-								
-								<br>
-								
-								<br>荷蘭據臺共三十八年，其主要經營區域多在臺灣南部，其他地方可能只限於傳教行為。</p>
-								
-								 <div align="center"><img style="width: 270px; height: 154px;" src="images/01_history/content/1-3/03_01pic01.jpg" alt="Image"></div>
-								
+
+                                    <br>
+
+                                    <br>荷蘭據臺共三十八年，其主要經營區域多在臺灣南部，其他地方可能只限於傳教行為。
+                                </p>
+
+                                <div align="center"><img style="width: 270px; height: 154px;"
+                                        src="images/01_history/content/1-3/03_01pic01.jpg" alt="Image"></div>
+
                             </div>
                         </div><!--content1頁面 結束-->
-                        
+
                         <!--content2頁面-->
                         <div class="content display-none" id="content2">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="代表建築">
+                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif"
+                                    alt="代表建築">
                             </div>
                             <div class="content-body">
                                 <div style="display: flex;">
                                     <div class="image_section mt-3 mr-3" style="width: 200px;">
-                                         <!-- image_switch_01預設 -->
+                                        <!-- image_switch_01預設 -->
                                         <div id="image_switch_01" class="inline-image-switch">
                                             <div class="image-container">
-                                                <img id="displayImage_01" sty src="images/01_history/content/1-3/016-05.jpg" alt="熱蘭遮城（臺南安平）">
+                                                <img id="displayImage_01" sty
+                                                    src="images/01_history/content/1-3/016-05.jpg" alt="熱蘭遮城（臺南安平）">
                                             </div>
                                             <p id="displayText">熱蘭遮城牆（臺南安平）</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-3/016-05.jpg', 'displayImage_01'); changeText('熱蘭遮城牆（臺南安平）', 'displayText');"></a>
-												<a href=" " class="isb_02" onclick="changeImage('images/01_history/content/1-3/016-09.jpg', 'displayImage_01'); changeText('熱蘭遮城（臺南安平）', 'displayText');"></a>
-                                            </div>                                    
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-3/016-05.jpg', 'displayImage_01'); changeText('熱蘭遮城牆（臺南安平）', 'displayText');"></a>
+                                                <a href=" " class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-3/016-09.jpg', 'displayImage_01'); changeText('熱蘭遮城（臺南安平）', 'displayText');"></a>
+                                            </div>
                                         </div>
                                         <!-- end image_switch_01 -->
-										<!-- image_switch_02 -->                                        <div id="image_switch_02" class="inline-image-switch display-none">
+                                        <!-- image_switch_02 -->
+                                        <div id="image_switch_02" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_02" sty src="images/01_history/content/1-3/016-06.jpg" alt="鐵剪刀遺蹟（熱蘭遮城遺跡）">
+                                                <img id="displayImage_02" sty
+                                                    src="images/01_history/content/1-3/016-06.jpg" alt="鐵剪刀遺蹟（熱蘭遮城遺跡）">
                                             </div>
-                                            <p>鐵剪刀遺蹟（熱蘭遮城遺跡）</p>                                  
+                                            <p>鐵剪刀遺蹟（熱蘭遮城遺跡）</p>
                                         </div>
-                                         <!-- end image_switch_02 -->
-										 <!-- image_switch_03 --> 
-										 <div id="image_switch_03" class="inline-image-switch display-none">
+                                        <!-- end image_switch_02 -->
+                                        <!-- image_switch_03 -->
+                                        <div id="image_switch_03" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_03" sty src="images/01_history/content/1-3/016-04.jpg" alt="鐵方形樑的榫洞（熱蘭遮城遺跡）">
+                                                <img id="displayImage_03" sty
+                                                    src="images/01_history/content/1-3/016-04.jpg"
+                                                    alt="鐵方形樑的榫洞（熱蘭遮城遺跡）">
                                             </div>
-                                            <p>鐵方形樑的榫洞（熱蘭遮城遺跡）</p>                                  
+                                            <p>鐵方形樑的榫洞（熱蘭遮城遺跡）</p>
                                         </div>
-                                         <!-- end image_switch_03 -->
-										 <!-- image_switch_04 -->
-										 <div id="image_switch_04" class="inline-image-switch display-none">
+                                        <!-- end image_switch_03 -->
+                                        <!-- image_switch_04 -->
+                                        <div id="image_switch_04" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_04" sty src="images/01_history/content/1-3/017-03.jpg" alt="普羅文蒂亞城（今赤崁樓）">
+                                                <img id="displayImage_04" sty
+                                                    src="images/01_history/content/1-3/017-03.jpg" alt="普羅文蒂亞城（今赤崁樓）">
                                             </div>
                                             <p>普羅文蒂亞城（今赤崁樓）</p>
-											<div class="button-container">
-											<a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-3/017-03.jpg', 'displayImage_04');" class="image-switch-button" alt="b1"></a>
-											<a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-3/017-05.jpg', 'displayImage_04');" class="image-switch-button" alt="b2"></a>
-											<a href="" class="isb_03" onclick=" changeImage('images/01_history/content/1-3/017-08.jpg', 'displayImage_04');" class="image-switch-button" alt="b3"></a>
-                                            </div>                                   
-                                        </div>
-                                         <!-- end image_switch_04 -->
-										 <!-- image_switch_05 --> 
-										 <div id="image_switch_05" class="inline-image-switch display-none">
-                                            <div class="image-container">
-                                                <img id="displayImage_05" sty src="images/01_history/content/1-3/a0302_p05.jpg" alt="聖多明哥城（今紅毛城）">
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-3/017-03.jpg', 'displayImage_04');"
+                                                    class="image-switch-button" alt="b1"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-3/017-05.jpg', 'displayImage_04');"
+                                                    class="image-switch-button" alt="b2"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick=" changeImage('images/01_history/content/1-3/017-08.jpg', 'displayImage_04');"
+                                                    class="image-switch-button" alt="b3"></a>
                                             </div>
-                                            <p>聖多明哥城（今紅毛城）</p>                                  
                                         </div>
-                                         <!-- end image_switch_05 -->
-										 <!-- image_switch_06 --> 
-										 <div id="image_switch_06" class="inline-image-switch display-none">
+                                        <!-- end image_switch_04 -->
+                                        <!-- image_switch_05 -->
+                                        <div id="image_switch_05" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_06" sty src="images/01_history/content/1-3/a03_p03a.jpg" alt="基隆和平島 番字洞">
+                                                <img id="displayImage_05" sty
+                                                    src="images/01_history/content/1-3/a0302_p05.jpg" alt="聖多明哥城（今紅毛城）">
+                                            </div>
+                                            <p>聖多明哥城（今紅毛城）</p>
+                                        </div>
+                                        <!-- end image_switch_05 -->
+                                        <!-- image_switch_06 -->
+                                        <div id="image_switch_06" class="inline-image-switch display-none">
+                                            <div class="image-container">
+                                                <img id="displayImage_06" sty
+                                                    src="images/01_history/content/1-3/a03_p03a.jpg" alt="基隆和平島 番字洞">
                                             </div>
                                             <p>基隆和平島 番字洞</p>
-											<div class="button-container">
-											<a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-3/a03_p03a.jpg', 'displayImage_06');" class="image-switch-button" alt="b1"></a>
-											<a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-3/a03_p03b.jpg', 'displayImage_06');" class="image-switch-button" alt="b2"></a>
-											<a href="" class="isb_03" onclick=" changeImage('images/01_history/content/1-3/a03_p03c.jpg', 'displayImage_06');" class="image-switch-button" alt="b3"></a>
-                                            </div>                                   
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-3/a03_p03a.jpg', 'displayImage_06');"
+                                                    class="image-switch-button" alt="b1"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-3/a03_p03b.jpg', 'displayImage_06');"
+                                                    class="image-switch-button" alt="b2"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick=" changeImage('images/01_history/content/1-3/a03_p03c.jpg', 'displayImage_06');"
+                                                    class="image-switch-button" alt="b3"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_06 -->
-										 <!-- image_switch_07 --> 
-										 <div id="image_switch_07" class="inline-image-switch display-none">
+                                        <!-- end image_switch_06 -->
+                                        <!-- image_switch_07 -->
+                                        <div id="image_switch_07" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_07" sty src="images/01_history/content/1-3/a0402_p02.jpg" alt="黑人形象交趾陶（佳里震興宮）">
+                                                <img id="displayImage_07" sty
+                                                    src="images/01_history/content/1-3/a0402_p02.jpg"
+                                                    alt="黑人形象交趾陶（佳里震興宮）">
                                             </div>
                                             <p>黑人形象交趾陶（佳里震興宮）</p>
-											<div class="button-container">
-											<a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-3/a0402_p02.jpg', 'displayImage_07');" class="image-switch-button" alt="b1"></a>
-											<a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-3/a0402_p03.jpg', 'displayImage_07');" class="image-switch-button" alt="b2"></a>
-                                            </div>                                   
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-3/a0402_p02.jpg', 'displayImage_07');"
+                                                    class="image-switch-button" alt="b1"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-3/a0402_p03.jpg', 'displayImage_07');"
+                                                    class="image-switch-button" alt="b2"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_07 -->
-										 
-                                    </div>
-                                    
-                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
-                                        <p><a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">熱蘭遮城</a>為長方形，以糯米糊製作出來的「紅毛土」砌上紅磚成為城牆，到現在仍然非常堅固。外牆壁保留有兩種痕跡，一是<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">鐵剪刀</a>的遺蹟，也就是所謂的 「壁鎖」；另一種是方形樑的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">榫洞</a>。<br />
-										 </p>
-										 <p>另一座荷蘭人所建的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_04')">普羅文蒂亞城</a>，也就是現今的「赤崁樓」，據說是夕陽西下時，城壁呈現赤色而稱為赤崁樓。這座城臺基頗似熱蘭遮城。它的入口為半圓拱形，臺基由三個正方形組成的。可惜在清末已倒毀，再由地方官吏改為中國式樓閣，即為現今我們所見的赤崁樓。</p>
-										 <p>
-										 而<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_05')">聖多明哥城</a>，也就是現在我們所稱的「紅毛城」；原為西元 1629 年由西班牙人建，後來被荷蘭人所佔，於西元 1644 年再興築成為紅毛城。紅毛城的屋頂為半圓筒狀，為了防裂，底樓與二樓的筒面呈垂直配置。經過明鄭時期、清初管理及十九世紀租借給英國作為領事館後，使得紅毛城的外觀產生一些變化。</p>
+                                        <!-- end image_switch_07 -->
 
-										<p>荷蘭人佔據臺灣南部的第二年，西班牙也出兵侵入臺灣北部。於 1626 年登陸三貂角及雞籠，在社寮島建築聖薩爾瓦多堡。聖薩爾瓦多堡的遺蹟在日據時期尚存，近年已湮沒在中船造船廠址內；另外在西元 1627 年在聖薩爾瓦多堡旁建立社寮島教堂，是西班牙在臺灣所建的第一座教堂。</p>
-										<p>到了西元 1629 年西班牙人佔領滬尾，並建立聖多明哥城。荷西據臺由於殖民利益，以及須提防原住民或漢人的抵抗，因此最初的建築都是城堡要塞建築，至今遺存的建築很少。西元 1642 年荷蘭人攻進臺灣北部，西人孤軍無援，於是開門投降，總計西班牙人支配臺灣北部十六年（1626-1642）。（ <a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_06')">基隆和平島 番字洞</a>）
-										</p>
-										<p>西荷兩國的建築除了形式及風格各有不同外，材料的選擇也不同，荷蘭善用紅磚，西班牙則善用石材；而荷西建築對清代以後臺灣建築之影響並不明顯，可能只有臺南府城周緣某些構築技術上的影響，有鐵剪刀、有穿瓦衫……等；另外則有民間匠師以荷蘭人帶來的黑奴作為裝飾的題材，例如，臺南佳里興的震興宮有<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_07')">黑人形象之交趾陶</a>。</p>
-										</div>
+                                    </div>
+
+                                    <div class="mt-3"
+                                        style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                        <p><a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_01')">熱蘭遮城</a>為長方形，以糯米糊製作出來的「紅毛土」砌上紅磚成為城牆，到現在仍然非常堅固。外牆壁保留有兩種痕跡，一是<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_02')">鐵剪刀</a>的遺蹟，也就是所謂的
+                                            「壁鎖」；另一種是方形樑的<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_03')">榫洞</a>。<br />
+                                        </p>
+                                        <p>另一座荷蘭人所建的<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_04')">普羅文蒂亞城</a>，也就是現今的「赤崁樓」，據說是夕陽西下時，城壁呈現赤色而稱為赤崁樓。這座城臺基頗似熱蘭遮城。它的入口為半圓拱形，臺基由三個正方形組成的。可惜在清末已倒毀，再由地方官吏改為中國式樓閣，即為現今我們所見的赤崁樓。
+                                        </p>
+                                        <p>
+                                            而<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_05')">聖多明哥城</a>，也就是現在我們所稱的「紅毛城」；原為西元
+                                            1629 年由西班牙人建，後來被荷蘭人所佔，於西元 1644
+                                            年再興築成為紅毛城。紅毛城的屋頂為半圓筒狀，為了防裂，底樓與二樓的筒面呈垂直配置。經過明鄭時期、清初管理及十九世紀租借給英國作為領事館後，使得紅毛城的外觀產生一些變化。
+                                        </p>
+
+                                        <p>荷蘭人佔據臺灣南部的第二年，西班牙也出兵侵入臺灣北部。於 1626
+                                            年登陸三貂角及雞籠，在社寮島建築聖薩爾瓦多堡。聖薩爾瓦多堡的遺蹟在日據時期尚存，近年已湮沒在中船造船廠址內；另外在西元 1627
+                                            年在聖薩爾瓦多堡旁建立社寮島教堂，是西班牙在臺灣所建的第一座教堂。</p>
+                                        <p>到了西元 1629
+                                            年西班牙人佔領滬尾，並建立聖多明哥城。荷西據臺由於殖民利益，以及須提防原住民或漢人的抵抗，因此最初的建築都是城堡要塞建築，至今遺存的建築很少。西元
+                                            1642 年荷蘭人攻進臺灣北部，西人孤軍無援，於是開門投降，總計西班牙人支配臺灣北部十六年（1626-1642）。（ <a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_06')">基隆和平島 番字洞</a>）
+                                        </p>
+                                        <p>西荷兩國的建築除了形式及風格各有不同外，材料的選擇也不同，荷蘭善用紅磚，西班牙則善用石材；而荷西建築對清代以後臺灣建築之影響並不明顯，可能只有臺南府城周緣某些構築技術上的影響，有鐵剪刀、有穿瓦衫……等；另外則有民間匠師以荷蘭人帶來的黑奴作為裝飾的題材，例如，臺南佳里興的震興宮有<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_07')">黑人形象之交趾陶</a>。</p>
+                                    </div>
                                 </div>
                             </div>
                         </div><!--content2頁面 結束-->
                         <!-- 獅子問答區 -->
-                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion03.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion03.gif"
+                                    alt="Click to view details" name="image" id="image"
+                                    onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
-                            <div class="modal-content" style="background-image: url('images/01_history/side/popup0103.gif'); width: 391px; height: 314px;">
+                            <div class="modal-content"
+                                style="background-image: url('images/01_history/side/popup0103.gif'); width: 391px; height: 314px;">
                                 <span class="close" onclick="closeModal('lionModal')">&times;</span>
-                                
+
                                 <p>※ 十七世紀初，西班牙人占領臺灣北部，下列何者是西班牙人建造的建築？</p>
-                                
+
                                 <ol>
                                     <li>聖薩爾瓦多城<span id="lion_right_answer">（正確答案）</span></li>
                                     <li>熱蘭遮城</li>
                                     <li>普羅文遮城</li>
                                     <button id="lion_answer_button" onclick="display_answer()">看解答</button>
                                 </ol>
-                               
+
                             </div>
                         </div>
                         <!-- end 獅子問答區 -->
-					</div><!--主內容區 結束-->
-				</div>
-			</div>
-		</div>
+                    </div><!--主內容區 結束-->
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/content.js"></script>
     <script src="js/lionModal.js"></script>
     <script type="text/javascript">
-        window.onload=function(){
+        window.onload = function () {
             // 按照頁面需求更換
             const mainSection = document.getElementById("main-section")
             mainSection.style.backgroundImage = "url('" + mainBackground + "')";
         }
     </script>
 </body>
+
 </html>

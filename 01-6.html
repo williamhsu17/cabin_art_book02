@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,9 +40,11 @@
         .display-none {
             display: none;
         }
+
         .main-section {
             position: relative;
         }
+
         .content {
             width: 569px;
             margin-left: 52px;
@@ -52,15 +55,19 @@
             color: #363637;
             font-size: smaller;
         }
+
         .content-title-image {
             width: 100%;
         }
+
         .content-body {
             display: flex;
         }
+
         .content-body p {
             margin-left: 2px;
         }
+
         .content-body img {
             width: 100%;
         }
@@ -73,7 +80,8 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section"
+                        style="width: 96px; height: 324px; background-image: url('images/01_history/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -82,204 +90,271 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
+
                             #link_01 {
                                 background-image: url("images/01_history/side/03_icon01a.gif");
                             }
+
                             #link_01:hover {
                                 background-image: url("images/01_history/side/03_icon01b.gif");
                             }
+
                             #link_02 {
                                 background-image: url("images/01_history/side/03_icon02a.gif");
                             }
+
                             #link_02:hover {
                                 background-image: url("images/01_history/side/03_icon02b.gif");
                             }
-                           
+
                             }
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')" style="font-size: 0;">內容區1</a>
-                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')" style="font-size: 0;">內容區2</a>
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"
+                                style="font-size: 0;">內容區1</a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"
+                                style="font-size: 0;">內容區2</a>
                         </div>
                     </div>
-                    
-                   
-                   <!--主要內容區-->
+
+
+                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                       
-                       
+
+
                         <div class="content" id="content1">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="歷史背景">
+                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif"
+                                    alt="歷史背景">
                             </div>
-							
-							<br>							
-                            
-							<div class="content-body">
-							
+
+                            <br>
+
+                            <div class="content-body">
+
                                 <p>日本在中日甲午戰爭中取得臺灣；日本對臺灣的建設主要以獲取更多利益為主，不過，從另一角度來看，這對臺灣邁向現代化也非常有貢獻。
-								
-								<br>
-								
-								<br>日治前期先從改善交通、衛生與教育為主，並建立有效的統治機構。 1920 年後，臺灣有了重大的變化，社會思想蓬勃發展，民族主義與自由民主之風興起，藝術的表現也漸趨於多元，建築設計就琳瑯滿目。</p>
-								
-								 <div align="center"><img style="width: 238px; height: 163px;" src="images/01_history/content/1-6/07_01pic01.jpg" alt="Image"></div>
-								
+
+                                    <br>
+
+                                    <br>日治前期先從改善交通、衛生與教育為主，並建立有效的統治機構。 1920
+                                    年後，臺灣有了重大的變化，社會思想蓬勃發展，民族主義與自由民主之風興起，藝術的表現也漸趨於多元，建築設計就琳瑯滿目。
+                                </p>
+
+                                <div align="center"><img style="width: 238px; height: 163px;"
+                                        src="images/01_history/content/1-6/07_01pic01.jpg" alt="Image"></div>
+
                             </div>
                         </div><!--content1頁面 結束-->
-                        
+
                         <!--content2頁面-->
                         <div class="content display-none" id="content2">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="代表建築">
+                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif"
+                                    alt="代表建築">
                             </div>
                             <div class="content-body">
                                 <div style="display: flex;">
                                     <div class="image_section mt-3 mr-3" style="width: 200px;">
-                                         <!-- image_switch_01 預設 -->
+                                        <!-- image_switch_01 預設 -->
                                         <div id="image_switch_01" class="inline-image-switch">
                                             <div class="image-container">
-                                                <img id="displayImage_01" sty src="images/01_history/content/1-6/a06_p01a.jpg" alt="日式住宅 ─ 金瓜石太子賓館">
+                                                <img id="displayImage_01" sty
+                                                    src="images/01_history/content/1-6/a06_p01a.jpg"
+                                                    alt="日式住宅 ─ 金瓜石太子賓館">
                                             </div>
                                             <p id="displayText">日式住宅 ─ 金瓜石太子賓館</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-6/a06_p01a.jpg', 'displayImage_01'); changeText('日式住宅 ─ 金瓜石太子賓館', 'displayText');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-6/a06_p01b.jpg', 'displayImage_01'); changeText('日式住宅 ─ 金瓜石太子賓館', 'displayText');"></a>
-                                                <a href="" class="isb_03" onclick="changeImage('images/01_history/content/1-6/a06_p02.jpg', 'displayImage_01'); changeText('日式住宅 ─ 苗栗苑里山腳國小宿舍', 'displayText');"></a>
-                                                <a href="" class="isb_04" onclick="changeImage('images/01_history/content/1-6/a06_p03.jpg', 'displayImage_01'); changeText('日式住宅 ─ 彰化縣長宿舍', 'displayText');"></a>
-                                            </div>                                    
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-6/a06_p01a.jpg', 'displayImage_01'); changeText('日式住宅 ─ 金瓜石太子賓館', 'displayText');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-6/a06_p01b.jpg', 'displayImage_01'); changeText('日式住宅 ─ 金瓜石太子賓館', 'displayText');"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/01_history/content/1-6/a06_p02.jpg', 'displayImage_01'); changeText('日式住宅 ─ 苗栗苑里山腳國小宿舍', 'displayText');"></a>
+                                                <a href="" class="isb_04"
+                                                    onclick="changeImage('images/01_history/content/1-6/a06_p03.jpg', 'displayImage_01'); changeText('日式住宅 ─ 彰化縣長宿舍', 'displayText');"></a>
+                                            </div>
                                         </div>
                                         <!-- end image_switch_01 -->
-                                        <!-- image_switch_02 --> 
-										<div id="image_switch_02" class="inline-image-switch display-none">
+                                        <!-- image_switch_02 -->
+                                        <div id="image_switch_02" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_02" sty src="images/01_history/content/1-6/039-01.jpg" alt="桃園神社「唐破風」">
+                                                <img id="displayImage_02" sty
+                                                    src="images/01_history/content/1-6/039-01.jpg" alt="桃園神社「唐破風」">
                                             </div>
                                             <p>桃園神社「唐破風」</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-6/039-01.jpg', 'displayImage_02');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-6/039-02.jpg', 'displayImage_02');"></a>
-                                               
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-6/039-01.jpg', 'displayImage_02');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-6/039-02.jpg', 'displayImage_02');"></a>
+
                                             </div>
                                         </div>
-                                         <!-- end image_switch_02 -->
-										 <!-- image_switch_03 --> 
-										 <div id="image_switch_03" class="inline-image-switch display-none">
+                                        <!-- end image_switch_02 -->
+                                        <!-- image_switch_03 -->
+                                        <div id="image_switch_03" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_03" sty src="images/01_history/content/1-6/40_01.jpg" alt="桃園武德殿">
+                                                <img id="displayImage_03" sty
+                                                    src="images/01_history/content/1-6/40_01.jpg" alt="桃園武德殿">
                                             </div>
                                             <p>桃園武德殿</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-6/40_01.jpg', 'displayImage_03');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-6/40_02.jpg', 'displayImage_03');"></a>
-												
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-6/40_01.jpg', 'displayImage_03');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-6/40_02.jpg', 'displayImage_03');"></a>
+
                                             </div>
                                         </div>
-                                         <!-- end image_switch_03 -->
-										 <!-- image_switch_04 -->
-										 <div id="image_switch_04" class="inline-image-switch display-none">
+                                        <!-- end image_switch_03 -->
+                                        <!-- image_switch_04 -->
+                                        <div id="image_switch_04" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_04" sty src="images/01_history/content/1-6/039-04.jpg" alt="桃園神社">
+                                                <img id="displayImage_04" sty
+                                                    src="images/01_history/content/1-6/039-04.jpg" alt="桃園神社">
                                             </div>
                                             <p>桃園神社</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-6/039-04.jpg', 'displayImage_04');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-6/039-06.jpg', 'displayImage_04');"></a>
-                                                <a href="" class="isb_03" onclick="changeImage('images/01_history/content/1-6/039-07.jpg', 'displayImage_04');"></a>												
-                                            </div>											
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-6/039-04.jpg', 'displayImage_04');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-6/039-06.jpg', 'displayImage_04');"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/01_history/content/1-6/039-07.jpg', 'displayImage_04');"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_04 -->
-										 <!-- image_switch_05 --> 
-										 <div id="image_switch_05" class="inline-image-switch display-none">
+                                        <!-- end image_switch_04 -->
+                                        <!-- image_switch_05 -->
+                                        <div id="image_switch_05" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_05" sty src="images/01_history/content/1-6/a06_p04a.jpg" alt="臺北圓山臨濟護國禪寺">
+                                                <img id="displayImage_05" sty
+                                                    src="images/01_history/content/1-6/a06_p04a.jpg" alt="臺北圓山臨濟護國禪寺">
                                             </div>
                                             <p>臺北圓山臨濟護國禪寺</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-6/a06_p04a.jpg', 'displayImage_05');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-6/a06_p04b.jpg', 'displayImage_05');"></a>
-												
-                                            </div>	
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-6/a06_p04a.jpg', 'displayImage_05');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-6/a06_p04b.jpg', 'displayImage_05');"></a>
+
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_05 -->
-										 <!-- image_switch_06 --> 
-										 <div id="image_switch_06" class="inline-image-switch display-none">
+                                        <!-- end image_switch_05 -->
+                                        <!-- image_switch_06 -->
+                                        <div id="image_switch_06" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_06" sty src="images/01_history/content/1-6/041-01.jpg" alt="中和圓通寺">
+                                                <img id="displayImage_06" sty
+                                                    src="images/01_history/content/1-6/041-01.jpg" alt="中和圓通寺">
                                             </div>
                                             <p>中和圓通寺</p>
-											<div class="button-container">
-											<a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-6/041-01.jpg', 'displayImage_06');" class="image-switch-button" alt="b1"></a>
-											<a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-6/041-02.jpg', 'displayImage_06');" class="image-switch-button" alt="b2"></a>
-											<a href="" class="isb_03" onclick="changeImage('images/01_history/content/1-6/041-03.jpg', 'displayImage_06');" class="image-switch-button" alt="b2"></a>
-                                            </div>                                   
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-6/041-01.jpg', 'displayImage_06');"
+                                                    class="image-switch-button" alt="b1"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-6/041-02.jpg', 'displayImage_06');"
+                                                    class="image-switch-button" alt="b2"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/01_history/content/1-6/041-03.jpg', 'displayImage_06');"
+                                                    class="image-switch-button" alt="b2"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_06 -->
-										 <!-- image_switch_07 --> 
-										 <div id="image_switch_07" class="inline-image-switch display-none">
+                                        <!-- end image_switch_06 -->
+                                        <!-- image_switch_07 -->
+                                        <div id="image_switch_07" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_07" sty src="images/01_history/content/1-6/042b-02.jpg" alt="「珠寶式」欄杆柱（臺中公園木橋）">
+                                                <img id="displayImage_07" sty
+                                                    src="images/01_history/content/1-6/042b-02.jpg"
+                                                    alt="「珠寶式」欄杆柱（臺中公園木橋）">
                                             </div>
                                             <p>「珠寶式」欄杆柱（臺中公園木橋）</p>
-											<div class="button-container">
-											<a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-6/042b-02.jpg', 'displayImage_07');" class="image-switch-button" alt="b1"></a>
-											<a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-6/042b-03.jpg', 'displayImage_07');" class="image-switch-button" alt="b2"></a>
-                                            </div>                                   
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-6/042b-02.jpg', 'displayImage_07');"
+                                                    class="image-switch-button" alt="b1"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-6/042b-03.jpg', 'displayImage_07');"
+                                                    class="image-switch-button" alt="b2"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_07 -->
-										 
+                                        <!-- end image_switch_07 -->
+
                                     </div>
-                                    
-                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
-                                        <p>當時由日本官員及移民引入的「和風建築」，「和風」就是指大和風格。明治時期風展出來的和風，是在日本傳統建築基礎上，加入洋風所發展出來的風格。和風建築的特色，在平面佈局方面仍以<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">日式住宅</a>為主；如果是公共建築，平面傾向於西洋近代建築，通常入口喜作「<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">唐破風</a>」，就是垂直於主屋面的捲棚軒或小型的歇山頂。 </p>
-										<p>這些建築多作木結構，雕刻表現出日本傳統趣味，裝飾流露出日式傳統趣味。日式木造住宅在平面及空間上要熟悉「榻榻米」才能設計，其基本空間通常包括玄關、床間、茶間、押入、臺所、風呂等。目前保留完整的已經不多。</p>
-										<p>在臺灣除了宿舍、住宅建築為和風日式樣式，還有行館、武德殿、神社、佛寺、公園及橋樑等。所謂行館即為日本皇族官員來臺視察所居住的地方。這些大宅實際上是「和洋混合風」，就是除日式平房外，在旁邊附建洋式小樓。</p>
-										<p>
-										另外一種和風建築為「<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">武德殿</a>」；在軍國主義下，所有的男士都需學習相撲、劍道、柔道等武術，在整個富國強兵政策之下，瀰漫整個尚武德之風潮，因此臺灣在 1930 年代前後，建造不少「武德殿」。</p>
-										<p>臺灣目前尚存較完整武德殿有新竹、桃園、臺中、彰化、嘉義、臺南及旗山，均為水泥構造模仿傳統木造殿堂。它的平面多成長方型，屋頂為歇山頂，入口也做成唐破風的型式。</p>
-										<p>
-										日人治臺期間，也留下了頗多神社建築。<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_04')">神社</a>是日本特有的，以眾多柱子將臺基提高，為一種近似「干欄式」構造。神社在日本人心目非常重要，神社建築帶有日本歷史、文化、思想與政治精神，所以神社建造是種至高無上的象徵，由神社數量，可以知道日本統治的深度。其建造地點常選於小山上，有居高臨下庇護之象徵；臺灣城市的小山就是成為建造這些神社之處。日本人建造神社有許多不同動機與背景，國家神道的神社具有政治懷柔的意義；各地方城鎮的守護神社，有祈福納詳的意思；民間自築的神社則有鴻運發達的意義。除此之外，也會依據不同需要建立不同社格的神社。</p>
-										<p>根據統計，日治時期臺灣曾建造三十多座大小神社，較大的為臺北、基隆、桃園、新竹、臺中、嘉義、臺南及高雄。</p>
-										<p>      日本神社建築的佈局通常依本店而定，臺灣較常見「流造」與「神明造」；由入口位置可以分為兩大類的式樣：一是「妻入」，指的是入口設在山面，屋頂較緩；另一種是「平入」，是以入口在長邊，屋坡較緩。因為軍國主義，在臺北植物園建造建功神社，戰後大鳥居被拆，正殿被改為中央圖書館。</p>
-										<p>
-										寺廟方面，現存的像是臺北東門的東和禪寺、臺北圓山的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_05')">臨濟護國禪寺</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_06')">中和的圓通寺</a>以及十多年前被大火破壞的西門東本願寺皆屬之。</p>
-										<p>      還有一些橋樑、公園的設計也帶有日本風格，例如臺北圓山橋的橋墩立有日式石燈柱，造型優雅，可惜近年因道路拓寬拆除。在臺中、宜蘭的公園中，尚可見到小拱橋的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_07')">「寶珠式」欄杆柱</a>。</p>
-										</div>
+
+                                    <div class="mt-3"
+                                        style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                        <p>當時由日本官員及移民引入的「和風建築」，「和風」就是指大和風格。明治時期風展出來的和風，是在日本傳統建築基礎上，加入洋風所發展出來的風格。和風建築的特色，在平面佈局方面仍以<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_01')">日式住宅</a>為主；如果是公共建築，平面傾向於西洋近代建築，通常入口喜作「<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_02')">唐破風</a>」，就是垂直於主屋面的捲棚軒或小型的歇山頂。
+                                        </p>
+                                        <p>這些建築多作木結構，雕刻表現出日本傳統趣味，裝飾流露出日式傳統趣味。日式木造住宅在平面及空間上要熟悉「榻榻米」才能設計，其基本空間通常包括玄關、床間、茶間、押入、臺所、風呂等。目前保留完整的已經不多。
+                                        </p>
+                                        <p>在臺灣除了宿舍、住宅建築為和風日式樣式，還有行館、武德殿、神社、佛寺、公園及橋樑等。所謂行館即為日本皇族官員來臺視察所居住的地方。這些大宅實際上是「和洋混合風」，就是除日式平房外，在旁邊附建洋式小樓。
+                                        </p>
+                                        <p>
+                                            另外一種和風建築為「<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_03')">武德殿</a>」；在軍國主義下，所有的男士都需學習相撲、劍道、柔道等武術，在整個富國強兵政策之下，瀰漫整個尚武德之風潮，因此臺灣在
+                                            1930 年代前後，建造不少「武德殿」。</p>
+                                        <p>臺灣目前尚存較完整武德殿有新竹、桃園、臺中、彰化、嘉義、臺南及旗山，均為水泥構造模仿傳統木造殿堂。它的平面多成長方型，屋頂為歇山頂，入口也做成唐破風的型式。
+                                        </p>
+                                        <p>
+                                            日人治臺期間，也留下了頗多神社建築。<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_04')">神社</a>是日本特有的，以眾多柱子將臺基提高，為一種近似「干欄式」構造。神社在日本人心目非常重要，神社建築帶有日本歷史、文化、思想與政治精神，所以神社建造是種至高無上的象徵，由神社數量，可以知道日本統治的深度。其建造地點常選於小山上，有居高臨下庇護之象徵；臺灣城市的小山就是成為建造這些神社之處。日本人建造神社有許多不同動機與背景，國家神道的神社具有政治懷柔的意義；各地方城鎮的守護神社，有祈福納詳的意思；民間自築的神社則有鴻運發達的意義。除此之外，也會依據不同需要建立不同社格的神社。
+                                        </p>
+                                        <p>根據統計，日治時期臺灣曾建造三十多座大小神社，較大的為臺北、基隆、桃園、新竹、臺中、嘉義、臺南及高雄。</p>
+                                        <p> 日本神社建築的佈局通常依本店而定，臺灣較常見「流造」與「神明造」；由入口位置可以分為兩大類的式樣：一是「妻入」，指的是入口設在山面，屋頂較緩；另一種是「平入」，是以入口在長邊，屋坡較緩。因為軍國主義，在臺北植物園建造建功神社，戰後大鳥居被拆，正殿被改為中央圖書館。
+                                        </p>
+                                        <p>
+                                            寺廟方面，現存的像是臺北東門的東和禪寺、臺北圓山的<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_05')">臨濟護國禪寺</a>、<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_06')">中和的圓通寺</a>以及十多年前被大火破壞的西門東本願寺皆屬之。
+                                        </p>
+                                        <p> 還有一些橋樑、公園的設計也帶有日本風格，例如臺北圓山橋的橋墩立有日式石燈柱，造型優雅，可惜近年因道路拓寬拆除。在臺中、宜蘭的公園中，尚可見到小拱橋的<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_07')">「寶珠式」欄杆柱</a>。</p>
+                                    </div>
                                 </div>
                             </div>
                         </div><!--content2頁面 結束-->
                         <!-- 獅子問答區 -->
-                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion07.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion07.gif"
+                                    alt="Click to view details" name="image" id="image"
+                                    onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
-                            <div class="modal-content" style="background-image: url('images/01_history/side/popup0107.gif'); width: 391px; height: 314px;">
+                            <div class="modal-content"
+                                style="background-image: url('images/01_history/side/popup0107.gif'); width: 391px; height: 314px;">
                                 <span class="close" onclick="closeModal('lionModal')">&times;</span>
-                                
+
                                 <p>※ 下列何者屬於日式的寺廟建築？</p>
-                                
+
                                 <ol>
                                     <li>臺南祀典武廟</li>
                                     <li>臨濟護國禪寺<span id="lion_right_answer">（正確答案）</span></li>
                                     <li>淡水鄞山寺</li>
                                     <button id="lion_answer_button" onclick="display_answer()">看解答</button>
                                 </ol>
-                               
+
                             </div>
                         </div>
                         <!-- end 獅子問答區 -->
-					</div><!--主內容區 結束-->
-				</div>
-			</div>
-		</div>
+                    </div><!--主內容區 結束-->
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/content.js"></script>
     <script src="js/lionModal.js"></script>
     <script type="text/javascript">
-        window.onload=function(){
+        window.onload = function () {
             // 按照頁面需求更換
             const mainSection = document.getElementById("main-section")
             mainSection.style.backgroundImage = "url('" + mainBackground + "')";
         }
     </script>
 </body>
+
 </html>

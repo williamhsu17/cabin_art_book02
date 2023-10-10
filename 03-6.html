@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
         const navButtonGroupImage = 'images/03_function/top01_06.jpg';
         const navLogoImage = 'images/02_style/top01.gif';
         const navBackgroundImage = 'images/03_function/top07.jpg';
-		
+
         const subLinkSpacerWidth = '90px';
         const subLink01src = '03-1.html';
         const subLink01Width = '42px';
@@ -39,9 +40,11 @@
         .display-none {
             display: none;
         }
-		.main-section {
+
+        .main-section {
             position: relative;
         }
+
         .content {
             width: 600px;
             margin-left: 52px;
@@ -51,100 +54,119 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
-			/*height:310px;
+            /*height:310px;
 			overflow:auto;*/
         }
+
         .content-title-image {
             width: 100%;
         }
+
         .content-body {
             display: block;
             height: 240px;
         }
+
         .content-body p {
             margin-left: 2px;
         }
+
         .content-body img {
             width: 100%;
         }
+
         .sub_links {
             margin-top: 10px !important;
         }
     </style>
 </head>
+
 <body style="background-image: url('images/03_function/left.gif');">
     <div class="container mx-auto container-section" id="container-section-image">
         <div class="row">
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section"
+                        style="width: 96px; height: 324px; background-image: url('images/02_style/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
 
                     </div>
-                    
-                  <!--主要內容區-->
+
+                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                    
-                         <!--content1頁面-->
+
+                        <!--content1頁面-->
                         <div class="content" id="content1">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/00_icon01t.gif" alt="Image">
+                                <img class="content-title-image" src="images/01_history/content/00_icon01t.gif"
+                                    alt="Image">
                             </div>
                             <div class="content-body">
                                 <div style="display: flex;">
                                     <div class="image_section mt-3 mr-3" style="width: 200px;">
-                                        
-                                       
-                                        
-                                        <!-- image_switch_00預設 -->                                        <div id="image_switch_00" class="inline-image-switch">
+
+
+
+                                        <!-- image_switch_00預設 -->
+                                        <div id="image_switch_00" class="inline-image-switch">
                                             <div class="image-container">
-                                                <img id="displayImage_00" sty src="images/03_function/content/3-6/117-01_big.jpg" alt="「門迎后車」隘門（鹿港車后巷）">
+                                                <img id="displayImage_00" sty
+                                                    src="images/03_function/content/3-6/117-01_big.jpg"
+                                                    alt="「門迎后車」隘門（鹿港車后巷）">
                                             </div>
                                             <p>「門迎后車」隘門（鹿港車后巷）</p>
-                                                 <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/03_function/content/3-6/117-01_big.jpg', 'displayImage_00');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/03_function/content/3-6/117-02_big.jpg', 'displayImage_00');"></a>                     
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/03_function/content/3-6/117-01_big.jpg', 'displayImage_00');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/03_function/content/3-6/117-02_big.jpg', 'displayImage_00');"></a>
+                                            </div>
                                         </div>
-                                      </div>
-                                         <!-- end image_switch_00 -->                        
-                                        
+                                        <!-- end image_switch_00 -->
+
                                     </div>
-                                    
-                                    
-                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
-                                       
-                                    
-                                   <p>為了防禦，在防火巷裡每隔一段距離亦可築一道隘門，入夜後即行關閉。像是在金門、澎湖在明清兩朝均有海盜騷擾之史實，因此防禦是相當必要的。說到隘門，一般街屋式城市亦不乏其例，鹿港的隘門甚多，至今尚存一座「門迎后車」隘門。隘門起始於何時？亦尚未見有研究，唐代里坊的門或可視為隘門之前身。根據「三才圖會」一書中，找到一幅木刻的閭里圖，發現它在一條曲折的街道前後端，均設隘門，形式近似牌樓，為木造柵門。而街道兩側均為店屋，可見店舖之大略情形，宋清明上河圖中尚未見隘門。</p>
-                                   
+
+
+                                    <div class="mt-3"
+                                        style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+
+
+                                        <p>為了防禦，在防火巷裡每隔一段距離亦可築一道隘門，入夜後即行關閉。像是在金門、澎湖在明清兩朝均有海盜騷擾之史實，因此防禦是相當必要的。說到隘門，一般街屋式城市亦不乏其例，鹿港的隘門甚多，至今尚存一座「門迎后車」隘門。隘門起始於何時？亦尚未見有研究，唐代里坊的門或可視為隘門之前身。根據「三才圖會」一書中，找到一幅木刻的閭里圖，發現它在一條曲折的街道前後端，均設隘門，形式近似牌樓，為木造柵門。而街道兩側均為店屋，可見店舖之大略情形，宋清明上河圖中尚未見隘門。
+                                        </p>
+
                                     </div>
                                 </div>
                             </div>
                         </div><!--content1頁面 結束-->
                         <!-- 獅子問答區 -->
-                        <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion06.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        <div class="lion_section"> <a href="#"><img src="images/03_function/side/lion06.gif"
+                                    alt="Click to view details" name="image" id="image"
+                                    onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
-                            <div class="modal-content" style="background-image: url('images/03_function/side/popup0601.gif'); width: 391px; height: 198px;">
+                            <div class="modal-content"
+                                style="background-image: url('images/03_function/side/popup0601.gif'); width: 391px; height: 198px;">
                                 <span class="close" onclick="closeModal('lionModal')">&times;</span>
-                                
-                                
-                               
+
+
+
                             </div>
                         </div>
                         <!-- end 獅子問答區 -->
-					</div><!--主內容區 結束-->
-				</div>
-			</div>
-		</div>
+                    </div><!--主內容區 結束-->
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/content.js"></script>
     <script src="js/lionModal.js"></script>
     <script type="text/javascript">
-        window.onload=function(){
+        window.onload = function () {
             // 按照頁面需求更換
             const mainSection = document.getElementById("main-section")
             mainSection.style.backgroundImage = "url('" + mainBackground + "')";
         }
     </script>
 </body>
+
 </html>

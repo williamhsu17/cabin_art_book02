@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,9 +40,11 @@
         .display-none {
             display: none;
         }
+
         .main-section {
             position: relative;
         }
+
         .content {
             width: 569px;
             margin-left: 52px;
@@ -51,18 +54,22 @@
             background-color: transparent;
             color: #363637;
             font-size: smaller;
-			height:310px;
-			overflow:auto;
+            height: 310px;
+            overflow: auto;
         }
+
         .content-title-image {
             width: 100%;
         }
+
         .content-body {
             display: flex;
         }
+
         .content-body p {
             margin-left: 2px;
         }
+
         .content-body img {
             width: 100%;
         }
@@ -75,7 +82,8 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section"
+                        style="width: 96px; height: 324px; background-image: url('images/01_history/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -84,130 +92,160 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
+
                             #link_01 {
                                 background-image: url("images/01_history/side/03_icon01a.gif");
                             }
+
                             #link_01:hover {
                                 background-image: url("images/01_history/side/03_icon01b.gif");
                             }
+
                             #link_02 {
                                 background-image: url("images/01_history/side/03_icon02a.gif");
                             }
+
                             #link_02:hover {
                                 background-image: url("images/01_history/side/03_icon02b.gif");
                             }
-                           
+
                             }
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')" style="font-size: 0;">內容區1</a>
-                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')" style="font-size: 0;">內容區2</a>
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"
+                                style="font-size: 0;">內容區1</a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"
+                                style="font-size: 0;">內容區2</a>
                         </div>
                     </div>
-                    
-                   
-                   <!--主要內容區-->
+
+
+                    <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                       
+
                         <!--content1頁面-->
                         <div class="content" id="content1">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="歷史背景">
+                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif"
+                                    alt="歷史背景">
                             </div>
-							
-							<br>							
-                            
-							<div class="content-body">
-							
+
+                            <br>
+
+                            <div class="content-body">
+
                                 <p>二次大戰後，政經有了很大的改變，建築師來自各方面，有的是日據受建築教育者，著重專科訓練，難以出現思想設計層面的建築設計；有部分是大陸的建築師隨國民政府來臺，他們所受訓練較為嚴謹，也有良好的關係，多承作國家公共工程；另外有的是外國人，主要是美國人或日本人；最後另一部份人的基本建築教育是在臺灣完成，這些新一代的建築師多在臺灣受大學教育在到美國深造，陸續開業成為臺灣建築界的重要角色。
-								
-								<br>
-								
-								<br>戰後臺灣具有較大的本土文化認同感，到八○年代逐漸具備有本土文化反省能力，同時將中國傳統與臺灣地方文化表現出來。此時建築風格慢慢分出兩種路線，一是後期現代及超現代；另一種則是中國傳統形式的復興。</p>
-								
-								 <div align="center"><img style="width: 261px; height: 175px;" src="images/01_history/content/1-7/08_01pic01.jpg" alt="Image"></div>
-								
+
+                                    <br>
+
+                                    <br>戰後臺灣具有較大的本土文化認同感，到八○年代逐漸具備有本土文化反省能力，同時將中國傳統與臺灣地方文化表現出來。此時建築風格慢慢分出兩種路線，一是後期現代及超現代；另一種則是中國傳統形式的復興。
+                                </p>
+
+                                <div align="center"><img style="width: 261px; height: 175px;"
+                                        src="images/01_history/content/1-7/08_01pic01.jpg" alt="Image"></div>
+
                             </div>
                         </div><!--content1頁面 結束-->
-                        
+
                         <!--content2頁面-->
                         <div class="content display-none" id="content2">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="代表建築">
+                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif"
+                                    alt="代表建築">
                             </div>
                             <div class="content-body">
                                 <div style="display: flex;">
                                     <div class="image_section mt-3 mr-3" style="width: 200px;">
-                                         <!-- image_switch_01 預設 -->
+                                        <!-- image_switch_01 預設 -->
                                         <div id="image_switch_01" class="inline-image-switch">
                                             <div class="image-container">
-                                                <img id="displayImage_01" sty src="images/01_history/content/1-7/043b_01.jpg" alt="翼角起翹">
+                                                <img id="displayImage_01" sty
+                                                    src="images/01_history/content/1-7/043b_01.jpg" alt="翼角起翹">
                                             </div>
                                             <p id="displayText">翼角起翹 ─ 忠烈祠</p>
                                             <div class="button-container">
-                                               <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-7/043b_01.jpg', 'displayImage_01'); changeText('翼角起翹 ─ 忠烈祠', 'displayText');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-7/043c_02.jpg', 'displayImage_01'); changeText('翼角起翹 ─ 圓山大飯店', 'displayText');"></a>
-                                                <a href="" class="isb_03" onclick="changeImage('images/01_history/content/1-7/105-03.jpg', 'displayImage_01'); changeText('翼角起翹 ─ 臺北東門', 'displayText');"></a>
-                                                <a href="" class="isb_04" onclick="changeImage('images/01_history/content/1-7/106-02.jpg', 'displayImage_01'); changeText('翼角起翹 ─ 臺北南門', 'displayText');"></a>
-                                                <a href="" class="isb_05" onclick="changeImage('images/01_history/content/1-7/106b-01.jpg', 'displayImage_01'); changeText('翼角起翹 ─ 臺北小南門', 'displayText');"></a>
-                                            </div>                                    
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-7/043b_01.jpg', 'displayImage_01'); changeText('翼角起翹 ─ 忠烈祠', 'displayText');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-7/043c_02.jpg', 'displayImage_01'); changeText('翼角起翹 ─ 圓山大飯店', 'displayText');"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/01_history/content/1-7/105-03.jpg', 'displayImage_01'); changeText('翼角起翹 ─ 臺北東門', 'displayText');"></a>
+                                                <a href="" class="isb_04"
+                                                    onclick="changeImage('images/01_history/content/1-7/106-02.jpg', 'displayImage_01'); changeText('翼角起翹 ─ 臺北南門', 'displayText');"></a>
+                                                <a href="" class="isb_05"
+                                                    onclick="changeImage('images/01_history/content/1-7/106b-01.jpg', 'displayImage_01'); changeText('翼角起翹 ─ 臺北小南門', 'displayText');"></a>
+                                            </div>
                                         </div>
                                         <!-- end image_switch_01 -->
-                                        <!-- image_switch_02 -->                                        <div id="image_switch_02" class="inline-image-switch display-none">
+                                        <!-- image_switch_02 -->
+                                        <div id="image_switch_02" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_02" sty src="images/01_history/content/1-7/043a-02.jpg" alt="國父紀念館">
+                                                <img id="displayImage_02" sty
+                                                    src="images/01_history/content/1-7/043a-02.jpg" alt="國父紀念館">
                                             </div>
                                             <p>國父紀念館</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-7/043a-02.jpg', 'displayImage_02');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-7/043a-01.jpg', 'displayImage_02');"></a>
-                                               
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-7/043a-02.jpg', 'displayImage_02');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-7/043a-01.jpg', 'displayImage_02');"></a>
+
                                             </div>
                                         </div>
-                                         <!-- end image_switch_02 -->
-                                        
-										 
+                                        <!-- end image_switch_02 -->
+
+
                                     </div>
-                                    
-                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
-                                         <p>中國民族形式指的是<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">大屋頂，四角翹起</a>的建築。在民國政府來臺後，在思鄉情懷作用下，出現以大陸宮殿建築藍本的建築。到了六○年代，數量變少，出現了受現代主義簡單明朗線條影響的中國建築，屋頂保有起翹的曲線，但不鋪琉璃瓦而做灰瓦、水泥瓦或貼面磚，外觀色調單純化，如 臺北國父紀念館、東海大學的校舍。<br/>
-										 <br/>    結合傳統與現代潮流慢慢演變，在混凝土的結構表現骨架與屋頂的形式，有些頗負創意的作品出現，如著名的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">國父紀念館</a>，是由王大閎建築師設計。近年臺灣對歷史與空間意義重新認識的運動逐漸崛起，臺灣藝術要從歷史的瞭解建立信心，相信近年將綻放成熟可觀之建築設計。</p>
-										</div>
+
+                                    <div class="mt-3"
+                                        style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                        <p>中國民族形式指的是<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_01')">大屋頂，四角翹起</a>的建築。在民國政府來臺後，在思鄉情懷作用下，出現以大陸宮殿建築藍本的建築。到了六○年代，數量變少，出現了受現代主義簡單明朗線條影響的中國建築，屋頂保有起翹的曲線，但不鋪琉璃瓦而做灰瓦、水泥瓦或貼面磚，外觀色調單純化，如
+                                            臺北國父紀念館、東海大學的校舍。<br />
+                                            <br /> 結合傳統與現代潮流慢慢演變，在混凝土的結構表現骨架與屋頂的形式，有些頗負創意的作品出現，如著名的<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_02')">國父紀念館</a>，是由王大閎建築師設計。近年臺灣對歷史與空間意義重新認識的運動逐漸崛起，臺灣藝術要從歷史的瞭解建立信心，相信近年將綻放成熟可觀之建築設計。
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div><!--content2頁面 結束-->
                         <!-- 獅子問答區 -->
-                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion08.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion08.gif"
+                                    alt="Click to view details" name="image" id="image"
+                                    onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
-                            <div class="modal-content" style="background-image: url('images/01_history/side/popup0108.gif'); width: 391px; height: 314px;">
+                            <div class="modal-content"
+                                style="background-image: url('images/01_history/side/popup0108.gif'); width: 391px; height: 314px;">
                                 <span class="close" onclick="closeModal('lionModal')">&times;</span>
-                                
+
                                 <p>※ 臺灣近代的仿古建築融和了中國傳統與現代，下列何者不具有此一特色？</p>
-                                
+
                                 <ol>
                                     <li>國父紀念館</li>
                                     <li>故宮博物院</li>
                                     <li>總統府<span id="lion_right_answer">（正確答案）</span></li>
                                     <button id="lion_answer_button" onclick="display_answer()">看解答</button>
                                 </ol>
-                               
+
                             </div>
                         </div>
                         <!-- end 獅子問答區 -->
-					</div><!--主內容區 結束-->
-				</div>
-			</div>
-		</div>
+                    </div><!--主內容區 結束-->
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/content.js"></script>
     <script src="js/lionModal.js"></script>
     <script type="text/javascript">
-        window.onload=function(){
+        window.onload = function () {
             // 按照頁面需求更換
             const mainSection = document.getElementById("main-section")
             mainSection.style.backgroundImage = "url('" + mainBackground + "')";
         }
     </script>
 </body>
+
 </html>

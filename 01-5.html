@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,9 +40,11 @@
         .display-none {
             display: none;
         }
+
         .main-section {
             position: relative;
         }
+
         .content {
             width: 569px;
             margin-left: 52px;
@@ -52,15 +55,19 @@
             color: #363637;
             font-size: smaller;
         }
+
         .content-title-image {
             width: 100%;
         }
+
         .content-body {
             display: flex;
         }
+
         .content-body p {
             margin-left: 2px;
         }
+
         .content-body img {
             width: 100%;
         }
@@ -73,7 +80,8 @@
             <div class="main-section">
                 <include src="partial/nav.html"></include>
                 <div class="section" style="display: flex;">
-                    <div class="side-section" style="width: 96px; height: 324px; background-image: url('images/01_history/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
+                    <div class="side-section"
+                        style="width: 96px; height: 324px; background-image: url('images/01_history/mleft_bg.jpg'); background-repeat: no-repeat; background-position: right;">
                         <style>
                             .image_button {
                                 display: block;
@@ -82,268 +90,358 @@
                                 font-size: 0;
                                 margin-bottom: 1px;
                             }
+
                             #link_01 {
                                 background-image: url("images/01_history/side/03_icon01a.gif");
                             }
+
                             #link_01:hover {
                                 background-image: url("images/01_history/side/03_icon01b.gif");
                             }
+
                             #link_02 {
                                 background-image: url("images/01_history/side/03_icon02a.gif");
                             }
+
                             #link_02:hover {
                                 background-image: url("images/01_history/side/03_icon02b.gif");
                             }
-                           
+
                             }
                         </style>
                         <div class="side_button_group" style="margin-top: 140px; margin-left: 2px;">
-                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')" style="font-size: 0;">內容區1</a>
-                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')" style="font-size: 0;">內容區2</a>
+                            <a href="#" class="image_button" id="link_01" onclick="showContent('content1')"
+                                style="font-size: 0;">內容區1</a>
+                            <a href="#" class="image_button" id="link_02" onclick="showContent('content2')"
+                                style="font-size: 0;">內容區2</a>
                         </div>
                     </div>
-                    
-                   
+
+
                     <!--主要內容區-->
                     <div class="main-section" id="main-section" style="width: 772px; height: 324px;">
-                       
-                       
+
+
                         <div class="content" id="content1">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif" alt="歷史背景">
+                                <img class="content-title-image" src="images/01_history/content/03_icon01t.gif"
+                                    alt="歷史背景">
                             </div>
-							
-							<br>							
-                            
-							<div class="content-body">
-							
-                                <p>洋樓在中國出現始於明末清初，因開放通商口岸與洋務運動，清廷允許外國人在臺灣通商口岸居留建屋；外來影響是多方面的，多以政治及軍事勢力為主，並伴隨著宗教、文化各方面的力量，出現了因政治而建的領事館，為了商業行為的洋行建築，或是因宗教傳入形成的教堂、學校、醫院以及宅第等。除了外來因素，臺灣本身為鞏固防務與振興實業，也建造不少建築，像是：旗後砲臺、億載金城（安平二鯤鯓砲臺）。臺灣民間方面因商業往來，在通商口岸形成商行，也是另一種大規模的船頭行。</p>
-								
-                                    <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
-									
+
+                            <br>
+
+                            <div class="content-body">
+
+                                <p>洋樓在中國出現始於明末清初，因開放通商口岸與洋務運動，清廷允許外國人在臺灣通商口岸居留建屋；外來影響是多方面的，多以政治及軍事勢力為主，並伴隨著宗教、文化各方面的力量，出現了因政治而建的領事館，為了商業行為的洋行建築，或是因宗教傳入形成的教堂、學校、醫院以及宅第等。除了外來因素，臺灣本身為鞏固防務與振興實業，也建造不少建築，像是：旗後砲臺、億載金城（安平二鯤鯓砲臺）。臺灣民間方面因商業往來，在通商口岸形成商行，也是另一種大規模的船頭行。
+                                </p>
+
+                                <div class="image-switch" style="margin-left: 10px; margin-right: 10px;">
+
 
                                     <!-- image_switch_00 預設 -->
-                                        <div id="image_switch_00" class="inline-image-switch">
-                                            <div class="image-container">
-                                                <img id="displayImage_00" sty src="images/01_history/content/1-5/027-03.jpg" alt="億載金城">
-                                            </div>
-                                            <p>億載金城</p>
-                                            <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/027-03.jpg', 'displayImage_00');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/027-02.jpg', 'displayImage_00');"></a>
-                                            </div>                                    
+                                    <div id="image_switch_00" class="inline-image-switch">
+                                        <div class="image-container">
+                                            <img id="displayImage_00" sty src="images/01_history/content/1-5/027-03.jpg"
+                                                alt="億載金城">
                                         </div>
-                                        <!-- end image_switch_00 -->
+                                        <p>億載金城</p>
+                                        <div class="button-container">
+                                            <a href="" class="isb_01"
+                                                onclick="changeImage('images/01_history/content/1-5/027-03.jpg', 'displayImage_00');"></a>
+                                            <a href="" class="isb_02"
+                                                onclick="changeImage('images/01_history/content/1-5/027-02.jpg', 'displayImage_00');"></a>
+                                        </div>
+                                    </div>
+                                    <!-- end image_switch_00 -->
 
-								
-									</div>
-							</div><!--content1頁面 結束-->
-                        
-						</div>
+
+                                </div>
+                            </div><!--content1頁面 結束-->
+
+                        </div>
                         <!--content2頁面-->
                         <div class="content display-none" id="content2">
                             <div class="content-title">
-                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif" alt="代表建築">
+                                <img class="content-title-image" src="images/01_history/content/03_icon02t.gif"
+                                    alt="代表建築">
                             </div>
                             <div class="content-body">
                                 <div style="display: flex;">
                                     <div class="image_section mt-3 mr-3" style="width: 200px;">
-                                                              
+
                                         <!-- image_switch_01預設 -->
                                         <div id="image_switch_01" class="inline-image-switch">
                                             <div class="image-container">
-                                                <img id="displayImage_01" sty src="images/01_history/content/1-5/030-03_big.jpg" alt="打狗英雄領事館（高雄）">
+                                                <img id="displayImage_01" sty
+                                                    src="images/01_history/content/1-5/030-03_big.jpg"
+                                                    alt="打狗英雄領事館（高雄）">
                                             </div>
                                             <p>打狗英雄領事館（高雄）</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/030-03_big.jpg', 'displayImage_01');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/030-06_big.jpg', 'displayImage_01');"></a>											
-                                            </div>                         
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/030-03_big.jpg', 'displayImage_01');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/030-06_big.jpg', 'displayImage_01');"></a>
+                                            </div>
                                         </div>
                                         <!-- end image_switch_01 -->
-										<!-- image_switch_02 --> 
-										<div id="image_switch_02" class="inline-image-switch display-none">
+                                        <!-- image_switch_02 -->
+                                        <div id="image_switch_02" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_02" sty src="images/01_history/content/1-5/030-07_big.jpg" alt="轉角處雙根並柱（打狗英雄領事館）">
+                                                <img id="displayImage_02" sty
+                                                    src="images/01_history/content/1-5/030-07_big.jpg"
+                                                    alt="轉角處雙根並柱（打狗英雄領事館）">
                                             </div>
-                                            <p>轉角處雙根並柱（打狗英雄領事館）</p>										
+                                            <p>轉角處雙根並柱（打狗英雄領事館）</p>
                                         </div>
-                                         <!-- end image_switch_02 -->
-										 <!-- image_switch_03 --> 
-										 <div id="image_switch_03" class="inline-image-switch display-none">
+                                        <!-- end image_switch_02 -->
+                                        <!-- image_switch_03 -->
+                                        <div id="image_switch_03" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_03" sty src="images/01_history/content/1-5/031-01.jpg" alt="德記洋行">
+                                                <img id="displayImage_03" sty
+                                                    src="images/01_history/content/1-5/031-01.jpg" alt="德記洋行">
                                             </div>
                                             <p>德記洋行</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/031-01.jpg', 'displayImage_03');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/031-03.jpg', 'displayImage_03');"></a>
-                                                <a href="" class="isb_03" onclick="changeImage('images/01_history/content/1-5/031-04.jpg', 'displayImage_03');"></a>												
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/031-01.jpg', 'displayImage_03');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/031-03.jpg', 'displayImage_03');"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/01_history/content/1-5/031-04.jpg', 'displayImage_03');"></a>
                                             </div>
                                         </div>
-                                         <!-- end image_switch_03 -->
-										 <!-- image_switch_04 -->
-										 <div id="image_switch_04" class="inline-image-switch display-none">
+                                        <!-- end image_switch_03 -->
+                                        <!-- image_switch_04 -->
+                                        <div id="image_switch_04" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_04" sty src="images/01_history/content/1-5/032-02.jpg" alt="東興洋行">
+                                                <img id="displayImage_04" sty
+                                                    src="images/01_history/content/1-5/032-02.jpg" alt="東興洋行">
                                             </div>
                                             <p>東興洋行</p>
                                             <div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/032-02.jpg', 'displayImage_04');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/032-06.jpg', 'displayImage_04');"></a>
-                                                <a href="" class="isb_03" onclick="changeImage('images/01_history/content/1-5/032-07.jpg', 'displayImage_04');"></a>												
-                                            </div>											
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/032-02.jpg', 'displayImage_04');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/032-06.jpg', 'displayImage_04');"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/01_history/content/1-5/032-07.jpg', 'displayImage_04');"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_04 -->
-										 <!-- image_switch_05 --> 
-										 <div id="image_switch_05" class="inline-image-switch display-none">
+                                        <!-- end image_switch_04 -->
+                                        <!-- image_switch_05 -->
+                                        <div id="image_switch_05" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_05" sty src="images/01_history/content/1-5/033-07.jpg" alt="高雄玫瑰聖母堂">
+                                                <img id="displayImage_05" sty
+                                                    src="images/01_history/content/1-5/033-07.jpg" alt="高雄玫瑰聖母堂">
                                             </div>
                                             <p>高雄玫瑰聖母堂</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/033-07.jpg', 'displayImage_05');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/033-03.jpg', 'displayImage_05');"></a>
-                                                <a href="" class="isb_03" onclick="changeImage('images/01_history/content/1-5/033-04.jpg', 'displayImage_05');"></a>												
-                                            </div>	
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/033-07.jpg', 'displayImage_05');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/033-03.jpg', 'displayImage_05');"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/01_history/content/1-5/033-04.jpg', 'displayImage_05');"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_05 -->
-										 <!-- image_switch_06 --> 
-										 <div id="image_switch_06" class="inline-image-switch display-none">
+                                        <!-- end image_switch_05 -->
+                                        <!-- image_switch_06 -->
+                                        <div id="image_switch_06" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_06" sty src="images/01_history/content/1-5/0608_2_s.jpg" alt="滬尾教會">
+                                                <img id="displayImage_06" sty
+                                                    src="images/01_history/content/1-5/0608_2_s.jpg" alt="滬尾教會">
                                             </div>
                                             <p>滬尾教會</p>
-											<div class="button-container">
-											<a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/0608_2_s.jpg', 'displayImage_06');" class="image-switch-button" alt="b1"></a>
-											<a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/0608_4_s.jpg', 'displayImage_06');" class="image-switch-button" alt="b2"></a>
-                                            </div>                                   
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/0608_2_s.jpg', 'displayImage_06');"
+                                                    class="image-switch-button" alt="b1"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/0608_4_s.jpg', 'displayImage_06');"
+                                                    class="image-switch-button" alt="b2"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_06 -->
-										 <!-- image_switch_07 --> 
-										 <div id="image_switch_07" class="inline-image-switch display-none">
+                                        <!-- end image_switch_06 -->
+                                        <!-- image_switch_07 -->
+                                        <div id="image_switch_07" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_07" sty src="images/01_history/content/1-5/0609_1_s.jpg" alt="滬尾偕醫館（今馬偕醫院）">
+                                                <img id="displayImage_07" sty
+                                                    src="images/01_history/content/1-5/0609_1_s.jpg" alt="滬尾偕醫館（今馬偕醫院）">
                                             </div>
                                             <p>滬尾偕醫館（今馬偕醫院）</p>
-											<div class="button-container">
-											<a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/0609_1_s.jpg', 'displayImage_07');" class="image-switch-button" alt="b1"></a>
-											<a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/0609_3_s.jpg', 'displayImage_07');" class="image-switch-button" alt="b2"></a>
-                                            </div>                                   
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/0609_1_s.jpg', 'displayImage_07');"
+                                                    class="image-switch-button" alt="b1"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/0609_3_s.jpg', 'displayImage_07');"
+                                                    class="image-switch-button" alt="b2"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_07 -->
-										 <!-- image_switch_08 --> 
-										 <div id="image_switch_08" class="inline-image-switch display-none">
+                                        <!-- end image_switch_07 -->
+                                        <!-- image_switch_08 -->
+                                        <div id="image_switch_08" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_08" sty src="images/01_history/content/1-5/0610_3.jpg" alt="理學堂大書院（今牛津理學堂，位於淡水真理大學內）">
+                                                <img id="displayImage_08" sty
+                                                    src="images/01_history/content/1-5/0610_3.jpg"
+                                                    alt="理學堂大書院（今牛津理學堂，位於淡水真理大學內）">
                                             </div>
                                             <p>理學堂大書院（今牛津理學堂，位於淡水真理大學內）</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/0610_3.jpg', 'displayImage_08');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/0610_4.jpg', 'displayImage_08');"></a>
-                                                <a href="" class="isb_03" onclick="changeImage('images/01_history/content/1-5/0610_2.jpg', 'displayImage_08');"></a>												
-                                            </div>	
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/0610_3.jpg', 'displayImage_08');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/0610_4.jpg', 'displayImage_08');"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/01_history/content/1-5/0610_2.jpg', 'displayImage_08');"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_08 -->
-										 <!-- image_switch_09 --> 
-										 <div id="image_switch_09" class="inline-image-switch display-none">
+                                        <!-- end image_switch_08 -->
+                                        <!-- image_switch_09 -->
+                                        <div id="image_switch_09" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_09" sty src="images/01_history/content/1-5/037-01.jpg" alt="獅球嶺隧道">
+                                                <img id="displayImage_09" sty
+                                                    src="images/01_history/content/1-5/037-01.jpg" alt="獅球嶺隧道">
                                             </div>
                                             <p>獅球嶺隧道</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/037-01.jpg', 'displayImage_09');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/037-02.jpg', 'displayImage_09');"></a>											
-                                            </div>	
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/037-01.jpg', 'displayImage_09');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/037-02.jpg', 'displayImage_09');"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_09 -->
-										 <!-- image_switch_10 --> 
-										 <div id="image_switch_10" class="inline-image-switch display-none">
+                                        <!-- end image_switch_09 -->
+                                        <!-- image_switch_10 -->
+                                        <div id="image_switch_10" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_10" sty src="images/01_history/content/1-5/0612_3_s.jpg" alt="屏東鵝鸞鼻燈塔">
+                                                <img id="displayImage_10" sty
+                                                    src="images/01_history/content/1-5/0612_3_s.jpg" alt="屏東鵝鸞鼻燈塔">
                                             </div>
                                             <p>屏東鵝鸞鼻燈塔</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/0612_3_s.jpg', 'displayImage_10');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/0612_1_s.jpg', 'displayImage_10');"></a>
-                                                <a href="" class="isb_03" onclick="changeImage('images/01_history/content/1-5/0612_2_s.jpg', 'displayImage_10');"></a>												
-                                            </div>	
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/0612_3_s.jpg', 'displayImage_10');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/0612_1_s.jpg', 'displayImage_10');"></a>
+                                                <a href="" class="isb_03"
+                                                    onclick="changeImage('images/01_history/content/1-5/0612_2_s.jpg', 'displayImage_10');"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_10 -->
-										 <!-- image_switch_11 --> 
-										 <div id="image_switch_11" class="inline-image-switch display-none">
+                                        <!-- end image_switch_10 -->
+                                        <!-- image_switch_11 -->
+                                        <div id="image_switch_11" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_11" sty src="images/01_history/content/1-5/081c-01.jpg" alt="總統府">
+                                                <img id="displayImage_11" sty
+                                                    src="images/01_history/content/1-5/081c-01.jpg" alt="總統府">
                                             </div>
                                             <p>總統府</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/081c-01.jpg', 'displayImage_11');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/081c-02.jpg', 'displayImage_11');"></a>											
-                                            </div>	
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/081c-01.jpg', 'displayImage_11');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/081c-02.jpg', 'displayImage_11');"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_11 -->
-										 <!-- image_switch_12 --> 
-										 <div id="image_switch_12" class="inline-image-switch display-none">
+                                        <!-- end image_switch_11 -->
+                                        <!-- image_switch_12 -->
+                                        <div id="image_switch_12" class="inline-image-switch display-none">
                                             <div class="image-container">
-                                                <img id="displayImage_12" sty src="images/01_history/content/1-5/a05_p02a_big.jpg" alt="臺北賓館">
+                                                <img id="displayImage_12" sty
+                                                    src="images/01_history/content/1-5/a05_p02a_big.jpg" alt="臺北賓館">
                                             </div>
                                             <p>臺北賓館</p>
-											<div class="button-container">
-                                                <a href="" class="isb_01" onclick="changeImage('images/01_history/content/1-5/a05_p02a_big.jpg', 'displayImage_12');"></a>
-                                                <a href="" class="isb_02" onclick="changeImage('images/01_history/content/1-5/a05_p02b_big.jpg', 'displayImage_12');"></a>											
-                                            </div>	
+                                            <div class="button-container">
+                                                <a href="" class="isb_01"
+                                                    onclick="changeImage('images/01_history/content/1-5/a05_p02a_big.jpg', 'displayImage_12');"></a>
+                                                <a href="" class="isb_02"
+                                                    onclick="changeImage('images/01_history/content/1-5/a05_p02b_big.jpg', 'displayImage_12');"></a>
+                                            </div>
                                         </div>
-                                         <!-- end image_switch_12 -->
+                                        <!-- end image_switch_12 -->
                                     </div>
-                                    
-                                    <div class="mt-3" style="display: block; max-width: 400px; height: 240px; overflow: auto;">
-                                       <p>早期由於英國對於臺灣影響力最深遠，所以早期的洋樓建築傾向於英式的風格；在第一波外來建築物即為領事館、洋行與教堂。領事館有在西元 1865 年建造的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_01')">打狗英國領事館</a>、約建於西元 1880 年代的安平英國領事館和大稻埕的德國領事館、西元 1891 年淡水英國領事館、以及約建造於西元 1890 年代的安平德國領事館。現在這批領事館只有淡水及打狗的英國領事館保存下來，透過這兩座實體及其他各館的古照片，可以知道當時流行的是殖民樣式，當時英國勢力東漸後，將維多利亞風格的紅磚建築，與因應熱帶建築特色的拱廊結合，所創造出的新樣式。<br/>
-									   <br/>
-									   當時其中最古老的就是打狗英國領事館，它<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_02')">轉角處是用雙根並柱，其他部份是單柱</a>。淡水英國領事館所使用的紅磚，根據推測是廈門運來。它擁有細緻的磚工，甚至將英國維多利亞女皇的「VR」記號雕上去。當時這種洋樓基本上有兩種：一是中央梯間式，另一種是梯間分左右側，且四周環繞拱廊，完全將英國殖民樣式、浪板拱與壁爐直接移植過來。<br/>
-									   <br/>      其次，外商在居留地或租借地所建的洋行或住宅也同樣呈現殖民地樣式之特色。當時較出名的洋行如：淡水寶順洋行、安平英商德記洋行、英商和記洋行、德商東興洋行等，今日這些洋行也所剩無幾，安平的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_03')">德記</a>與<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_04')">東興洋行</a>可以說是保存不錯的兩座代表建築。<br/>
-									   <br/>至於教會建築方面，主要分為南北兩系。教會建築較能入境隨俗，其中大量使用本地傳統材料，形式上也融入地方特色。傳教士中南部以臺南的蘇格蘭長老教會的巴克禮及馬雅各為主，北部以來自加拿大長老教會的馬偕為主。他們在臺灣早期蓋的是教堂、學校、宿舍；史料上所載臺灣近代最早的教堂應是高雄的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_05')">玫瑰聖母堂</a> ，風格上較接近西班牙式，可惜在 1930 年代整個拆掉重建。馬雅各在 1878 年時，在臺南東門內建置洋樓，供給牧師住宿，稱為新樓。北部方面，馬偕在 1873 年即建造<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_06')">滬尾教會</a> ；到 1881 年在附近又建一座<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_07')">滬尾偕醫館</a>（今馬偕醫院），這座醫館仍保存良好，平面為三開間的中國式建築，入口處有磚砌的階梯，雖有臺灣地方樣式，但大門卻顯現出西式趣味。<br/>
-									   <br/>
-									   為了培養本地的傳教士，建造<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_08')">理學堂大書院</a>（今牛津理學堂，位淡水真理大學內），這座建築現仍大部份存在，平面猶如臺灣民居。山牆斜度較陡，有印度式的火焰形裝飾，據傳為緩和當地佛教信徒的反對，因此在屋脊上設有許多類似佛教的尖形物，可以說入境隨俗；這座建築可以說是反映出十九世紀外來建築樣式與臺灣本地建築的融合並存的設計。<br/>
-									   <br/>     臺灣本身為了軍事防務、交通與礦業等，在重要港口建造要塞砲臺，這段期間興建十多座大小砲臺；交通建築方面可說是臺灣鐵路的創建，基隆的<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_09')">獅球嶺隧道</a>就是此時完成，工程艱鉅。<br/>
-									   <br/>
-									   另外，少見的是燈塔，像是馬祖的東莒和東引燈塔，澎湖的西嶼燈塔，<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_10')">屏東鵝鑾鼻燈塔</a>等，這些都是今日值得珍藏的建築。<br/>
-									   <br/>									   日本領有臺灣之後，繼現代化與進步的思維，經市街改正、都市計劃，新基礎設施、公共建設、公家機關、公用事業等，透過明治維新以來，全鑒西化對「西方古典菁英文化」的抄襲，延用學院派的形式模仿做，在所有的人造設施物上，穿戴文藝復興、巴洛克、新古典、新藝術……等多種西方建築形式，街屋正面穿上文藝復興的立面，間雜巴洛克的紋樣與露臺作法；公共建築利用塔樓作標記、軒亭作入口玄關；銀行、金融機構蓋希臘古典式；法院與博物館蓋圓頂的羅馬式；教堂、學校建築蓋英國哥德式；水道及相關設施蓋文藝復興式；鐵道及相關設施多以各種方式的「切角頂」、「挑樓」、「法國式屋頂」……作木構造的軒亭型式為表現，使臺灣大地上的景觀煥然一新，由於這種想法來自西方工業革命以後的近代化觀念，一般稱這樣的建築物為「近代建築」。（<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_11')">總統府</a>、<a href="#" class="inline_image_switcher" onclick="showImageSwitcher('image_switch_12')">臺北賓館</a>）</p>
-									</div>
+
+                                    <div class="mt-3"
+                                        style="display: block; max-width: 400px; height: 240px; overflow: auto;">
+                                        <p>早期由於英國對於臺灣影響力最深遠，所以早期的洋樓建築傾向於英式的風格；在第一波外來建築物即為領事館、洋行與教堂。領事館有在西元 1865 年建造的<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_01')">打狗英國領事館</a>、約建於西元 1880
+                                            年代的安平英國領事館和大稻埕的德國領事館、西元 1891 年淡水英國領事館、以及約建造於西元 1890
+                                            年代的安平德國領事館。現在這批領事館只有淡水及打狗的英國領事館保存下來，透過這兩座實體及其他各館的古照片，可以知道當時流行的是殖民樣式，當時英國勢力東漸後，將維多利亞風格的紅磚建築，與因應熱帶建築特色的拱廊結合，所創造出的新樣式。<br />
+                                            <br />
+                                            當時其中最古老的就是打狗英國領事館，它<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_02')">轉角處是用雙根並柱，其他部份是單柱</a>。淡水英國領事館所使用的紅磚，根據推測是廈門運來。它擁有細緻的磚工，甚至將英國維多利亞女皇的「VR」記號雕上去。當時這種洋樓基本上有兩種：一是中央梯間式，另一種是梯間分左右側，且四周環繞拱廊，完全將英國殖民樣式、浪板拱與壁爐直接移植過來。<br />
+                                            <br />
+                                            其次，外商在居留地或租借地所建的洋行或住宅也同樣呈現殖民地樣式之特色。當時較出名的洋行如：淡水寶順洋行、安平英商德記洋行、英商和記洋行、德商東興洋行等，今日這些洋行也所剩無幾，安平的<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_03')">德記</a>與<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_04')">東興洋行</a>可以說是保存不錯的兩座代表建築。<br />
+                                            <br />至於教會建築方面，主要分為南北兩系。教會建築較能入境隨俗，其中大量使用本地傳統材料，形式上也融入地方特色。傳教士中南部以臺南的蘇格蘭長老教會的巴克禮及馬雅各為主，北部以來自加拿大長老教會的馬偕為主。他們在臺灣早期蓋的是教堂、學校、宿舍；史料上所載臺灣近代最早的教堂應是高雄的<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_05')">玫瑰聖母堂</a> ，風格上較接近西班牙式，可惜在
+                                            1930 年代整個拆掉重建。馬雅各在 1878 年時，在臺南東門內建置洋樓，供給牧師住宿，稱為新樓。北部方面，馬偕在 1873 年即建造<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_06')">滬尾教會</a> ；到 1881
+                                            年在附近又建一座<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_07')">滬尾偕醫館</a>（今馬偕醫院），這座醫館仍保存良好，平面為三開間的中國式建築，入口處有磚砌的階梯，雖有臺灣地方樣式，但大門卻顯現出西式趣味。<br />
+                                            <br />
+                                            為了培養本地的傳教士，建造<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_08')">理學堂大書院</a>（今牛津理學堂，位淡水真理大學內），這座建築現仍大部份存在，平面猶如臺灣民居。山牆斜度較陡，有印度式的火焰形裝飾，據傳為緩和當地佛教信徒的反對，因此在屋脊上設有許多類似佛教的尖形物，可以說入境隨俗；這座建築可以說是反映出十九世紀外來建築樣式與臺灣本地建築的融合並存的設計。<br />
+                                            <br /> 臺灣本身為了軍事防務、交通與礦業等，在重要港口建造要塞砲臺，這段期間興建十多座大小砲臺；交通建築方面可說是臺灣鐵路的創建，基隆的<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_09')">獅球嶺隧道</a>就是此時完成，工程艱鉅。<br />
+                                            <br />
+                                            另外，少見的是燈塔，像是馬祖的東莒和東引燈塔，澎湖的西嶼燈塔，<a href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_10')">屏東鵝鑾鼻燈塔</a>等，這些都是今日值得珍藏的建築。<br />
+                                            <br />
+                                            日本領有臺灣之後，繼現代化與進步的思維，經市街改正、都市計劃，新基礎設施、公共建設、公家機關、公用事業等，透過明治維新以來，全鑒西化對「西方古典菁英文化」的抄襲，延用學院派的形式模仿做，在所有的人造設施物上，穿戴文藝復興、巴洛克、新古典、新藝術……等多種西方建築形式，街屋正面穿上文藝復興的立面，間雜巴洛克的紋樣與露臺作法；公共建築利用塔樓作標記、軒亭作入口玄關；銀行、金融機構蓋希臘古典式；法院與博物館蓋圓頂的羅馬式；教堂、學校建築蓋英國哥德式；水道及相關設施蓋文藝復興式；鐵道及相關設施多以各種方式的「切角頂」、「挑樓」、「法國式屋頂」……作木構造的軒亭型式為表現，使臺灣大地上的景觀煥然一新，由於這種想法來自西方工業革命以後的近代化觀念，一般稱這樣的建築物為「近代建築」。（<a
+                                                href="#" class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_11')">總統府</a>、<a href="#"
+                                                class="inline_image_switcher"
+                                                onclick="showImageSwitcher('image_switch_12')">臺北賓館</a>）
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div><!--content2頁面 結束-->
-                         <!-- 獅子問答區 -->
-                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion06.gif" alt="Click to view details" name="image" id="image" onclick="openModal('lionModal')"></a>
+                        <!-- 獅子問答區 -->
+                        <div class="lion_section"> <a href="#"><img src="images/01_history/side/lion06.gif"
+                                    alt="Click to view details" name="image" id="image"
+                                    onclick="openModal('lionModal')"></a>
 
                         </div>
                         <div id="lionModal" class="modal">
-                            <div class="modal-content" style="background-image: url('images/01_history/side/popup0106.gif'); width: 391px; height: 314px;">
+                            <div class="modal-content"
+                                style="background-image: url('images/01_history/side/popup0106.gif'); width: 391px; height: 314px;">
                                 <span class="close" onclick="closeModal('lionModal')">&times;</span>
                                 ※ 早期的洋樓建築大多傾向英式路線，最早的英國領事館建於何處？</p>
-                                
+
                                 <ol>
                                     <li>安平</li>
                                     <li>淡水<span id="lion_right_answer">（正確答案）</span></li>
                                     <li>大稻埕</li>
                                     <button id="lion_answer_button" onclick="display_answer()">看解答</button>
                                 </ol>
-                               
+
                             </div>
                         </div>
                         <!-- end 獅子問答區 -->
-					</div><!--主內容區 結束-->
-				</div>
-			</div>
-		</div>
+                    </div><!--主內容區 結束-->
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/content.js"></script>
     <script src="js/lionModal.js"></script>
     <script type="text/javascript">
-        window.onload=function(){
+        window.onload = function () {
             // 按照頁面需求更換
             const mainSection = document.getElementById("main-section")
             mainSection.style.backgroundImage = "url('" + mainBackground + "')";
         }
     </script>
 </body>
+
 </html>
