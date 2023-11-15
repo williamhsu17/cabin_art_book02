@@ -1,0 +1,87 @@
+<style>
+    .nav_links {
+        margin-top: 50px;
+        display: flex;
+    }
+    .nav_links a {
+        display: block;
+        height: 32px;
+    }
+    .sub_links {
+        margin-top: 3px;
+        display: flex;
+    }
+    .sub_links a {
+        display: block;
+        height: 20px;
+        width: 68px;
+    }
+    .sub_links a:hover {
+        background-color: rgba(0,0,0,0.2);;
+    }
+</style>
+<div class="nav-section">
+    <div id="nav-background" style="width: 868px; height: 114px; display: flex; background-image: url('images/01_history/top07.jpg');">
+        <div style="width: 169; height: 114px; display: flex; flex-direction: column; background-color: #bfbfbf;">
+            <img id="nav-logo" src="images/01_history/top01.gif" alt="臺灣傳統建築欣賞 LOGO" style="width: 169px; height: 89px; line-height: 1;">   <h1 style="font-size:12px; vertical-align:top; margin-bottom:-2px; color: #666">臺灣傳統建築欣賞</h1>
+             <a href="index.html" title="回首頁"><img class="left_image" src="images/01_history/top02.gif" alt="臺灣傳統建築欣賞首頁"></a>
+             
+        </div>
+        <div id="nav-button-group"  style="width: 598px; height: 114px; background-image: url('images/01_history/top01_01.jpg');">
+            <div class="nav_links">
+                <a href="01-1.html" title="歷史篇" style="width: 68px;
+                font-size:0px;" >歷史篇</a>
+                <a href="02-1.html" title="風格篇" style="width: 64px; font-size:0px;" >風格篇</a>
+                <a href="03-1.html" title="類型篇" style="width: 65px; font-size:0px;" >類型篇</a>
+                <a href="04-1.html" title="藝術篇" style="width: 62px; font-size:0px;" >藝術篇</a>
+                <a href="05-1.html" title="生活篇" style="width: 60px; font-size:0px;" >生活篇</a>
+                <a href="06-1.html" title="網站篇" style="width: 60px; font-size:0px;" >網站篇</a>
+            </div>
+            <div class="sub_links">
+                <div id="sub_link_spacer" style="height: 20px; width: 0px;"></div>
+                <a href="01-1.html" title="住宅" id="sub_link_01" style="font-size: 0;">住宅</a>
+                <a href="01-2.html" title="城郭" id="sub_link_02" style="font-size: 0;">城郭</a>
+                <a href="01-3.html" title="庭園" id="sub_link_03" style="font-size: 0;">庭園</a>
+                <a href="01-4.html" title="棋盤佈局" id="sub_link_04" style="font-size: 0;">棋盤佈局</a>
+                <a href="01-5.html" title="牌坊" id="sub_link_05" style="font-size: 0;">牌坊</a>
+                <a href="01-6.html" title="隘門" id="sub_link_06" style="font-size: 0;">隘門</a>
+                <a href="01-7.html" title="寺廟" id="sub_link_07" style="font-size: 0;">寺廟</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const navLogo = document.getElementById("nav-logo")
+    navLogo.src = navLogoImage;
+
+    const navBackground = document.getElementById("nav-background")
+    navBackground.style.backgroundImage = "url('" + navBackgroundImage + "')";
+    
+    const navButtonGroup = document.getElementById("nav-button-group")
+    navButtonGroup.style.backgroundImage = "url('" + navButtonGroupImage + "')";
+
+    const subLinkSpacer = document.getElementById("sub_link_spacer")
+    const subLink01 = document.getElementById("sub_link_01")
+    const subLink02 = document.getElementById("sub_link_02")
+    const subLink03 = document.getElementById("sub_link_03")
+    const subLink04 = document.getElementById("sub_link_04")
+    const subLink05 = document.getElementById("sub_link_05")
+    const subLink06 = document.getElementById("sub_link_06")
+    const subLink07 = document.getElementById("sub_link_07")
+
+    subLinkSpacer.style.width = subLinkSpacerWidth;
+    subLink01.href = subLink01src;
+    subLink01.style.width = subLink01Width;
+    subLink02.href = subLink02src;
+    subLink02.style.width = subLink02Width;
+    subLink03.href = subLink03src;
+    subLink03.style.width = subLink03Width;
+    subLink04.href = subLink04src;
+    subLink04.style.width = subLink04Width;
+    subLink05.href = subLink05src;
+    subLink05.style.width = subLink05Width;
+    subLink06.href = subLink06src;
+    subLink06.style.width = subLink06Width;
+    subLink07.href = subLink07src;
+    subLink07.style.width = subLink07Width;
+</script>
