@@ -56,7 +56,7 @@
 
     right: 40px;
 }
-#lion_answer_button:hover, #lion_answer_button:focus, #lion_question_button:hover, #lion_answer_button:focus {
+#lion_answer_button:hover, #lion_answer_button:focus, #lion_question_button:hover, #lion_question_button:focus {
     background-color: white;
     border: #016e9a solid 1px;
     color: black;
