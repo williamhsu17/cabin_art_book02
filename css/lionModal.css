@@ -50,9 +50,16 @@
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+
     background-color: #016e9a;
     color: #ecf0f1;
+
     right: 40px;
+}
+#lion_answer_button:hover, #lion_answer_button:focus, #lion_question_button:hover, #lion_answer_button:focus {
+    background-color: white;
+    border: #016e9a solid 1px;
+    color: black;
 }
 #lion_right_answer {
     display: none;
