@@ -243,18 +243,18 @@
                         <!-- 獅子問答區 -->
                         <div class="lion_section"> <a href="#" title="史前建築互動問答"><img src="images/01_history/side/lion01.gif"
                                     alt="互動問答Click to view details" name="image" id="image"
-                                    onclick="openModal('lionModal')"></a>
+                                    tabindex="0" onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
                             <div class="modal-content"
                                 style="background-image: url('images/01_history/side/popup0101.gif');">
-                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                                <span class="close" tabindex="0" onclick="closeModal('lionModal')">&times;</span>
                                 <p>※臺灣史前的十三行文化屬於下列什麼時代？</p>
                                 <ol>
                                     <li>舊石器時代</li>
                                     <li>新石器時代</li>
                                     <li>金屬時代<span id="lion_right_answer">（正確答案）</span></li>
-                                    <button id="lion_answer_button" onclick="display_answer()">看解答</button>
+                                    <button id="lion_answer_button" tabindex="0" onclick="display_answer()">看解答</button>
                                 </ol>
                             </div>
                         </div>

@@ -324,12 +324,12 @@
                         <!-- 獅子問答區 -->
                         <div class="lion_section"> <a href="#" title="日式和風建築互動問答"><img src="images/01_history/side/lion07.gif"
                                     alt="互動問答Click to view details" name="image" id="image"
-                                    onclick="openModal('lionModal')"></a>
+                                    tabindex="0" onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
                             <div class="modal-content"
                                 style="background-image: url('images/01_history/side/popup0107.gif'); width: 391px; height: 314px;">
-                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                                <span class="close" tabindex="0" onclick="closeModal('lionModal')">&times;</span>
 
                                 <p>※ 下列何者屬於日式的寺廟建築？</p>
 
@@ -337,7 +337,7 @@
                                     <li>臺南祀典武廟</li>
                                     <li>臨濟護國禪寺<span id="lion_right_answer">（正確答案）</span></li>
                                     <li>淡水鄞山寺</li>
-                                    <button id="lion_answer_button" onclick="display_answer()">看解答</button>
+                                    <button id="lion_answer_button" tabindex="0" onclick="display_answer()">看解答</button>
                                 </ol>
 
                             </div>

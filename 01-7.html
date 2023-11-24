@@ -221,12 +221,12 @@
                         <!-- 獅子問答區 -->
                         <div class="lion_section"> <a href="#" title="近年仿古建築互動問答"><img src="images/01_history/side/lion08.gif"
                                     alt="互動問答Click to view details" name="image" id="image"
-                                    onclick="openModal('lionModal')"></a>
+                                    tabindex="0" onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
                             <div class="modal-content"
                                 style="background-image: url('images/01_history/side/popup0108.gif'); width: 391px; height: 314px;">
-                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                                <span class="close" tabindex="0" onclick="closeModal('lionModal')">&times;</span>
 
                                 <p>※ 臺灣近代的仿古建築融和了中國傳統與現代，下列何者不具有此一特色？</p>
 
@@ -234,7 +234,7 @@
                                     <li>國父紀念館</li>
                                     <li>故宮博物院</li>
                                     <li>總統府<span id="lion_right_answer">（正確答案）</span></li>
-                                    <button id="lion_answer_button" onclick="display_answer()">看解答</button>
+                                    <button id="lion_answer_button" tabindex="0" onclick="display_answer()">看解答</button>
                                 </ol>
 
                             </div>

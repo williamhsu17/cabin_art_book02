@@ -301,13 +301,13 @@
                         <!-- 獅子問答區 -->
                         <div class="lion_section"> <a href="#" title="漢人傳統建築互動問答"><img src="images/01_history/side/lion05.gif"
                                     alt="互動問答Click to view details" name="image" id="image"
-                                    onclick="openModal('lionModal')"></a>
+                                    tabindex="0" onclick="openModal('lionModal')"></a>
 
                         </div>
                         <div id="lionModal" class="modal">
                             <div class="modal-content"
                                 style="background-image: url('images/01_history/side/popup0105.gif'); width: 391px; height: 314px;">
-                                <span class="close" onclick="closeModal('lionModal')">&times;</span>
+                                <span class="close" tabindex="0" onclick="closeModal('lionModal')">&times;</span>
 
                                 <p>※ 閩南式建築是臺灣最常見的傳統建築，又可細分為漳州及泉州，下列何者屬漳州派建築？</p>
 
@@ -315,7 +315,7 @@
                                     <li>林家花園<span id="lion_right_answer">（正確答案）</span></li>
                                     <li>淡水龍山寺</li>
                                     <li>新竹北埔民居</li>
-                                    <button id="lion_answer_button" onclick="display_answer()">看解答</button>
+                                    <button id="lion_answer_button" tabindex="0" onclick="display_answer()">看解答</button>
                                 </ol>
 
                             </div>

@@ -205,13 +205,13 @@
                         <!-- 獅子問答區 -->
                         <div class="lion_section"> <a href="#" title="DIY學習單元"><img src="images/05_life/side/lion01.gif"
                                     alt="DIY學習單元Click to view details" name="image" id="image"
-                                    onclick="openModal('lionModal')"></a>
+                                    tabindex="0" onclick="openModal('lionModal')"></a>
                         </div>
                         <div id="lionModal" class="modal">
                             <div class="modal-content"
                                 style="height: 380px; background-image: url('images/05_life/side/popup0101.gif'); background-repeat: no-repeat;">
                                 <span class="close" style="margin-top: 300px;"
-                                    onclick="closeModal('lionModal')">&times;</span>
+                                    tabindex="0" onclick="closeModal('lionModal')">&times;</span>
                                 <button id="lion_answer_button" style="margin-top: 300px;"
                                     onclick="showAnswer(this)">看解答</button>
                                 <button id="lion_question_button" style="margin-top: 300px; display: none;"
