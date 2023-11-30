@@ -593,8 +593,14 @@
                                 </ol>
                             </div>
                         </div>
+                        <script>
+                            document.addEventListener('keydown', function(event) {
+                                if (event.key === 'Escape') {
+                                    closeModal('lionModal');
+                                }
+                            });
+                        </script>
                         <!-- end 獅子問答區 -->
-
                     </div>   </div>
             </div>
         </div>
